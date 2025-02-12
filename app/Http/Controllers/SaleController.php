@@ -50,33 +50,34 @@ class SaleController extends Controller
                         throw new \Exception("Medicine with ID {$order['medicine_id']} not found.");
                     }
 
-                    // Check if sufficient quantity is available
                     if ($medicine->quantity < $order['quantity']) {
                         throw new \Exception("Insufficient stock for Medicine ID {$order['medicine_id']}.");
                     }
 
-                    // Calculate remaining quantity and total amount
                     $remain = $medicine->quantity - $order['quantity'];
                     $total_amount = $order['quantity'] * $medicine->sell_price;
+                    $batchNumber = Sale::count() + 1;
 
-                    // Create a new sale
                     Sale::create([
                         'staff_id' => auth()->id(),
                         'medicine_id' => $order['medicine_id'],
+                        'batch_number' => $batchNumber,
                         'quantity' => $order['quantity'],
                         'total_amount' => $total_amount,
                     ]);
 
-                    // Update the medicine's quantity
                     $medicine->update(['quantity' => $remain]);
                 }
             });
 
-            return redirect()->route('sales.index')->with('success', 'Sales added successfully!');
+            session()->flash('success', 'Sales added successfully!'); // Ensure the message is flashed
+            return redirect()->route('sales.index');
         } catch (\Exception $e) {
-            return back()->withErrors(['error' => $e->getMessage()]);
+            session()->flash('error', $e->getMessage()); // Ensure error message is flashed
+            return redirect()->route('sales.index');
         }
     }
+
 
 
 

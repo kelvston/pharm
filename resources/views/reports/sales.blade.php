@@ -31,6 +31,8 @@
 
 
     </style>
+
+    <div class="container mt-4 custom-bg">
         <ul class="navigate">
             <li>
                 <a href="/inventory-report">Inventory</a>
@@ -39,7 +41,6 @@
                 <a href="/revenue-report">Revenue</a>
             </li>
         </ul>
-    <div class="container mt-4">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="mb-4 text-primary">Sales Report</h2>

@@ -1,0 +1,4217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from backend.themesadmin.com/backend/admin_left_top_menu/default/admin_default/advanced_elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 08:27:30 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="bootstrap default admin template">
+<meta name="viewport" content="width=device-width">
+<title>Advanced elements | Admin Template</title>
+ 
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1491196372,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"faccdb26552b26ba47282e3ab09989aa",petok:"0e22887013ff2f0ab068dfc1ab60e4f3632d41c9-1491207782-1800",zone:"themesadmin.com",rocket:"0",apps:{"ga_key":{"ua":"UA-92643213-2","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="../../../../../ajax.cloudflare.com/cdn-cgi/nexp/dok3v%3df2befc48d1/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link rel="shortcut icon" href="http://backend.themesadmin.com/backend/assets/favicon/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="../../../assets/favicon/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../../../assets/favicon/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="../../../assets/favicon/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../../../assets/favicon/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="../../../assets/favicon/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="../../../assets/favicon/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="../../../assets/favicon/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="../../../assets/favicon/apple-touch-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicon/apple-touch-icon-180x180.png"/>
+ 
+<link rel="stylesheet" href="../../../assets/global/plugins/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../../../assets/icons_fonts/elegant_font/elegant.min.css"/>
+<link id="site-color" rel="stylesheet" href="../../../assets/layouts/layout-left-top-menu/css/color/light/color-default.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/switchery/dist/switchery.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+ 
+ 
+<link rel="stylesheet" href="../../../assets/global/plugins/bootstrap-select/dist/css/bootstrap-select.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/select2/dist/css/select2.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/jt.timepicker/jquery.timepicker.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/flatpickr/dist/flatpickr.min.css"/>
+ 
+ 
+<link rel="stylesheet" href="../../../assets/global/css/components.min.css"/>
+ 
+ 
+<link rel="stylesheet" href="../../../assets/layouts/layout-left-top-menu/css/layout.css"/>
+ 
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-92643213-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body>
+<div class="loader-overlay">
+<div class="loader-preview-area">
+<div class="spinners">
+<div class="loader">
+<div class="rotating-plane"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+ 
+<header id="header">
+<div class="row">
+<div class="col-sm-4 col-xl-2 header-left">
+<div class="logo float-xs-left">
+<a href="#"><img src="../../../assets/global/image/web-logo.png" alt="logo"></a>
+</div>
+<button class="left-menu-toggle float-xs-right">
+<i class="icon_menu toggle-icon"></i>
+</button>
+<button class="right-menu-toggle float-xs-right">
+<i class="arrow_carrot-left toggle-icon"></i>
+</button>
+</div>
+<div class="col-xl-6 header-center">
+<div class="menucontainer">
+<div class="overlapblackbg"></div>
+<a id="navtoggle" class="animated-arrow"><span></span></a>
+<nav id="nav" class="topmenu" role="navigation">
+<div class="sidebar-search">
+<input id="live-search-box" type="search" class="form-control input-sm" placeholder="Search...">
+<a href="javascript:void(0)"><i class="search-close icon_search"></i></a>
+</div>
+<ul class="menu-list live-search-list">
+<li>
+<a href="javascript:void(0)">
+<span class="icon_desktop header-icon" aria-hidden="true"></span>Dashboard<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li>
+<a href="index-2.html">Dashboard</a>
+</li>
+<li>
+<a href="dashboard_v1.html">Dashboard 1</a>
+</li>
+<li>
+<a href="dashboard_v2.html">Dashboard 2</a>
+</li>
+<li>
+<a href="dashboard_v3.html">Dashboard 3</a>
+</li>
+<li>
+<a href="crm_dashboard.html">CRM Dashboard</a>
+</li>
+<li>
+<a href="server_dashboard.html">Server Dashboard</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">
+<span class="icon_tags_alt header-icon" aria-hidden="true"></span>Layout<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li><a href="javascript:void(0)">General Pages<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub dropNav">
+<li>
+<a href="userlist.html">Userlist</a>
+</li>
+<li>
+<a href="invoice.html">Invoice</a>
+</li>
+<li>
+<a href="blank.html">Blank</a>
+</li>
+<li>
+<a href="profile.html">Profile</a>
+</li>
+<li>
+<a href="search.html">Search</a>
+</li>
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+<li>
+<a href="grid.html">Grid</a>
+</li>
+<li>
+<a href="maintenance.html">Maintenance</a>
+</li>
+<li>
+<a href="404.html">404 Page</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Cookie consent<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="cookie_consent_v1.html">Cookie consent 1</a>
+</li>
+<li>
+<a href="cookie_consent_v2.html">Cookie consent 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">eCommerce<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="eCommerce_dashboard.html">Dashboard</a>
+</li>
+<li>
+<a href="order.html">Orders</a>
+</li>
+<li>
+<a href="order_view.html">Order view</a>
+</li>
+<li>
+<a href="product.html">Products</a>
+</li>
+<li>
+<a href="products_edit.html">Product edit</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Apps<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="contact.html">Contacts</a>
+</li>
+<li>
+<a href="calendar.html">Calender</a>
+</li>
+<li><a href="javascript:void(0)">Message<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="message.html">Message</a>
+</li>
+<li>
+<a href="message_v2.html">Message V2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Mailbox<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="mail_box.html">Inbox</a>
+</li>
+<li>
+<a href="mail_draft.html">Draft</a>
+</li>
+<li>
+<a href="mail_send.html">Sent</a>
+</li>
+<li>
+<a href="mail_archive.html">Archive</a>
+</li>
+<li>
+<a href="mail_trash.html">Trash</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Maps<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="google_maps.html">Google map</a>
+</li>
+<li>
+<a href="vector_maps.html">Vector map</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Users<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li><a href="javascript:void(0)">Login<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="login_v1.html">Login Page 1</a>
+</li>
+<li>
+<a href="login_v2.html">Login Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Register<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="register_v1.html">Register Page 1</a>
+</li>
+<li>
+<a href="register_v2.html">Register Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Lockscreen<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="lock_screen_v1.html">Lockscreen Page 1</a>
+</li>
+<li>
+<a href="lock_screen_v2.html">Lockscreen Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Forgot Password<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="forgot_password_v1.html">Forgot Password 1</a>
+</li>
+<li>
+<a href="forgot_password_v2.html">Forgot Password 2</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">
+<span class="icon_ribbon_alt header-icon" aria-hidden="true"></span>Components<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li><a href="javascript:void(0)">Basic UI<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="cards.html">Cards</a>
+</li>
+<li>
+<a href="buttons.html">Button</a>
+</li>
+<li>
+<a class="flat-buttons" href="switches.html">Switch</a>
+</li>
+<li><a href="javascript:void(0)">Icons<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="font_awesome.html">Font-Awesome</a>
+</li>
+<li>
+<a href="themify_icons.html">Themify-Icons</a>
+</li>
+<li>
+<a href="7-Stroke_icons.html">7-stroke</a>
+</li>
+<li>
+<a href="weather_icons.html">Weather-Icons</a>
+</li>
+<li>
+<a href="material_icons.html">Material-Design</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">Progress<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="youtube_progress.html">Youtube</a>
+</li>
+<li>
+<a href="3D_bar_progress.html">3D bar</a>
+</li>
+<li>
+<a href="flate_topbar_progress.html">Flate header</a>
+</li>
+<li>
+<a href="corner_indicator_progress.html">Corner indicator</a>
+</li>
+<li>
+<a href="big_counter.html">Counter</a>
+</li>
+<li>
+<a href="bounce.html">Bounce</a>
+</li>
+<li>
+<a href="loading_bar.html">Loading bar</a>
+</li>
+<li>
+<a href="center_circle.html">Center circle</a>
+</li>
+<li>
+<a href="center_simple.html">Center simple</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="list.html">List</a>
+</li>
+<li>
+<a href="dropdown.html">Dropdown</a>
+</li>
+<li>
+<a href="images.html">Image</a>
+</li>
+<li>
+<a href="modals.html">Modals</a>
+</li>
+<li>
+<a href="scrollable.html">Scrollbar</a>
+</li>
+<li>
+<a href="typography.html">Typography</a>
+</li>
+<li>
+<a href="utilities.html">Utilities</a>
+</li>
+<li>
+<a href="carousel.html">Carousel</a>
+</li>
+<li>
+<a href="color_generator.html">Color Generator</a>
+</li>
+<li>
+<a href="tabs_accordions.html">Tabs &amp; Accordions</a>
+</li>
+<li>
+<a href="badges_tags.html">Badges &amp; Tags</a>
+</li>
+<li>
+<a href="progress_bar.html">Progress Bars</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Advanced UI<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="highlight.html">Highlight</a>
+</li>
+<li>
+<a href="bootbox.html">Bootbox</a>
+</li>
+<li>
+<a href="sweetalert.html">Sweetalert</a>
+</li>
+<li>
+<a href="toastr.html">Toastr</a>
+</li>
+<li>
+<a href="tooltip_popover.html">Tooltip & Popover</a>
+</li>
+<li>
+<a href="masonry.html">Masonry</a>
+</li>
+<li>
+<a href="rating.html">Rating</a>
+</li>
+<li>
+<a href="sortable_nestable.html">Sortable & Nestable</a>
+</li>
+<li>
+<a href="lightbox.html">Lightbox</a>
+</li>
+<li>
+<a href="treeview.html">Treeview</a>
+</li>
+<li>
+<a href="context_menu.html">Context Menu</a>
+</li>
+<li>
+<a href="file_manager.html">File Manager</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Elements<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="alerts.html">Alerts</a>
+</li>
+<li>
+<a href="ribbon.html">Ribbon</a>
+</li>
+<li>
+<a href="pricing-table.html">Pricing Table</a>
+</li>
+<li>
+<a href="overlay.html">Overlay</a>
+</li>
+<li>
+<a href="step.html">Step</a>
+</li>
+<li>
+<a href="timeline.html">Timeline</a>
+</li>
+<li>
+<a href="testimonial.html">Testimonials</a>
+</li>
+<li>
+<a href="breadcrumbs.html">Breadcrumbs</a>
+</li>
+<li>
+<a href="blockquote.html">Blockquotes</a>
+</li>
+<li>
+<a href="nav.html">Nav</a>
+</li>
+<li>
+<a href="navbar.html">Navbars</a>
+</li>
+<li>
+<a href="pagination.html">Pagination</a>
+</li>
+<li>
+<a href="different_headers.html">Different Headers</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Forms<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="general_elements.html">General Elements</a>
+</li>
+<li>
+<a href="form_layout.html">Form Layouts</a>
+</li>
+<li>
+<a href="form_validation.html">Form Validation</a>
+</li>
+<li>
+<a href="form_mask.html">Form Masks</a>
+</li>
+<li>
+<a href="advanced_elements.html">Advanced Elements</a>
+</li>
+<li>
+<a href="form_wizard.html">Form Wizard</a>
+</li>
+<li>
+<a href="markdown_editor.html">Markdown Editor</a>
+</li>
+<li>
+<a href="image_cropping.html">Image Cropping</a>
+</li>
+<li>
+<a href="file_upload.html">File Upload</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Tables<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="basic_table.html">Basic Tables</a>
+</li>
+<li>
+<a href="bootstrap_tables.html">Bootstrap Tables</a>
+</li>
+<li>
+<a href="floatthead.html">floatThead</a>
+</li>
+<li>
+<a href="editable.html">Editable</a>
+</li>
+<li>
+<a href="datatable.html">Datatable</a>
+</li>
+<li>
+<a href="jsgrid.html">jsGrid</a>
+</li>
+<li>
+<a href="responsive_table.html">Responsive Tables</a>
+</li>
+<li>
+<a href="footable.html">Footable</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Chart<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="morris_chart.html">Morris Chart</a>
+</li>
+<li>
+<a href="sparkline_chart.html">Sparkline Chart </a>
+</li>
+<li>
+<a href="chartist.html">Chartist</a>
+</li>
+<li>
+<a href="gantt_chart.html">Gantt Chart</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Widgets<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="social_widget.html">Social Widgets</a>
+</li>
+<li>
+<a href="static_widget.html">Static Widgets</a>
+</li>
+<li>
+<a href="data_widgets.html">Data Widgets</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<nav id="nav-mega">
+<ul class="menu-list">
+<li class="dropdown dropdown-mega-item">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" aria-haspopup="true" aria-expanded="false">
+<span class="icon_ul header-icon" aria-hidden="true"></span><span class="mega-title">Mega</span>
+<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<div class="dropdown-menu dropdown-mega-menu">
+<div class="mega-menu-container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="mega-menu-title">
+<span>Layout</span>
+</div>
+<ul>
+<li>
+<a href="userlist.html">
+<span class="icon_documents_alt" aria-hidden="true"></span>Userlist
+</a>
+</li>
+<li>
+<a href="invoice.html">
+<span class="icon_document_alt" aria-hidden="true"></span>Invoice
+</a>
+</li>
+<li>
+<a href="blank.html">
+<span class="icon_menu-square_alt2" aria-hidden="true"></span>Blank
+</a>
+</li>
+<li>
+<a href="profile.html">
+<span class="icon_id-2" aria-hidden="true"></span>Profile
+</a>
+</li>
+<li>
+<a href="search.html">
+<span class="icon_search" aria-hidden="true"></span>Search
+</a>
+</li>
+<li>
+<a href="gallery.html">
+<span class="icon_images" aria-hidden="true"></span>Gallery
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="grid.html">
+<span class="icon_archive_alt" aria-hidden="true"></span>Grid
+</a>
+</li>
+<li>
+<a href="404.html">
+<span class="icon_error-triangle_alt" aria-hidden="true"></span>404 Error
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-xs-megamenu-spacing"></div>
+<div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="mega-menu-title">
+<span>Basic ui</span>
+</div>
+<ul>
+<li>
+<a href="cards.html">
+<span class="icon_creditcard" aria-hidden="true"></span>Cards
+</a>
+</li>
+<li>
+<a href="buttons.html">
+<span class="icon_tags_alt" aria-hidden="true"></span>Button
+</a>
+</li>
+<li>
+<a href="list.html">
+<span class="icon_document_alt" aria-hidden="true"></span>List
+</a>
+</li>
+<li>
+<a href="dropdown.html">
+<span class="icon_cloud_alt" aria-hidden="true"></span>Dropdown
+</a>
+</li>
+<li>
+<a href="images.html">
+<span class="icon_image" aria-hidden="true"></span>Image
+</a>
+</li>
+<li>
+<a href="themify_icons.html">
+<span class="icon_percent" aria-hidden="true"></span>Themify Icons
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="modals.html">
+<span class="icon_drawer_alt" aria-hidden="true"></span>Modals
+</a>
+</li>
+<li>
+<a href="scrollable.html">
+<span class="icon_pens" aria-hidden="true"></span>Scrollbar
+</a>
+</li>
+<li>
+<a href="typography.html">
+<span class="icon_pencil-edit_alt" aria-hidden="true"></span>Typography
+</a>
+</li>
+<li>
+<a href="utilities.html">
+<span class="icon_drive" aria-hidden="true"></span>Utilities
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-md-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="mega-menu-title">
+<span>Advance ui</span>
+</div>
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li>
+<a href="highlight.html">
+<span class="icon_pencil-edit" aria-hidden="true"></span>Highlight
+</a>
+</li>
+<li>
+<a href="bootbox.html">
+<span class="icon_drawer_alt" aria-hidden="true"></span>Bootbox
+</a>
+</li>
+<li>
+<a href="sweetalert.html">
+<span class="icon_info_alt" aria-hidden="true"></span>Sweetalert
+</a>
+</li>
+<li>
+<a href="toastr.html">
+<span class="icon_error-oct_alt" aria-hidden="true"></span>Toastr
+</a>
+</li>
+<li>
+<a href="tooltip_popover.html">
+<span class="icon_target" aria-hidden="true"></span>Tooltip & popover
+</a>
+</li>
+<li>
+<a href="masonry.html">
+<span class="icon_hourglass" aria-hidden="true"></span>Masonry
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="rating.html">
+<span class="icon_star_alt" aria-hidden="true"></span>Rating
+</a>
+</li>
+<li>
+<a href="sortable_nestable.html">
+<span class="arrow_move" aria-hidden="true"></span>Sortable &
+nestable
+</a>
+</li>
+<li>
+<a href="lightbox.html">
+<span class="icon_lightbulb_alt" aria-hidden="true"></span>Lightbox
+</a>
+</li>
+<li>
+<a href="treeview.html">
+<span class="icon_flowchart" aria-hidden="true"></span>Treeview
+</a>
+</li>
+<li>
+<a href="carousel.html">
+<span class="icon_puzzle" aria-hidden="true"></span>Carousel
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-xs-megamenu-spacing"></div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li>
+<a href="file_manager.html">
+<span class="icon_folder-open_alt" aria-hidden="true"></span>File Manager<span class="tag tag-pill tag-danger">New</span>
+</a>
+</li>
+<li>
+<a href="alerts.html">
+<span class="icon_puzzle" aria-hidden="true"></span>Alert
+</a>
+</li>
+<li>
+<a href="ribbon.html">
+<span class="icon_ribbon_alt" aria-hidden="true"></span>Ribbon
+</a>
+</li>
+<li>
+<a href="gantt_chart.html">
+<span class="icon_easel" aria-hidden="true"></span>Gantt Chart<span class="tag tag-pill tag-danger">New</span>
+</a>
+</li>
+<li>
+<a href="timeline.html">
+<span class="icon_clock_alt" aria-hidden="true"></span>Timeline
+</a>
+</li>
+<li>
+<a href="testimonial.html">
+<span class="icon_comment_alt" aria-hidden="true"></span>Testimonial
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="morris_chart.html">
+<span class="icon_piechart" aria-hidden="true"></span>Morris chart
+</a>
+</li>
+<li>
+<a href="chartist.html">
+<span class="icon_datareport" aria-hidden="true"></span>Chartist
+</a>
+</li>
+<li>
+<a href="social_widget.html">
+<span class="icon_globe-2" aria-hidden="true"></span>Social widget
+</a>
+</li>
+<li>
+<a href="static_widget.html">
+<span class="icon_id" aria-hidden="true"></span>Static widget
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<img src="../../../assets/global/image/tabimg.png" alt="" class="tabimage"/>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="col-sm-8 col-xl-10 header-right">
+<div class="header-inner-right">
+<div class="float-default searchbox">
+<div class="right-icon">
+<a href="javascript:void(0)">
+<i class="icon_search"></i>
+</a>
+</div>
+</div>
+<div class="float-default mail">
+<div class="right-icon">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" aria-expanded="true">
+<i class="icon_mail_alt"></i>
+<span class="mail-no">10</span>
+</a>
+<div class="dropdown-menu messagetoggle" role="menu">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#messages" role="tab">Message</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#resendmessage" role="tab">Resend</a>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="messages" role="tabpanel" data-plugin="custom-scroll" data-height="320">
+<ul class="userMessagedrop">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-primary"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>New tasks added</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-success"><i class="icon_lock"></i></span>
+</div>
+<div class="media-body">
+<h6>Successfully</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-danger"><i class="icon_info_alt"></i></span>
+</div>
+<div class="media-body">
+<h6>Warnind</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-info"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>Add new friend</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="tab-pane" id="resendmessage" role="tabpanel" data-plugin="custom-scroll" data-height="320">
+<ul class="userMessagedrop">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-primary"><i class="icon_profile"></i></span>
+</div>
+<div class="media-body">
+<h6>5 new members joi...</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">2 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-success"><i class="icon_key"></i></span>
+</div>
+<div class="media-body">
+<h6>You changed...</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-danger"><i class="icon_close"></i></span>
+</div>
+<div class="media-body">
+<h6>5 members removed</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">15 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-info"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>Update available</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="float-default chat">
+<div class="right-icon">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" data-animation="slideOutUp" aria-expanded="false">
+<i class="icon_chat_alt"></i>
+<span class="mail-no">8</span>
+</a>
+<ul class="dropdown-menu userChat" data-plugin="custom-scroll" data-height="310">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image1-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+<div class="status online"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image2-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">2 hours
+</time>
+</div>
+<div class="status offline"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image3-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">20 Oct
+</time>
+</div>
+<div class="status offline"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image4-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">20 Oct
+</time>
+</div>
+<div class="status online"></div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="float-default chat">
+<div class="right-icon">
+<a href="#" data-plugin="fullscreen">
+<i class="arrow_expand"></i>
+</a>
+</div>
+</div>
+<div class="user-dropdown">
+<div class="btn-group">
+<a href="#" class="user-header dropdown-toggle" data-toggle="dropdown" data-animation="slideOutUp" aria-haspopup="true" aria-expanded="false">
+<img src="../../../assets/global/image/user.jpg" alt="Profile image"/>
+</a>
+<div class="dropdown-menu drop-profile">
+<div class="userProfile">
+<img src="../../../assets/global/image/user.jpg" alt="Profile image"/>
+<h5>Miler Hussey</h5>
+<p>milerhussey@yahoo.com</p>
+</div>
+<div class="dropdown-divider"></div>
+<a class="btn left-spacing link-btn" href="#" role="button">Link</a>
+<a class="btn left-second-spacing link-btn" href="#" role="button">Link 2</a>
+<a class="btn btn-primary float-xs-right right-spacing" href="#" role="button">Logout</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="search-overlay">
+<div class="float-default search">
+<div class="search_bg"></div>
+<div class="right-icon search_box">
+<div class="search-div">
+<input type="text" class="search_input">
+<label class="search-input-label">
+<span class="input-label-title">Search</span>
+</label>
+</div>
+<div class="divider50"></div>
+<div class="search-result">
+<div class="search-item">
+<div class="search-image float-xs-left">
+<img src="../../../assets/global/image/guitar.jpg" alt="search-image">
+</div>
+<div class="search-info float-xs-right">
+<h3 class="title">Search here</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+<div class="divider15"></div>
+<div class="search-item">
+<div class="search-info search-full float-xs-right">
+<h3 class="title">Admin templates</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+<div class="divider15"></div>
+<div class="search-item">
+<div class="search-image float-xs-left">
+<img src="../../../assets/global/image/book-flower.jpg" alt="search-image">
+</div>
+<div class="search-info float-xs-right">
+<h3 class="title">Books</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="search_close icon_close"></div>
+</div>
+</div>
+ 
+ 
+<section id="main" class="container-fluid">
+<div class="row">
+ 
+<aside id="sidebar">
+<div class="sidebar-search">
+<input id="left-menu-search" type="search" class="form-control input-sm" placeholder="Search...">
+<a href="javascript:void(0)"><i class="search-close icon_search"></i></a>
+</div>
+<div class="sidebar-menu">
+<ul class="nav site-menu live-search-list" id="site-menu" data-plugin="custom-scroll" data-suppress-scroll-x="true" data-height="100%">
+<li class="menu-title"><i class="icon_compass_alt"></i><span>Main Menu</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)"><span>Dashboard</span>
+<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="index-2.html">Dashboard</a>
+</li>
+<li>
+<a href="dashboard_v1.html">Dashboard 1</a>
+</li>
+<li>
+<a href="dashboard_v2.html">Dashboard 2</a>
+</li>
+<li>
+<a href="dashboard_v3.html">Dashboard 3</a>
+</li>
+<li>
+<a href="crm_dashboard.html">CRM Dashboard</a>
+</li>
+<li>
+<a href="server_dashboard.html">Server Dashboard</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-title"><i class="icon_document_alt"></i><span>Layout Pages</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)"><span>General Pages</span>
+<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="userlist.html">Userlist</a>
+</li>
+<li>
+<a href="invoice.html">Invoice</a>
+</li>
+<li>
+<a href="blank.html">Blank</a>
+</li>
+<li>
+<a href="profile.html">Profile</a>
+</li>
+<li>
+<a href="search.html">Search</a>
+</li>
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+<li>
+<a href="grid.html">Grid</a>
+</li>
+<li>
+<a href="maintenance.html">Maintenance</a>
+</li>
+<li>
+<a href="404.html">404 Page</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Cookie consent<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="cookie_consent_v1.html">Cookie consent 1</a>
+</li>
+<li>
+<a href="cookie_consent_v2.html">Cookie consent 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+eCommerce<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="eCommerce_dashboard.html">Dashboard</a>
+</li>
+<li>
+<a href="order.html">Orders</a>
+</li>
+<li>
+<a href="order_view.html">Order view</a>
+</li>
+<li>
+<a href="product.html">Products</a>
+</li>
+<li>
+<a href="products_edit.html">Product edit</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Apps<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="contact.html">Contacts</a>
+</li>
+<li>
+<a href="calendar.html">Calender</a>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Message<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="message.html">Message</a>
+</li>
+<li>
+<a href="message_v2.html">Message V2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Mailbox<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="mail_box.html">Inbox</a>
+</li>
+<li>
+<a href="mail_draft.html">Draft</a>
+</li>
+<li>
+<a href="mail_send.html">Sent</a>
+</li>
+<li>
+<a href="mail_archive.html">Archive</a>
+</li>
+<li>
+<a href="mail_trash.html">Trash</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Maps<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="google_maps.html">Google map</a>
+</li>
+<li>
+<a href="vector_maps.html">Vector map</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Users<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li class="sub-item">
+<a href="javascript:void(0)">
+Login<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="login_v1.html">Login Page 1</a>
+</li>
+<li>
+<a href="login_v2.html">Login Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Register<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="register_v1.html">Register Page 1</a>
+</li>
+<li>
+<a href="register_v2.html">Register Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Lockscreen<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="lock_screen_v1.html">Lockscreen Page 1</a>
+</li>
+<li>
+<a href="lock_screen_v2.html">Lockscreen Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Forgot Password<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="forgot_password_v1.html">Forgot Password 1</a>
+</li>
+<li>
+<a href="forgot_password_v2.html">Forgot Password 2</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-title"><i class="icon_genius"></i><span>Components</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)">
+Basic UI<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="cards.html">Cards</a>
+</li>
+<li>
+<a href="buttons.html">Button</a>
+</li>
+<li>
+<a href="switches.html" class="flat-buttons">Switch</a>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Icons<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="font_awesome.html">Font-Awesome</a>
+</li>
+<li>
+<a href="themify_icons.html">Themify-Icons</a>
+</li>
+<li>
+<a href="7-Stroke_icons.html">7-stroke</a>
+</li>
+<li>
+<a href="weather_icons.html">Weather-Icons</a>
+</li>
+<li>
+<a href="material_icons.html">Material-Design</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Progress<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="youtube_progress.html">Youtube</a>
+</li>
+<li>
+<a href="3D_bar_progress.html">3D bar</a>
+</li>
+<li>
+<a href="flate_topbar_progress.html">Flate header</a>
+</li>
+<li>
+<a href="corner_indicator_progress.html">Corner indicator</a>
+</li>
+<li>
+<a href="big_counter.html">Counter</a>
+</li>
+<li>
+<a href="bounce.html">Bounce</a>
+</li>
+<li>
+<a href="loading_bar.html">Loading bar</a>
+</li>
+<li>
+<a href="center_circle.html">Center circle</a>
+</li>
+<li>
+<a href="center_simple.html">Center simple</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="list.html">List</a>
+</li>
+<li>
+<a href="dropdown.html">Dropdown</a>
+</li>
+<li>
+<a href="images.html">Image</a>
+</li>
+<li>
+<a href="modals.html">Modals</a>
+</li>
+<li>
+<a href="scrollable.html">Scrollbar</a>
+</li>
+<li>
+<a href="typography.html">Typography</a>
+</li>
+<li>
+<a href="utilities.html">Utilities</a>
+</li>
+<li>
+<a href="carousel.html">Carousel</a>
+</li>
+<li>
+<a href="color_generator.html">Color Generator</a>
+</li>
+<li>
+<a href="tabs_accordions.html">Tabs &amp; Accordions</a>
+</li>
+<li>
+<a href="badges_tags.html">Badges &amp; Tags</a>
+</li>
+<li>
+<a href="progress_bar.html">Progress Bars</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Advanced UI<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="highlight.html">Highlight</a>
+</li>
+<li>
+<a href="bootbox.html">Bootbox</a>
+</li>
+<li>
+<a href="sweetalert.html">Sweetalert</a>
+</li>
+<li>
+<a href="toastr.html">Toastr</a>
+</li>
+<li>
+<a href="tooltip_popover.html">Tooltip & Popover</a>
+</li>
+<li>
+<a href="masonry.html">Masonry</a>
+</li>
+<li>
+<a href="rating.html">Rating</a>
+</li>
+<li>
+<a href="sortable_nestable.html">Sortable & Nestable</a>
+</li>
+<li>
+<a href="lightbox.html">Lightbox</a>
+</li>
+<li>
+<a href="treeview.html">Treeview</a>
+</li>
+<li>
+<a href="context_menu.html">Context Menu</a>
+</li>
+<li>
+<a href="file_manager.html">File Manager</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Elements<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="alerts.html">Alerts</a>
+</li>
+<li>
+<a href="ribbon.html">Ribbon</a>
+</li>
+<li>
+<a href="pricing-table.html">Pricing Table</a>
+</li>
+<li>
+<a href="overlay.html">Overlay</a>
+</li>
+<li>
+<a href="step.html">Step</a>
+</li>
+<li>
+<a href="timeline.html">Timeline</a>
+</li>
+<li>
+<a href="testimonial.html">Testimonials</a>
+</li>
+<li>
+<a href="breadcrumbs.html">Breadcrumbs</a>
+</li>
+<li>
+<a href="blockquote.html">Blockquotes</a>
+</li>
+<li>
+<a href="nav.html">Nav</a>
+</li>
+<li>
+<a href="navbar.html">Navbars</a>
+</li>
+<li>
+<a href="pagination.html">Pagination</a>
+</li>
+<li>
+<a href="different_headers.html">Different Headers</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Forms<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="general_elements.html">General Elements</a>
+</li>
+<li>
+<a href="form_layout.html">Form Layouts</a>
+</li>
+<li>
+<a href="form_validation.html">Form Validation</a>
+</li>
+<li>
+<a href="form_mask.html">Form Masks</a>
+</li>
+<li>
+<a href="advanced_elements.html">Advanced Elements</a>
+</li>
+<li>
+<a href="form_wizard.html">Form Wizard</a>
+</li>
+<li>
+<a href="markdown_editor.html">Markdown Editor</a>
+</li>
+<li>
+<a href="image_cropping.html">Image Cropping</a>
+</li>
+<li>
+<a href="file_upload.html">File Upload</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Tables<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="basic_table.html">Basic Tables</a>
+</li>
+<li>
+<a href="bootstrap_tables.html">Bootstrap Tables</a>
+</li>
+<li>
+<a href="floatthead.html">floatThead</a>
+</li>
+<li>
+<a href="editable.html">Editable</a>
+</li>
+<li>
+<a href="datatable.html">Datatable</a>
+</li>
+<li>
+<a href="jsgrid.html">jsGrid</a>
+</li>
+<li>
+<a href="responsive_table.html">Responsive Tables</a>
+</li>
+<li>
+<a href="footable.html">Footable</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Chart<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="morris_chart.html">Morris Chart</a>
+</li>
+<li>
+<a href="sparkline_chart.html">Sparkline Chart </a>
+</li>
+<li>
+<a href="chartist.html">Chartist</a>
+</li>
+<li>
+<a href="gantt_chart.html">Gantt Chart</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Widgets<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="social_widget.html">Social Widgets</a>
+</li>
+<li>
+<a href="static_widget.html">Static Widgets</a>
+</li>
+<li>
+<a href="data_widgets.html">Data Widgets</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sidebar-extra">
+<a href="#"><i class="icon_lock-open_alt"></i></a>
+<a href="#"><i class="icon_key_alt"></i></a>
+<a href="#"><i class="icon_lock_alt"></i></a>
+</div>
+</aside>
+ 
+ 
+<section id="content-wrapper" class="form-elements">
+ 
+<div class="site-content-title">
+<h2 class="float-xs-left content-title-main">Advanced elements</h2>
+ 
+<ol class="breadcrumb float-xs-right">
+<li class="breadcrumb-item">
+<span class="fs1" aria-hidden="true" data-icon=""></span>
+<a href="#">Home</a>
+</li>
+<li class="breadcrumb-item"><a href="#">Components</a></li>
+<li class="breadcrumb-item active">Advanced elements</li>
+</ol>
+ 
+</div>
+ 
+ 
+<div class="content advanced-elements-content">
+<div class="general-elements-content">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h4 class="page-content-title">Bootstrap select</h4>
+<p>Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style
+and bring additional functionality to standard select elements.</p>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#default-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#default-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Default examples</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="default-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Standard select boxes</label>
+<select class="selectpicker" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label>Select boxes with optgroups</label>
+<select class="selectpicker" data-style="btn-secondary">
+<optgroup label="Picnic">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</optgroup>
+<optgroup label="Camping">
+<option>Tent</option>
+<option>Flashlight</option>
+<option>Toilet Paper</option>
+</optgroup>
+</select>
+<label>Multiple select boxes</label>
+<select class="selectpicker" data-icon-base="icon" data-tick-icon="icon_check" data-style="btn-secondary" multiple>
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="default-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<pre><b>/* Simple select box */</b>
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+<b>/* Simple select box with optgroups */</b>
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;optgroup label=&quot;Picnic&quot;&gt;
+        &lt;option&gt;Solmen&lt;/option&gt;
+        &lt;option&gt;Omnicos&lt;/option&gt;
+        &lt;option&gt;Rrefusa&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label=&quot;Camping&quot;&gt;
+        &lt;option&gt;Tent&lt;/option&gt;
+        &lt;option&gt;Flashlight&lt;/option&gt;
+        &lt;option&gt;Toilet Paper&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;
+
+<b>/* Multi select box */</b>
+&lt;select class=&quot;selectpicker&quot; data-icon-base=&quot;icon&quot; data-tick-icon=&quot;icon_check&quot; data-style=&quot;btn-secondary&quot; multiple&gt;
+  &lt;option&gt;Solmen&lt;/option&gt;
+  &lt;option&gt;Omnicos&lt;/option&gt;
+  &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#search-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#search-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Search input</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="search-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Live search</label>
+<select class="selectpicker" data-live-search="true" data-style="btn-secondary">
+<option data-tokens="Omnicos Solmen">Hot Dog, Fries and a Soda
+</option>
+<option data-tokens="Solmen">Burger, Shake and a Smile</option>
+<option data-tokens="frosting">Sugar, Spice and all things nice
+</option>
+</select>
+<label>Limit the number of selections</label>
+<select class="selectpicker" data-icon-base="icon" data-tick-icon="icon_check" data-style="btn-secondary" multiple data-max-options="2">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<select class="selectpicker" data-icon-base="icon" data-tick-icon="icon_check" data-style="btn-secondary" multiple>
+<optgroup label="Condiments" data-max-options="2">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</optgroup>
+<optgroup label="Breads" data-max-options="2">
+<option>Plain</option>
+<option>Steamed</option>
+<option>Toasted</option>
+</optgroup>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="search-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<pre><b>/* Live search */</b>
+&lt;select class=&quot;selectpicker&quot; data-live-search=&quot;true&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option data-tokens=&quot;Omnicos Solmen&quot;&gt;Hot Dog, Fries and a Soda
+    &lt;/option&gt;
+    &lt;option data-tokens=&quot;Solmen&quot;&gt;Burger, Shake and a Smile&lt;/option&gt;
+    &lt;option data-tokens=&quot;frosting&quot;&gt;Sugar, Spice and all things nice
+    &lt;/option&gt;
+&lt;/select&gt;
+
+
+<b>/* Number section */</b>
+&lt;select class=&quot;selectpicker&quot; data-icon-base=&quot;icon&quot; data-tick-icon=&quot;icon_check&quot; data-style=&quot;btn-secondary&quot; multiple data-max-options=&quot;2&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;selectpicker&quot; data-icon-base=&quot;icon&quot; data-tick-icon=&quot;icon_check&quot; data-style=&quot;btn-secondary&quot; multiple&gt;
+    &lt;optgroup label=&quot;Condiments&quot; data-max-options=&quot;2&quot;&gt;
+        &lt;option&gt;Solmen&lt;/option&gt;
+        &lt;option&gt;Omnicos&lt;/option&gt;
+        &lt;option&gt;Rrefusa&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label=&quot;Breads&quot; data-max-options=&quot;2&quot;&gt;
+        &lt;option&gt;Plain&lt;/option&gt;
+        &lt;option&gt;Steamed&lt;/option&gt;
+        &lt;option&gt;Toasted&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#standard-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#standard-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Standard select boxes</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="standard-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Selected text</label>
+<select class="selectpicker" data-style="btn-secondary">
+<option title="Combo 1">Hot Dog, Fries and a Soda</option>
+<option title="Combo 2">Burger, Shake and a Smile</option>
+<option title="Combo 3">Sugar, Spice and all things nice</option>
+</select>
+<label>Selected text format</label>
+<select class="selectpicker" multiple data-selected-text-format="count" data-icon-base="icon" data-tick-icon="icon_check" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label>Selected text 4</label>
+<select class="selectpicker" multiple data-selected-text-format="count > 3" data-icon-base="icon" data-tick-icon="icon_check" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+<option>Onions</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="standard-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<pre><b>/* Standard select box */</b>
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option title=&quot;Combo 1&quot;&gt;Hot Dog, Fries and a Soda&lt;/option&gt;
+    &lt;option title=&quot;Combo 2&quot;&gt;Burger, Shake and a Smile&lt;/option&gt;
+    &lt;option title=&quot;Combo 3&quot;&gt;Sugar, Spice and all things nice&lt;/option&gt;
+&lt;/select&gt;
+
+<b>/* Select text format select box */</b>
+&lt;select class=&quot;selectpicker&quot; multiple data-selected-text-format=&quot;count&quot; data-icon-base=&quot;icon&quot; data-tick-icon=&quot;icon_check&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+/* To display more than 3 selected items in the count, use attribute <b>multiple data-selected-text-format=&quot;count &gt; 3&quot;</b> */</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider25 divider-xs-spacing"></div>
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#different-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#different-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Different menu</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="different-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Menu header</label>
+<select class="selectpicker" data-header="Select a condiment" data-style="btn-secondary">
+<option data-subtext="French's">Solmen</option>
+<option data-subtext="Heinz">Omnicos</option>
+<option data-subtext="Sweet">Rrefusa</option>
+<option data-subtext="Miracle Whip">Mayonnaise</option>
+</select>
+<label>Container body</label>
+<select class="selectpicker" data-container="body" data-style="btn-secondary">
+<option data-subtext="French's">Solmen</option>
+<option data-subtext="Heinz">Omnicos</option>
+<option data-subtext="Sweet">Rrefusa</option>
+<option data-subtext="Miracle Whip">Mayonnaise</option>
+<option data-divider="true">&nbsp;</option>
+<option data-subtext="Honey">Barbecue Sauce</option>
+<option data-subtext="Ranch">Salad Dressing</option>
+<option data-subtext="Sweet & Spicy">Tabasco</option>
+<option data-subtext="Chunky">Salsa</option>
+</select>
+<label>Dropup menu</label>
+<select class="selectpicker dropup" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+<option>Tent</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="different-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<pre>&lt;select class=&quot;selectpicker&quot; data-header=&quot;Select a condiment&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option data-subtext=&quot;French's&quot;&gt;Solmen&lt;/option&gt;
+    &lt;option data-subtext=&quot;Heinz&quot;&gt;Omnicos&lt;/option&gt;
+    &lt;option data-subtext=&quot;Sweet&quot;&gt;Rrefusa&lt;/option&gt;
+    &lt;option data-subtext=&quot;Miracle Whip&quot;&gt;Mayonnaise&lt;/option&gt;
+&lt;/select&gt;
+
+/* To display select box in body container, use <b>data-container=&quot;body&quot;</b> and to create dropup select menu, you can use the class <b>dropup</b> */</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#disabled-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#disabled-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Disabled options</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="disabled-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Disabled menu</label>
+<select class="selectpicker" data-style="btn-secondary" disabled>
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label>Disabled options</label>
+<select class="selectpicker" data-style="btn-secondary">
+<option>Solmen</option>
+<option disabled>Omnicos</option>
+<option>Rrefusa</option>
+<option>Tent</option>
+</select>
+<label>Disabled option groups</label>
+<select class="selectpicker test" data-style="btn-secondary">
+<optgroup label="Picnic" disabled>
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</optgroup>
+<optgroup label="Camping">
+<option>Tent</option>
+<option>Flashlight</option>
+<option>Toilet Paper</option>
+</optgroup>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="disabled-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<pre>&lt;label&gt;Disabled menu&lt;/label&gt;
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-secondary&quot; disabled&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+/* To display disabled options select box, use <b>&lt;option disabled&gt;Omnicos&lt;/option&gt;</b> and for disabled optgroup select box, use <b>&lt;optgroup label=&quot;Picnic&quot; disabled&gt;</b> */</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider25 divider-lg-spacing divider-xs-spacing"></div>
+<div class="row">
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#color-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#color-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Color styling</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="color-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Button classes</label>
+<select class="selectpicker" data-style="btn-primary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<select class="selectpicker" data-style="btn-info">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<select class="selectpicker" data-style="btn-success">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<select class="selectpicker" data-style="btn-warning">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="color-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="280">
+<pre>&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-primary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+/* To display select box in different colors, use the class <b>btn-info, btn-success, btn-warning</b> */</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#styling-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#styling-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Styling buttons</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="styling-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Checkmark on selected option</label>
+<select class="selectpicker show-tick" data-icon-base="icon" data-tick-icon="icon_check" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label>Style individual options</label>
+<select class="selectpicker" data-style="btn-secondary">
+<option>Solmen</option>
+<option class="special-color-danger">Omnicos</option>
+<option class="special-color-success">Rrefusa</option>
+</select>
+<label>Style colorful</label>
+<select class="selectpicker" data-style="btn-primary">
+<option class="special-color-info">Solmen</option>
+<option class="special-color-danger">Omnicos</option>
+<option class="special-color-success">Rrefusa</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="styling-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="280">
+<pre><b>/* Checkmark on selected option select box */</b>
+&lt;select class=&quot;selectpicker show-tick&quot; data-icon-base=&quot;icon&quot; data-tick-icon=&quot;icon_check&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+<b>/* Style individual options select box */</b>
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option class=&quot;special-color-danger&quot;&gt;Omnicos&lt;/option&gt;
+    &lt;option class=&quot;special-color-success&quot;&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+<b>/* Style colorful select box */</b>
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-primary&quot;&gt;
+    &lt;option class=&quot;special-color-info&quot;&gt;Solmen&lt;/option&gt;
+    &lt;option class=&quot;special-color-danger&quot;&gt;Omnicos&lt;/option&gt;
+    &lt;option class=&quot;special-color-success&quot;&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#columns-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#columns-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Custom width</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="columns-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select custom-width-select">
+<label>Grid columns</label>
+<div class="row">
+<div class="col-xs-3">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+<div class="col-xs-9">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-4">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+<div class="col-xs-8">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-5">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+<div class="col-xs-7">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-6">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+<div class="col-xs-6">
+<select class="selectpicker form-control" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="columns-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="280">
+<pre>&lt;label&gt;Grid columns&lt;/label&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-3&quot;&gt;
+        &lt;select class=&quot;selectpicker form-control&quot; data-style=&quot;btn-secondary&quot;&gt;
+            &lt;option&gt;Solmen&lt;/option&gt;
+            &lt;option&gt;Omnicos&lt;/option&gt;
+            &lt;option&gt;Rrefusa&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-9&quot;&gt;
+        &lt;select class=&quot;selectpicker form-control&quot; data-style=&quot;btn-secondary&quot;&gt;
+            &lt;option&gt;Solmen&lt;/option&gt;
+            &lt;option&gt;Omnicos&lt;/option&gt;
+            &lt;option&gt;Rrefusa&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider25 divider-xs-spacing"></div>
+<div class="row">
+<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#custom-select" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#custom-select-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Custom width</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="custom-select" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label class="d-block">width: '<b>auto</b>'</label>
+<select class="selectpicker " data-width="auto" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label class="d-block">width: '<b>fit</b>'</label>
+<select class="selectpicker " data-width="fit" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label class="d-block">width: '<b>200px</b>'</label>
+<select class="selectpicker " data-width="200px" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label class="d-block">width: '<b>75%</b>'</label>
+<select class="selectpicker" data-width="75%" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="custom-select-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="355">
+<pre>&lt;label class=&quot;d-block&quot;&gt;width: '&lt;b&gt;auto&lt;/b&gt;'&lt;/label&gt;
+&lt;select class=&quot;selectpicker &quot; data-width=&quot;auto&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+/* To create fit select box, use attribute <b>data-width=&quot;fit&quot;</b>, for fixed width select box, use <b>data-width=&quot;200px&quot;</b> and to use percentage based width for select box, use <b>data-width=&quot;75%&quot;</b> */</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#customize-options" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#customize-options-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Customize options</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="customize-options" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Icons</label>
+<select class="selectpicker" data-style="btn-secondary">
+<option data-icon="icon_cart">Omnicos</option>
+<option data-icon="icon_ribbon">Solmen</option>
+<option data-icon="icon_camera">Omnicos</option>
+<option data-icon="icon_house">Rrefusa</option>
+</select>
+<label>Custom content</label>
+<select class="selectpicker label-selectpicker" data-icon-base="icon" data-tick-icon="icon_check" data-style="btn-secondary">
+<option data-content="<span class='label label-primary'>Omnicos</span>">
+Omnicos
+</option>
+<option data-content="<span class='label label-success'>Solmen</span>">
+Solmen
+</option>
+<option data-content="<span class='label label-info'>Omnicos</span>">
+Omnicos
+</option>
+<option data-content="<span class='label label-danger'>Rrefusa</span>">
+Rrefusa
+</option>
+</select>
+<label>Subtext</label>
+<select class="selectpicker" data-size="5" data-style="btn-secondary">
+<option data-subtext="French's">Solmen</option>
+<option data-subtext="Heinz">Omnicos</option>
+<option data-subtext="Sweet">Rrefusa</option>
+<option data-subtext="Miracle Whip">Mayonnaise</option>
+<option data-divider="true">&nbsp;</option>
+<option data-subtext="Honey">Barbecue Sauce</option>
+<option data-subtext="Ranch">Salad Dressing</option>
+<option data-subtext="Sweet & Spicy">Tabasco</option>
+<option data-subtext="Chunky">Salsa</option>
+</select>
+<select class="selectpicker" data-size="5" data-show-subtext="true" data-style="btn-secondary">
+<option data-subtext="French's">Solmen</option>
+<option data-subtext="Heinz">Omnicos</option>
+<option data-subtext="Sweet">Rrefusa</option>
+<option data-subtext="Miracle Whip">Mayonnaise</option>
+<option data-divider="true">&nbsp;</option>
+<option data-subtext="Honey">Barbecue Sauce</option>
+<option data-subtext="Ranch">Salad Dressing</option>
+<option data-subtext="Sweet & Spicy">Tabasco</option>
+<option data-subtext="Chunky">Salsa</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="customize-options-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="355">
+<pre><b>/* Select box with icons */</b>
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option data-icon=&quot;icon_cart&quot;&gt;Omnicos&lt;/option&gt;
+    &lt;option data-icon=&quot;icon_ribbon&quot;&gt;Solmen&lt;/option&gt;
+    &lt;option data-icon=&quot;icon_camera&quot;&gt;Omnicos&lt;/option&gt;
+    &lt;option data-icon=&quot;icon_house&quot;&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+
+<b>/* Select box with custom content */</b>
+&lt;select class=&quot;selectpicker label-selectpicker&quot; data-icon-base=&quot;icon&quot; data-tick-icon=&quot;icon_check&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option data-content=&quot;&lt;span class='label label-primary'&gt;Omnicos&lt;/span&gt;&quot;&gt;
+        Omnicos
+    &lt;/option&gt;
+    &lt;option data-content=&quot;&lt;span class='label label-success'&gt;Solmen&lt;/span&gt;&quot;&gt;
+        Solmen
+    &lt;/option&gt;
+    &lt;option data-content=&quot;&lt;span class='label label-info'&gt;Omnicos&lt;/span&gt;&quot;&gt;
+        Omnicos
+    &lt;/option&gt;
+    &lt;option data-content=&quot;&lt;span class='label label-danger'&gt;Rrefusa&lt;/span&gt;&quot;&gt;
+        Rrefusa
+    &lt;/option&gt;
+&lt;/select&gt;
+
+
+<b>/* Select box with subtext */</b>
+&lt;select class=&quot;selectpicker&quot; data-size=&quot;5&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option data-subtext=&quot;French's&quot;&gt;Solmen&lt;/option&gt;
+    &lt;option data-subtext=&quot;Heinz&quot;&gt;Omnicos&lt;/option&gt;
+    &lt;option data-subtext=&quot;Sweet&quot;&gt;Rrefusa&lt;/option&gt;
+    &lt;option data-subtext=&quot;Miracle Whip&quot;&gt;Mayonnaise&lt;/option&gt;
+    &lt;option data-divider=&quot;true&quot;&gt;&nbsp;&lt;/option&gt;
+    &lt;option data-subtext=&quot;Honey&quot;&gt;Barbecue Sauce&lt;/option&gt;
+    &lt;option data-subtext=&quot;Ranch&quot;&gt;Salad Dressing&lt;/option&gt;
+    &lt;option data-subtext=&quot;Sweet &amp; Spicy&quot;&gt;Tabasco&lt;/option&gt;
+    &lt;option data-subtext=&quot;Chunky&quot;&gt;Salsa&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;selectpicker&quot; data-size=&quot;5&quot; data-show-subtext=&quot;true&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option data-subtext=&quot;French's&quot;&gt;Solmen&lt;/option&gt;
+    &lt;option data-subtext=&quot;Heinz&quot;&gt;Omnicos&lt;/option&gt;
+    &lt;option data-subtext=&quot;Sweet&quot;&gt;Rrefusa&lt;/option&gt;
+    &lt;option data-subtext=&quot;Miracle Whip&quot;&gt;Mayonnaise&lt;/option&gt;
+    &lt;option data-divider=&quot;true&quot;&gt;&nbsp;&lt;/option&gt;
+    &lt;option data-subtext=&quot;Honey&quot;&gt;Barbecue Sauce&lt;/option&gt;
+    &lt;option data-subtext=&quot;Ranch&quot;&gt;Salad Dressing&lt;/option&gt;
+    &lt;option data-subtext=&quot;Sweet &amp; Spicy&quot;&gt;Tabasco&lt;/option&gt;
+    &lt;option data-subtext=&quot;Chunky&quot;&gt;Salsa&lt;/option&gt;
+&lt;/select&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#customize-menu" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#customize-menu-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Customize menu</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="customize-menu" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Menu size</label>
+<select class="selectpicker" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+<option>Mayonnaise</option>
+<option>Barbecue Sauce</option>
+<option>Salad Dressing</option>
+<option>Tabasco</option>
+<option>Salsa</option>
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+<option>Mayonnaise</option>
+<option>Barbecue Sauce</option>
+<option>Salad Dressing</option>
+<option>Tabasco</option>
+<option>Salsa</option>
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+<option>Mayonnaise</option>
+<option>Barbecue Sauce</option>
+<option>Salad Dressing</option>
+<option>Tabasco</option>
+<option>Salsa</option>
+</select>
+<select class="selectpicker" data-size="5" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+<option>Mayonnaise</option>
+<option>Barbecue Sauce</option>
+<option>Salad Dressing</option>
+<option>Tabasco</option>
+<option>Salsa</option>
+</select>
+<label>Select/deselect all options</label>
+<select class="selectpicker" data-icon-base="icon" data-tick-icon="icon_check" multiple data-actions-box="true" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+</select>
+<label>Divider</label>
+<select class="selectpicker" data-style="btn-secondary">
+<option>Solmen</option>
+<option>Omnicos</option>
+<option>Rrefusa</option>
+<option>Mayonnaise</option>
+<option data-divider="true">&nbsp;</option>
+<option>Barbecue Sauce</option>
+<option>Salad Dressing</option>
+<option>Tabasco</option>
+<option>Salsa</option>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="customize-menu-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="355">
+<pre><b>/* Customize menu  */</b>
+&lt;select class=&quot;selectpicker&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+    &lt;option&gt;Mayonnaise&lt;/option&gt;
+    &lt;option&gt;Barbecue Sauce&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;selectpicker&quot; data-size=&quot;5&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+    &lt;option&gt;Mayonnaise&lt;/option&gt;
+    &lt;option&gt;Barbecue Sauce&lt;/option&gt;
+    &lt;option&gt;Salad Dressing&lt;/option&gt;
+    &lt;option&gt;Tabasco&lt;/option&gt;
+    &lt;option&gt;Salsa&lt;/option&gt;
+&lt;/select&gt;
+
+<b>/* Select/deselect option  */</b>
+&lt;select class=&quot;selectpicker&quot; data-icon-base=&quot;icon&quot; data-tick-icon=&quot;icon_check&quot; multiple data-actions-box=&quot;true&quot; data-style=&quot;btn-secondary&quot;&gt;
+    &lt;option&gt;Solmen&lt;/option&gt;
+    &lt;option&gt;Omnicos&lt;/option&gt;
+    &lt;option&gt;Rrefusa&lt;/option&gt;
+&lt;/select&gt;
+
+<b>/* To use divider in select box, use data-divider=&quot;true&quot; */</b></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content advanced-elements-content">
+<div class="general-elements-content">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h4 class="page-content-title">Select2</h4>
+<p>Select2 gives you a customizable select box with support for searching, tagging,
+remote data sets, infinite scrolling, and many other highly used options.</p>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#default-select2" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#default-select2-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Default examples</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="default-select2" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Single select boxes</label>
+<select class="js-example-basic-single">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+<optgroup label="Mountain Time Zone">
+<option value="AZ">Arizona</option>
+<option value="CO">Colorado</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NM">New Mexico</option>
+<option value="ND">North Dakota</option>
+<option value="UT">Utah</option>
+<option value="WY">Wyoming</option>
+</optgroup>
+<optgroup label="Central Time Zone">
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="IL">Illinois</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="OK">Oklahoma</option>
+<option value="SD">South Dakota</option>
+<option value="TX">Texas</option>
+<option value="TN">Tennessee</option>
+<option value="WI">Wisconsin</option>
+</optgroup>
+<optgroup label="Eastern Time Zone">
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="IN">Indiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WV">West Virginia</option>
+</optgroup>
+</select>
+<label>Multiple select boxes</label>
+<select class="js-example-basic-multiple" multiple="multiple">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+<optgroup label="Mountain Time Zone">
+<option value="AZ">Arizona</option>
+<option value="CO">Colorado</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NM">New Mexico</option>
+<option value="ND">North Dakota</option>
+<option value="UT">Utah</option>
+<option value="WY">Wyoming</option>
+</optgroup>
+<optgroup label="Central Time Zone">
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="IL">Illinois</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="OK">Oklahoma</option>
+<option value="SD">South Dakota</option>
+<option value="TX">Texas</option>
+<option value="TN">Tennessee</option>
+<option value="WI">Wisconsin</option>
+</optgroup>
+<optgroup label="Eastern Time Zone">
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="IN">Indiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WV">West Virginia</option>
+</optgroup>
+</select>
+<label>Placeholders</label>
+<select class="js-example-placeholder-single">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+<optgroup label="Mountain Time Zone">
+<option value="AZ">Arizona</option>
+<option value="CO">Colorado</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NM">New Mexico</option>
+<option value="ND">North Dakota</option>
+<option value="UT">Utah</option>
+<option value="WY">Wyoming</option>
+</optgroup>
+<optgroup label="Central Time Zone">
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="IL">Illinois</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="OK">Oklahoma</option>
+<option value="SD">South Dakota</option>
+<option value="TX">Texas</option>
+<option value="TN">Tennessee</option>
+<option value="WI">Wisconsin</option>
+</optgroup>
+<optgroup label="Eastern Time Zone">
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="IN">Indiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WV">West Virginia</option>
+</optgroup>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="default-select2-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="320">
+<pre>&lt;select class=&quot;js-example-basic-single&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+    country names
+&lt;/select&gt;
+
+<b>/* Multiple select boxes */</b>
+&lt;select class=&quot;js-example-basic-multiple&quot; multiple=&quot;multiple&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+    country names
+&lt;/select&gt;
+
+
+<b>/* Placeholders select box */</b>
+&lt;select class=&quot;js-example-placeholder-single&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+    country names
+&lt;/select&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#data-sources-select2" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#data-sources-select2-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Data sources</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="data-sources-select2" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Loading array data</label>
+<select class="js-example-data-array"></select>
+<label>Disabled mode</label>
+<select class="js-example-disabled js-states form-control" disabled="disabled">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+<optgroup label="Mountain Time Zone">
+<option value="AZ">Arizona</option>
+<option value="CO">Colorado</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NM">New Mexico</option>
+<option value="ND">North Dakota</option>
+<option value="UT">Utah</option>
+<option value="WY">Wyoming</option>
+</optgroup>
+<optgroup label="Central Time Zone">
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="IL">Illinois</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="OK">Oklahoma</option>
+<option value="SD">South Dakota</option>
+<option value="TX">Texas</option>
+<option value="TN">Tennessee</option>
+<option value="WI">Wisconsin</option>
+</optgroup>
+<optgroup label="Eastern Time Zone">
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="IN">Indiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WV">West Virginia</option>
+</optgroup>
+</select>
+<select class="js-example-disabled-multi js-states form-control" multiple="multiple" disabled="disabled">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+<optgroup label="Mountain Time Zone">
+<option value="AZ">Arizona</option>
+<option value="CO">Colorado</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NM">New Mexico</option>
+<option value="ND">North Dakota</option>
+<option value="UT">Utah</option>
+<option value="WY">Wyoming</option>
+</optgroup>
+<optgroup label="Central Time Zone">
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="IL">Illinois</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="OK">Oklahoma</option>
+<option value="SD">South Dakota</option>
+<option value="TX">Texas</option>
+<option value="TN">Tennessee</option>
+<option value="WI">Wisconsin</option>
+</optgroup>
+<optgroup label="Eastern Time Zone">
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="IN">Indiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WV">West Virginia</option>
+</optgroup>
+</select>
+<div class="btn-group btn-group-sm" role="group" aria-label="Programmatic enabling and disabling">
+<button type="button" class="js-programmatic-enable btn btn-primary">
+Enable
+</button>
+<button type="button" class="js-programmatic-disable btn btn-primary">
+Disable
+</button>
+</div>
+<div class="divider15"></div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="data-sources-select2-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="320">
+<pre><b>/* Loading array data */</b>
+&lt;select class=&quot;js-example-data-array&quot;&gt;&lt;/select&gt;
+
+<b>/* Disabled mode */</b>
+&lt;select class=&quot;js-example-disabled js-states form-control&quot; disabled=&quot;disabled&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+     country names
+&lt;/select&gt;
+
+&lt;select class=&quot;js-example-disabled-multi js-states form-control&quot; multiple=&quot;multiple&quot; disabled=&quot;disabled&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+     country names
+&lt;/select&gt;
+
+&lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;Programmatic enabling and disabling&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;js-programmatic-enable btn btn-primary&quot;&gt;
+        Enable
+    &lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;js-programmatic-disable btn btn-primary&quot;&gt;
+        Disable
+    &lt;/button&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#selections-options-select2" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#selections-options-select2-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Selections options</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="selections-options-select2" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Limiting the number of selections</label>
+<select class="js-example-basic-multiple-limit js-states form-control" multiple="multiple">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+<optgroup label="Mountain Time Zone">
+<option value="AZ">Arizona</option>
+<option value="CO">Colorado</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NM">New Mexico</option>
+<option value="ND">North Dakota</option>
+<option value="UT">Utah</option>
+<option value="WY">Wyoming</option>
+</optgroup>
+<optgroup label="Central Time Zone">
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="IL">Illinois</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="OK">Oklahoma</option>
+<option value="SD">South Dakota</option>
+<option value="TX">Texas</option>
+<option value="TN">Tennessee</option>
+<option value="WI">Wisconsin</option>
+</optgroup>
+<optgroup label="Eastern Time Zone">
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="IN">Indiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WV">West Virginia</option>
+</optgroup>
+</select>
+<label>Hiding the search box</label>
+<select class="js-example-basic-hide-search js-states form-control">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+<optgroup label="Mountain Time Zone">
+<option value="AZ">Arizona</option>
+<option value="CO">Colorado</option>
+<option value="ID">Idaho</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NM">New Mexico</option>
+<option value="ND">North Dakota</option>
+<option value="UT">Utah</option>
+<option value="WY">Wyoming</option>
+</optgroup>
+<optgroup label="Central Time Zone">
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="IL">Illinois</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="OK">Oklahoma</option>
+<option value="SD">South Dakota</option>
+<option value="TX">Texas</option>
+<option value="TN">Tennessee</option>
+<option value="WI">Wisconsin</option>
+</optgroup>
+<optgroup label="Eastern Time Zone">
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="IN">Indiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="OH">Ohio</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WV">West Virginia</option>
+</optgroup>
+</select>
+<label>Tagging support</label>
+<select class="js-example-tags form-control" multiple="multiple">
+<option selected="selected">orange</option>
+<option>white</option>
+<option selected="selected">purple</option>
+<option>red</option>
+<option>blue</option>
+<option>green</option>
+</select>
+<label>Templating</label>
+<select class="js-example-templating js-states form-control">
+<optgroup label="Alaskan/Hawaiian Time Zone">
+<option value="AK">Alaska</option>
+<option value="HI">Hawaii</option>
+</optgroup>
+<optgroup label="Pacific Time Zone">
+<option value="CA">California</option>
+<option value="NV">Nevada</option>
+<option value="OR">Oregon</option>
+<option value="WA">Washington</option>
+</optgroup>
+</select>
+</div>
+</div>
+<div class="tab-pane pre-code" id="selections-options-select2-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="320">
+<pre><b>/* Limiting the number of selections */</b>
+&lt;select class=&quot;js-example-basic-multiple-limit js-states form-control&quot; multiple=&quot;multiple&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+    country names
+&lt;/select&gt;
+
+<b>/* Hiding the search box */</b>
+
+&lt;select class=&quot;js-example-basic-hide-search js-states form-control&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+    country names
+&lt;/select&gt;
+
+<b> /* Tagging support */</b>
+&lt;select class=&quot;js-example-tags form-control&quot; multiple=&quot;multiple&quot;&gt;
+    &lt;option selected=&quot;selected&quot;&gt;orange&lt;/option&gt;
+    &lt;option&gt;white&lt;/option&gt;
+    &lt;option selected=&quot;selected&quot;&gt;purple&lt;/option&gt;
+    &lt;option&gt;red&lt;/option&gt;
+    &lt;option&gt;blue&lt;/option&gt;
+    &lt;option&gt;green&lt;/option&gt;
+&lt;/select&gt;
+
+<b>/* Templating */</b>
+&lt;select class=&quot;js-example-templating js-states form-control&quot;&gt;
+    &lt;optgroup label=&quot;Alaskan/Hawaiian Time Zone&quot;&gt;
+        &lt;option value=&quot;AK&quot;&gt;Alaska&lt;/option&gt;
+        &lt;option value=&quot;HI&quot;&gt;Hawaii&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label=&quot;Pacific Time Zone&quot;&gt;
+        &lt;option value=&quot;CA&quot;&gt;California&lt;/option&gt;
+        &lt;option value=&quot;NV&quot;&gt;Nevada&lt;/option&gt;
+        &lt;option value=&quot;OR&quot;&gt;Oregon&lt;/option&gt;
+        &lt;option value=&quot;WA&quot;&gt;Washington&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content advanced-elements-content">
+<div class="general-elements-content">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h4 class="page-content-title">Typeahead</h4>
+<p>Typeahead.js is autocomplete search functionality, typeahead.js is a flexible
+JavaScript library that provides a strong foundation for building robust
+typeaheads.</p>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#default-typeahead" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#default-typeahead-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Default examples</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="default-typeahead" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Basics</label>
+<div id="the-basics" class="typeahead-control">
+<input class="typeahead form-control" type="text" placeholder="States of USA">
+</div>
+<label>Bloodhound</label>
+<div id="bloodhound" class="typeahead-control">
+<input class="typeahead form-control" type="text" placeholder="States of USA">
+</div>
+<label>Prefetch</label>
+<div id="prefetch" class="typeahead-control">
+<input class="typeahead form-control" type="text" placeholder="Countries">
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="default-typeahead-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="250">
+<pre><b>/* Basics */</b>
+&lt;div id=&quot;the-basics&quot; class=&quot;typeahead-control&quot;&gt;
+    &lt;input class=&quot;typeahead form-control&quot; type=&quot;text&quot; placeholder=&quot;States of USA&quot;&gt;
+&lt;/div&gt;
+
+<b>/* Bloodhound */</b>
+&lt;div id=&quot;bloodhound&quot; class=&quot;typeahead-control&quot;&gt;
+    &lt;input class=&quot;typeahead form-control&quot; type=&quot;text&quot; placeholder=&quot;States of USA&quot;&gt;
+&lt;/div&gt;
+
+<b>/* Prefetch */</b>
+&lt;div id=&quot;prefetch&quot; class=&quot;typeahead-control&quot;&gt;
+    &lt;input class=&quot;typeahead form-control&quot; type=&quot;text&quot; placeholder=&quot;Countries&quot;&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#advanced-typeahead" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#advanced-typeahead-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Advanced examples</h4>
+<div class="tab-content">
+<div class="tab-pane active btn-margin" id="advanced-typeahead" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-select">
+<label>Default Suggestions</label>
+<div id="default-suggestions" class="typeahead-control">
+<input class="typeahead form-control" type="text" placeholder="NFL Teams">
+</div>
+<label>Multiple Datasets</label>
+<div id="multiple-datasets" class="typeahead-control">
+<input class="typeahead form-control" type="text" placeholder="NBA and NHL teams">
+</div>
+<label>Scrollable Dropdown Menu</label>
+<div id="scrollable-dropdown-menu" class="typeahead-control">
+<input class="typeahead form-control" type="text" placeholder="Countries">
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="advanced-typeahead-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="250">
+<pre><b>/* Default Suggestions */</b>
+&lt;div id=&quot;default-suggestions&quot; class=&quot;typeahead-control&quot;&gt;
+    &lt;input class=&quot;typeahead form-control&quot; type=&quot;text&quot; placeholder=&quot;NFL Teams&quot;&gt;
+&lt;/div&gt;
+
+<b>/* Multiple Datasets */</b>
+&lt;div id=&quot;multiple-datasets&quot; class=&quot;typeahead-control&quot;&gt;
+    &lt;input class=&quot;typeahead form-control&quot; type=&quot;text&quot; placeholder=&quot;NBA and NHL teams&quot;&gt;
+&lt;/div&gt;
+
+<b>/* Scrollable Dropdown Menu */</b>
+&lt;div id=&quot;scrollable-dropdown-menu&quot; class=&quot;typeahead-control&quot;&gt;
+    &lt;input class=&quot;typeahead form-control&quot; type=&quot;text&quot; placeholder=&quot;Countries&quot;&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content advanced-elements-content">
+<div class="general-elements-content">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h4 class="page-content-title">Bootstrap TouchSpin</h4>
+<p>Use <code>data-plugin="TouchSpin"</code> to create bootstrap touchspin.</p>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#default-touchSpin" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#default-touchSpin-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Default examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="default-touchSpin" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-touchspin">
+<label>Vertical button alignment</label>
+<input id="demo_vertical" type="text" value="" name="demo_vertical" data-plugin="TouchSpin" data-verticalbuttons="true" data-verticalupclass="arrow_carrot-up" data-verticaldownclass="arrow_carrot-down">
+<label>Vertical buttons with custom icons</label>
+<input id="demo_vertical2" type="text" value="" name="demo_vertical2" data-plugin="TouchSpin" data-verticalbuttons="true" data-verticalupclass="icon icon_plus" data-verticaldownclass="icon icon_minus-06">
+<label>Change button class</label>
+<input id="demo6" type="text" class="form-control" name="demo6" value="50" data-plugin="TouchSpin" data-buttondown_class="btn btn-link" data-buttonup_class="btn btn-link">
+<label>Button postfix (small)</label>
+<input id="demo4" type="text" value="" name="demo4" data-plugin="TouchSpin" data-postfix="button" data-postfix_extraclass="btn btn-default">
+</div>
+</div>
+<div class="tab-pane pre-code" id="default-touchSpin-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="325">
+<pre><b>/* Vertical button alignment */</b>
+&lt;input id=&quot;demo_vertical&quot; type=&quot;text&quot; value=&quot;&quot; name=&quot;demo_vertical&quot; data-plugin=&quot;TouchSpin&quot; data-verticalbuttons=&quot;true&quot; data-verticalupclass=&quot;arrow_carrot-up&quot; data-verticaldownclass=&quot;arrow_carrot-down&quot;&gt;
+
+<b>/* Vertical buttons with custom icons */</b>
+&lt;input id=&quot;demo_vertical2&quot; type=&quot;text&quot; value=&quot;&quot; name=&quot;demo_vertical2&quot; data-plugin=&quot;TouchSpin&quot; data-verticalbuttons=&quot;true&quot; data-verticalupclass=&quot;icon icon_plus&quot; data-verticaldownclass=&quot;icon icon_minus-06&quot;&gt;
+
+<b>/* Change button class */</b>
+&lt;input id=&quot;demo6&quot; type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;demo6&quot; value=&quot;50&quot; data-plugin=&quot;TouchSpin&quot; data-buttondown_class=&quot;btn btn-link&quot; data-buttonup_class=&quot;btn btn-link&quot;&gt;
+
+<b>/* Button postfix (small) */</b>
+&lt;input id=&quot;demo4&quot; type=&quot;text&quot; value=&quot;&quot; name=&quot;demo4&quot; class=&quot;input-sm&quot; data-plugin=&quot;TouchSpin&quot; data-postfix=&quot;button&quot; data-postfix_extraclass=&quot;btn btn-default&quot;&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#prefix-touchspin" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#prefix-touchspin-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Prefix examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="prefix-touchspin" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-touchspin">
+<label>Example with postfix (large)</label>
+<input id="demo1" type="text" value="55" name="demo1" data-plugin="TouchSpin" data-min="0" data-max="100" data-step="0.1" data-decimals="2" data-boostat="5" data-maxboostedstep="10" data-postfix="%">
+<label>prefix</label>
+<form class="form-horizontal">
+<div class="form-group">
+<input id="demo2" type="text" value="0" name="demo2" class="form-control" data-plugin="TouchSpin" data-min="-1000000000" data-max="1000000000" data-stepinterval="50" data-maxboostedstep="10000000" data-prefix="$">
+</div>
+</form>
+<label>Init with empty value</label>
+<input id="demo3" type="text" data-plugin="TouchSpin" value="" name="demo3">
+<label>Button group</label>
+<div class="input-group">
+<input id="demo5" type="text" class="form-control" name="demo5" value="50" data-plugin="TouchSpin" data-prefix="pre" data-postfix="post">
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="prefix-touchspin-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="325">
+<pre><b>/* Example with postfix (large) input */</b>
+&lt;input id=&quot;demo1&quot; type=&quot;text&quot; value=&quot;55&quot; name=&quot;demo1&quot; data-plugin=&quot;TouchSpin&quot; data-min=&quot;0&quot; data-max=&quot;100&quot; data-step=&quot;0.1&quot; data-decimals=&quot;2&quot; data-boostat=&quot;5&quot; data-maxboostedstep=&quot;10&quot; data-postfix=&quot;%&quot;&gt;
+
+<b>/* Prefix input */</b>
+&lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;input id=&quot;demo2&quot; type=&quot;text&quot; value=&quot;0&quot; name=&quot;demo2&quot; class=&quot;form-control&quot; data-plugin=&quot;TouchSpin&quot; data-min=&quot;-1000000000&quot; data-max=&quot;1000000000&quot; data-stepinterval=&quot;50&quot; data-maxboostedstep=&quot;10000000&quot; data-prefix=&quot;$&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+
+<b>/* Init with empty value input */</b>
+&lt;input id=&quot;demo3&quot; type=&quot;text&quot; data-plugin=&quot;TouchSpin&quot; value=&quot;&quot; name=&quot;demo3&quot;&gt;
+
+<b>/* Button group input */</b>
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;input id=&quot;demo5&quot; type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;demo5&quot; value=&quot;50&quot; data-plugin=&quot;TouchSpin&quot; data-prefix=&quot;pre&quot; data-postfix=&quot;post&quot;&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content advanced-elements-content">
+<div class="general-elements-content">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h4 class="page-content-title">Timepicker</h4>
+<p>Use this to unobtrusively add a timepicker dropdown to your forms.</p>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#default-timepicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#default-timepicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Default examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="default-timepicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-touchspin">
+<label>Basic Example</label>
+<div class="input-group form-group">
+<input type="text" class="time form-control" data-plugin="timepicker"/>
+<span class="input-group-addon"><span class="icon icon_clock"></span></span>
+</div>
+<label>Duration Example</label>
+<div class="input-group form-group">
+<input type="text" class="time form-control" data-plugin="timepicker" data-min-time="2:00pm" data-max-time="11:30pm" data-show-duration="true"/>
+<span class="input-group-addon"><span class="icon icon_clock"></span></span>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="default-timepicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="175">
+<pre><b>/* Basic Example */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;time form-control&quot; data-plugin=&quot;timepicker&quot; /&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span class=&quot;icon icon_clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+<b>/* Duration Example */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;time form-control&quot; data-plugin=&quot;timepicker&quot; data-min-time=&quot;2:00pm&quot; data-max-time=&quot;11:30pm&quot; data-show-duration=&quot;true&quot; /&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span class=&quot;icon icon_clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#button-timepicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#button-timepicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Button examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="button-timepicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-touchspin">
+<label>Set Time Example</label>
+<div class="input-group form-group">
+<input id="setTimeExample" type="text" class="time form-control" data-plugin="timepicker"/>
+<span class="input-group-addon"><span class="icon icon_clock"></span></span>
+<span class="input-group-btn">
+<button id="setTimeButton" class="btn btn-primary">Current time</button>
+</span>
+</div>
+<label>Select Example</label>
+<div class="input-group form-group timepicker-toggle">
+<input id="selectExample" type="text" class="time form-control" data-plugin="timepicker"/>
+<span class="input-group-btn">
+<button id="selectButton" class="btn btn-primary">Toggle</button>
+</span>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="button-timepicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="175">
+<pre><b>/* Set Time input timepicker */</b>
+&lt;div class=&quot;input-group form-group timepicker-toggle&quot;&gt;
+    &lt;input id=&quot;setTimeExample&quot; type=&quot;text&quot; class=&quot;time form-control&quot; data-plugin=&quot;timepicker&quot; /&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span class=&quot;icon icon_clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;input-group-btn&quot;&gt;
+      &lt;button id=&quot;setTimeButton&quot; class=&quot;btn btn-primary&quot;&gt;Current time&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+
+<b>/* Select input timepicker */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input id=&quot;selectExample&quot; type=&quot;text&quot; class=&quot;time form-control&quot; data-plugin=&quot;timepicker&quot; /&gt;
+    &lt;span class=&quot;input-group-btn&quot;&gt;
+      &lt;button id=&quot;selectButton&quot; class=&quot;btn btn-primary&quot;&gt;Toggle&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#timeFormat-timepicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#timeFormat-timepicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">TimeFormat Example</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="timeFormat-timepicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-touchspin">
+<label>TimeFormat</label>
+<div class="input-group form-group">
+<input type="text" class="time form-control" data-plugin="timepicker" data-time-format="H:i:s"/>
+<span class="input-group-addon"><span class="icon icon_clock"></span></span>
+</div>
+<div class="input-group form-group">
+<input type="text" class="time form-control" data-plugin="timepicker" data-time-format="h:i A"/>
+<span class="input-group-addon"><span class="icon icon_clock"></span></span>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="timeFormat-timepicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="175">
+<pre><b>/* TimeFormat input timepicker */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;time form-control&quot; data-plugin=&quot;timepicker&quot; data-time-format=&quot;H:i:s&quot; /&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span class=&quot;icon icon_clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;time form-control&quot; data-plugin=&quot;timepicker&quot; data-time-format=&quot;h:i A&quot; /&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;span class=&quot;icon icon_clock&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content advanced-elements-content">
+<div class="general-elements-content">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h4 class="page-content-title">Datetimepicker</h4>
+<p>You can display date and time picker in different styles.</p>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#default-datetimepicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#default-datetimepicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Default examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="default-datetimepicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-datetime">
+<label>Minimum Setup</label>
+<div class="form-group">
+<div class='input-group date' data-plugin="flatpickr" data-enable-time="true" data-wrap="true">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+<label>Human readable format</label>
+<div class="form-group">
+<div class='input-group date' data-plugin="flatpickr" data-enable-time="true" data-alt-input="true" data-wrap="true" data-alt-format="F j, Y h:i K">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+<label>No Icon (input field only)</label>
+<div class="form-group">
+<input type='text' class="form-control" data-plugin="flatpickr" data-enable-time="true"/>
+</div>
+<label>Enabled Dates</label>
+<div class="form-group">
+<div class='input-group date' id="enable-date">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+<label>Disabled Dates</label>
+<div class="form-group">
+<div class='input-group date' id="disable-date">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+<label>Linked Pickers</label>
+<div class="form-group">
+<div class='input-group date' data-plugin="flatpickr" data-enable-time="true" data-wrap="true" data-click-opens="false">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+<label>Fiscal Calendar</label>
+<div class="form-group">
+<div class='input-group date' id="fiscal">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="default-datetimepicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="465">
+<pre><b>/* Minimum Setup input */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' data-plugin=&quot;flatpickr&quot; data-enable-time=&quot;true&quot; data-wrap=&quot;true&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input/&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+            &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/* Human readable format */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' data-plugin=&quot;flatpickr&quot; data-enable-time=&quot;true&quot; data-alt-input=&quot;true&quot; data-alt-format=&quot;F j, Y h:i K&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input /&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+           &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+         &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/* No Icon input datepicker */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type='text' class=&quot;form-control&quot; data-plugin=&quot;flatpickr&quot; data-enable-time=&quot;true&quot; /&gt;
+&lt;/div&gt;
+
+<b>/* Enable dates */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' id=&quot;enable-date&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input /&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+         &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/*Disable dates */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' id=&quot;disable-date&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input /&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+          &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+         &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/* Linked Pickers */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' data-plugin=&quot;flatpickr&quot; data-enable-time=&quot;true&quot; data-wrap=&quot;true&quot; data-click-opens=&quot;false&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input/&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+            &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/* Fiscal Calendar */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' id=&quot;fiscal&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input/&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+            &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+         &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-md-spacing divider-xs-spacing"></div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#prefix-datetimepicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#prefix-datetimepicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Some extra examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="prefix-datetimepicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-datetime">
+<label>Range selector</label>
+<div class="form-group">
+<div class='input-group date' data-plugin="flatpickr" data-enable-time="true" data-wrap="true" data-mode="range">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+<label>Multiple date selector</label>
+<div class="form-group">
+<div class='input-group date' data-plugin="flatpickr" data-enable-time="true" data-wrap="true" data-mode="multiple">
+<input type='text' class="form-control" data-input />
+<span class="input-group-addon date-icon" data-toggle>
+<i class="icon icon_calendar"></i>
+</span>
+</div>
+</div>
+<label>Datetimepicker</label>
+<div class="datetimepicker-display">
+<div data-plugin="flatpickr" data-enable-time="true" data-inline="true"></div>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="prefix-datetimepicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="465">
+<pre><b>/* Range selector */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' data-plugin=&quot;flatpickr&quot; data-enable-time=&quot;true&quot; data-wrap=&quot;true&quot; data-mode=&quot;range&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input/&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+          &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/* Multiple date selector */</b>
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' data-plugin=&quot;flatpickr&quot; data-enable-time=&quot;true&quot; data-wrap=&quot;true&quot; data-mode=&quot;multiple&quot;&gt;
+        &lt;input type='text' class=&quot;form-control&quot; data-input/&gt;
+        &lt;span class=&quot;input-group-addon date-icon&quot; data-toggle&gt;
+           &lt;i class=&quot;icon icon_calendar&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/* Datetimepicker */</b>
+&lt;div class=&quot;datetimepicker-display inline-calendar&quot;&gt;
+    &lt;div data-plugin=&quot;flatpickr&quot; data-enable-time=&quot;true&quot; data-inline=&quot;true&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content advanced-elements-content">
+<div class="general-elements-content">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h4 class="page-content-title">Bootstrap colorpicker</h4>
+<p>You can set colorpicker options either as a <code>data-plugin="colorpicker"</code>
+parameter or <code>data-*</code> attributes.</p>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#default-colorpicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#default-colorpicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Basic examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="default-colorpicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-colorpicker">
+<label>Simple input field</label>
+<div class="input-group form-group">
+<input type="text" class="form-control" value="#5367ce" data-plugin="colorpicker"/>
+</div>
+<label>Duration Example</label>
+<div class="input-group form-group">
+<div class="input-group colorpicker-component" data-plugin="colorpicker">
+<input type="text" value="#00AABB" class="form-control"/>
+<span class="input-group-addon"><i></i></span>
+</div>
+</div>
+<label>With custom options</label>
+<div class="input-group form-group colorpicker-component" data-plugin="colorpicker" data-color="#AA3399" data-format="rgb">
+<input type="text" value="#00AABB" class="form-control"/>
+<span class="input-group-addon"><i></i></span>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="default-colorpicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="245">
+<pre><b>/* Transparent color support */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; value=&quot;#5367ce&quot; data-plugin=&quot;colorpicker&quot; /&gt;
+&lt;/div&gt;
+
+<b>/* Duration input */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;div class=&quot;input-group colorpicker-component&quot; data-plugin=&quot;colorpicker&quot;&gt;
+        &lt;input type=&quot;text&quot; value=&quot;#00AABB&quot; class=&quot;form-control&quot; /&gt;
+        &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>/* Custom options input */</b>
+&lt;div class=&quot;input-group form-group colorpicker-component&quot; data-plugin=&quot;colorpicker&quot; data-color=&quot;#AA3399&quot; data-format=&quot;rgb&quot;&gt;
+    &lt;input type=&quot;text&quot; value=&quot;#00AABB&quot; class=&quot;form-control&quot; /&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#events-colorpicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#events-colorpicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Events examples</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="events-colorpicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-colorpicker">
+<label>Working with events</label>
+<div class="input-group form-group">
+<button class="btn btn-primary btn-block" id="cp4">Change background color
+</button>
+</div>
+<label>Transparent color support</label>
+<div class="input-group form-group">
+<input type="text" class="form-control" data-plugin="colorpicker" data-color="transparent" data-format="hex"/>
+</div>
+<label>Horizontal mode</label>
+<div class="input-group form-group">
+<input type="text" class="form-control" data-plugin="colorpicker" data-color="#88cc33" data-horizontal="true"/>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="events-colorpicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="245">
+<pre><b>/* Working with events */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;button class=&quot;btn btn-primary btn-block&quot; id=&quot;cp4&quot;&gt;Change background color
+    &lt;/button&gt;
+&lt;/div&gt;
+
+<b>/* Transparent color support */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-plugin=&quot;colorpicker&quot; data-color=&quot;transparent&quot; data-format=&quot;hex&quot; /&gt;
+&lt;/div&gt;
+
+<b>/* Horizontal mode */</b>
+&lt;div class=&quot;input-group form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-plugin=&quot;colorpicker&quot; data-color=&quot;#88cc33&quot; data-horizontal=&quot;true&quot; /&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#status-colorpicker" role="tab">Output</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#status-colorpicker-code" role="tab">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Disabled / enabled status</h4>
+<div class="tab-content">
+<div class="tab-pane active" id="status-colorpicker" role="tabpanel">
+<div class="element-margin-bottom form-bootstrap-colorpicker">
+<label>TimeFormat</label>
+<div id="cp10" class="input-group form-group colorpicker-component" data-plugin="colorpicker" data-color="#88cc33">
+<input disabled type="text" value="" class="form-control"/>
+<span class="input-group-addon"><i></i></span>
+</div>
+<p class="float-xs-right">
+<button class="btn btn-sm btn-primary enable-button">Enable</button>
+<button class="btn btn-sm btn-primary disable-button">Disable
+</button>
+</p>
+<div class="clear"></div>
+<label class="d-block">Inside a modal</label>
+<button class="btn btn-primary btn-md btn-block" data-toggle="modal" data-target="#myModal">Show modal
+</button>
+<div class="divider15"></div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<h4 class="modal-title">Colorpicker</h4>
+</div>
+<div class="modal-body">
+<div class="input-group colorpicker-component" data-color="#087380" data-plugin="colorpicker">
+<input type="text" value="" class="form-control"/>
+<span class="input-group-addon"><i></i></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane pre-code" id="status-colorpicker-code" role="tabpanel">
+<div data-plugin="custom-scroll" data-min="300" data-height="245">
+<pre><b>/* TimeFormat */</b>
+&lt;div id=&quot;cp10&quot; class=&quot;input-group form-group colorpicker-component&quot; data-plugin=&quot;colorpicker&quot; data-color=&quot;#88cc33&quot;&gt;
+    &lt;input disabled type=&quot;text&quot; value=&quot;&quot; class=&quot;form-control&quot; /&gt;
+    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;p class=&quot;float-xs-right&quot;&gt;
+    &lt;button class=&quot;btn btn-sm btn-primary enable-button&quot;&gt;Enable&lt;/button&gt;
+    &lt;button class=&quot;btn btn-sm btn-primary disable-button&quot;&gt;Disable
+    &lt;/button&gt;
+&lt;/p&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+<b>/* Inside a modal */</b>
+&lt;button class=&quot;btn btn-primary btn-md btn-block&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Show modal
+&lt;/button&gt;
+&lt;div class=&quot;divider15&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;div class=&quot;input-group colorpicker-component&quot; data-plugin=&quot;colorpicker&quot;&gt;
+                    &lt;input type=&quot;text&quot; value=&quot;&quot; class=&quot;form-control&quot; /&gt;
+                    &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+</section>
+ 
+</div>
+</section>
+ 
+ 
+<footer id="footer">
+Copyright&copy; 2017, All Rights Reserved.
+</footer>
+ 
+ 
+<div class="right-side-bar">
+<div class="float-xs-left icon-right site-setting-animation how-it-works">
+<div id="site_setting_icon" class="animation">
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon1"/>
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon2">
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon3">
+</div>
+</div>
+<div class="right-side-box float-xs-right" data-plugin="custom-scroll" data-height="100%">
+<div class="right-side-inner-box">
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> Colors</h5>
+<div class="settings-sidebox site-color">
+<div class="color-inner-box default-color color-active" data-color="default" data-color-code="#087380"></div>
+<div class="color-inner-box golden-color" data-color="golden" data-color-code="#F3C200"></div>
+<div class="color-inner-box soft-orange-color" data-color="soft-orange" data-color-code="#F2784B"></div>
+<div class="color-inner-box dodger-blue-color" data-color="dodger-blue" data-color-code="#039be5"></div>
+<div class="color-inner-box bright-pink-color" data-color="bright-pink" data-color-code="#ec407a"></div>
+<div class="color-inner-box light-red-color" data-color="light-red" data-color-code="#eb6d6d"></div>
+<div class="color-inner-box purple-color" data-color="purple" data-color-code="#6d5cae"></div>
+<div class="color-inner-box spice-color" data-color="spice" data-color-code="#6d4c41"></div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Template</h5>
+<div class="settings-sidebox">
+<span class="dark-color">Light</span>
+<div class="texture-switch dark-color-switch">
+<input type="checkbox" class="js-switch site-dark-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Navigation</h5>
+<div class="settings-sidebox">
+<span class="nav-dark-color">Vertical Dark</span>
+<div class="texture-switch nav-color-switch">
+<input type="checkbox" class="js-switch nav-dark-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+<div class="settings-sidebox">
+<span class="top-nav-color-text">Horizontal Light</span>
+<div class="texture-switch top-nav-color-switch">
+<input type="checkbox" class="js-switch top-nav-color-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+<div class="settings-sidebox">
+<span class="nav-fixed-text">Vertical Fixed</span>
+<div class="texture-switch nav-fixed-switch">
+<input type="checkbox" class="js-switch nav-fixed-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Footer</h5>
+<div class="settings-sidebox">
+<span class="footer-check-text">Default</span>
+<div class="texture-switch footer-fixed-switch">
+<input type="checkbox" class="js-switch footer-fixed-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> Fonts</h5>
+<div class="settings-sidebox site-fonts">
+<div class="font-box">
+<label for="font-radio-button1">Default</label>
+<div class="radio-button float-xs-right">
+<input value="default" id="font-radio-button1" name="font" type="radio" checked>
+<label class="radio-check" for="font-radio-button1"></label>
+</div>
+</div>
+<div class="font-box">
+<label for="font-radio-button2">PT Sans</label>
+<div class="radio-button float-xs-right">
+<input value="font2" id="font-radio-button2" name="font" type="radio">
+<label class="radio-check" for="font-radio-button2"></label>
+</div></div>
+<div class="font-box">
+<label for="font-radio-button3">Open Sans</label>
+<div class="radio-button float-xs-right">
+<input value="font3" id="font-radio-button3" name="font" type="radio">
+<label class="radio-check" for="font-radio-button3"></label>
+</div></div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> System</h5>
+<div class="settings-sidebox">
+<ul class="list-unstyled">
+<li>
+<span class="system-option"><i class="icon_lock"></i> Last Login</span>
+<span class="time float-xs-right">2h ago</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_calendar"></i> Our Task</span>
+<span class="time float-xs-right">06</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_cloud_alt"></i> Weather Today</span>
+<span class="time float-xs-right">32c</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_comment_alt"></i> Notifications</span>
+<span class="time float-xs-right">10</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+ 
+<script type="text/javascript" src="../../../assets/global/plugins/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/tether/dist/js/tether.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/switchery/dist/switchery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/screenfull.js/dist/screenfull.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/classie/classie.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/global/plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/select2/dist/js/select2.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/typeahead.js/dist/typeahead.jquery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/typeahead.js/dist/bloodhound.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/moment/min/moment.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/jt.timepicker/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/flatpickr/dist/flatpickr.min.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/global/js/site.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/js/site-settings.min.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/global/js/global/advanced_elements.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/layouts/layout-left-top-menu/js/layout.js"></script>
+ 
+</body>
+
+<!-- Mirrored from backend.themesadmin.com/backend/admin_left_top_menu/default/admin_default/advanced_elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 08:27:34 GMT -->
+</html>

@@ -20,6 +20,8 @@
         "vue": "^3.2.37"
     },
     "dependencies": {
-        "quagga": "^0.12.1"
+        "jquery": "^3.7.1",
+        "quagga": "^0.12.1",
+        "select2": "^4.1.0-rc.0"
     }
 }

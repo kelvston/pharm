@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from backend.themesadmin.com/backend/admin_left_top_menu/default/admin_default/list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 08:25:41 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="bootstrap default admin template">
+<meta name="viewport" content="width=device-width">
+<title>List | Admin Template</title>
+ 
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1491196372,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"faccdb26552b26ba47282e3ab09989aa",petok:"5babfd44bb55ef8036dfe68cabbe85141417cfe2-1491207759-1800",zone:"themesadmin.com",rocket:"0",apps:{"ga_key":{"ua":"UA-92643213-2","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="../../../../../ajax.cloudflare.com/cdn-cgi/nexp/dok3v%3df2befc48d1/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link rel="shortcut icon" href="http://backend.themesadmin.com/backend/assets/favicon/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="../../../assets/favicon/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../../../assets/favicon/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="../../../assets/favicon/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../../../assets/favicon/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="../../../assets/favicon/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="../../../assets/favicon/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="../../../assets/favicon/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="../../../assets/favicon/apple-touch-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicon/apple-touch-icon-180x180.png"/>
+ 
+<link rel="stylesheet" href="../../../assets/global/plugins/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../../../assets/icons_fonts/elegant_font/elegant.min.css"/>
+<link id="site-color" rel="stylesheet" href="../../../assets/layouts/layout-left-top-menu/css/color/light/color-default.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/switchery/dist/switchery.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+ 
+ 
+ 
+ 
+<link rel="stylesheet" href="../../../assets/global/css/components.min.css"/>
+ 
+ 
+<link rel="stylesheet" href="../../../assets/layouts/layout-left-top-menu/css/layout.css"/>
+ 
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-92643213-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body>
+<div class="loader-overlay">
+<div class="loader-preview-area">
+<div class="spinners">
+<div class="loader">
+<div class="rotating-plane"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+ 
+<header id="header">
+<div class="row">
+<div class="col-sm-4 col-xl-2 header-left">
+<div class="logo float-xs-left">
+<a href="#"><img src="../../../assets/global/image/web-logo.png" alt="logo"></a>
+</div>
+<button class="left-menu-toggle float-xs-right">
+<i class="icon_menu toggle-icon"></i>
+</button>
+<button class="right-menu-toggle float-xs-right">
+<i class="arrow_carrot-left toggle-icon"></i>
+</button>
+</div>
+<div class="col-xl-6 header-center">
+<div class="menucontainer">
+<div class="overlapblackbg"></div>
+<a id="navtoggle" class="animated-arrow"><span></span></a>
+<nav id="nav" class="topmenu" role="navigation">
+<div class="sidebar-search">
+<input id="live-search-box" type="search" class="form-control input-sm" placeholder="Search...">
+<a href="javascript:void(0)"><i class="search-close icon_search"></i></a>
+</div>
+<ul class="menu-list live-search-list">
+<li>
+<a href="javascript:void(0)">
+<span class="icon_desktop header-icon" aria-hidden="true"></span>Dashboard<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li>
+<a href="index-2.html">Dashboard</a>
+</li>
+<li>
+<a href="dashboard_v1.html">Dashboard 1</a>
+</li>
+<li>
+<a href="dashboard_v2.html">Dashboard 2</a>
+</li>
+<li>
+<a href="dashboard_v3.html">Dashboard 3</a>
+</li>
+<li>
+<a href="crm_dashboard.html">CRM Dashboard</a>
+</li>
+<li>
+<a href="server_dashboard.html">Server Dashboard</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">
+<span class="icon_tags_alt header-icon" aria-hidden="true"></span>Layout<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li><a href="javascript:void(0)">General Pages<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub dropNav">
+<li>
+<a href="userlist.html">Userlist</a>
+</li>
+<li>
+<a href="invoice.html">Invoice</a>
+</li>
+<li>
+<a href="blank.html">Blank</a>
+</li>
+<li>
+<a href="profile.html">Profile</a>
+</li>
+<li>
+<a href="search.html">Search</a>
+</li>
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+<li>
+<a href="grid.html">Grid</a>
+</li>
+<li>
+<a href="maintenance.html">Maintenance</a>
+</li>
+<li>
+<a href="404.html">404 Page</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Cookie consent<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="cookie_consent_v1.html">Cookie consent 1</a>
+</li>
+<li>
+<a href="cookie_consent_v2.html">Cookie consent 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">eCommerce<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="eCommerce_dashboard.html">Dashboard</a>
+</li>
+<li>
+<a href="order.html">Orders</a>
+</li>
+<li>
+<a href="order_view.html">Order view</a>
+</li>
+<li>
+<a href="product.html">Products</a>
+</li>
+<li>
+<a href="products_edit.html">Product edit</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Apps<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="contact.html">Contacts</a>
+</li>
+<li>
+<a href="calendar.html">Calender</a>
+</li>
+<li><a href="javascript:void(0)">Message<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="message.html">Message</a>
+</li>
+<li>
+<a href="message_v2.html">Message V2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Mailbox<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="mail_box.html">Inbox</a>
+</li>
+<li>
+<a href="mail_draft.html">Draft</a>
+</li>
+<li>
+<a href="mail_send.html">Sent</a>
+</li>
+<li>
+<a href="mail_archive.html">Archive</a>
+</li>
+<li>
+<a href="mail_trash.html">Trash</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Maps<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="google_maps.html">Google map</a>
+</li>
+<li>
+<a href="vector_maps.html">Vector map</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Users<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li><a href="javascript:void(0)">Login<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="login_v1.html">Login Page 1</a>
+</li>
+<li>
+<a href="login_v2.html">Login Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Register<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="register_v1.html">Register Page 1</a>
+</li>
+<li>
+<a href="register_v2.html">Register Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Lockscreen<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="lock_screen_v1.html">Lockscreen Page 1</a>
+</li>
+<li>
+<a href="lock_screen_v2.html">Lockscreen Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Forgot Password<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="forgot_password_v1.html">Forgot Password 1</a>
+</li>
+<li>
+<a href="forgot_password_v2.html">Forgot Password 2</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">
+<span class="icon_ribbon_alt header-icon" aria-hidden="true"></span>Components<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li><a href="javascript:void(0)">Basic UI<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="cards.html">Cards</a>
+</li>
+<li>
+<a href="buttons.html">Button</a>
+</li>
+<li>
+<a class="flat-buttons" href="switches.html">Switch</a>
+</li>
+<li><a href="javascript:void(0)">Icons<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="font_awesome.html">Font-Awesome</a>
+</li>
+<li>
+<a href="themify_icons.html">Themify-Icons</a>
+</li>
+<li>
+<a href="7-Stroke_icons.html">7-stroke</a>
+</li>
+<li>
+<a href="weather_icons.html">Weather-Icons</a>
+</li>
+<li>
+<a href="material_icons.html">Material-Design</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">Progress<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="youtube_progress.html">Youtube</a>
+</li>
+<li>
+<a href="3D_bar_progress.html">3D bar</a>
+</li>
+<li>
+<a href="flate_topbar_progress.html">Flate header</a>
+</li>
+<li>
+<a href="corner_indicator_progress.html">Corner indicator</a>
+</li>
+<li>
+<a href="big_counter.html">Counter</a>
+</li>
+<li>
+<a href="bounce.html">Bounce</a>
+</li>
+<li>
+<a href="loading_bar.html">Loading bar</a>
+</li>
+<li>
+<a href="center_circle.html">Center circle</a>
+</li>
+<li>
+<a href="center_simple.html">Center simple</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="list.html">List</a>
+</li>
+<li>
+<a href="dropdown.html">Dropdown</a>
+</li>
+<li>
+<a href="images.html">Image</a>
+</li>
+<li>
+<a href="modals.html">Modals</a>
+</li>
+<li>
+<a href="scrollable.html">Scrollbar</a>
+</li>
+<li>
+<a href="typography.html">Typography</a>
+</li>
+<li>
+<a href="utilities.html">Utilities</a>
+</li>
+<li>
+<a href="carousel.html">Carousel</a>
+</li>
+<li>
+<a href="color_generator.html">Color Generator</a>
+</li>
+<li>
+<a href="tabs_accordions.html">Tabs &amp; Accordions</a>
+</li>
+<li>
+<a href="badges_tags.html">Badges &amp; Tags</a>
+</li>
+<li>
+<a href="progress_bar.html">Progress Bars</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Advanced UI<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="highlight.html">Highlight</a>
+</li>
+<li>
+<a href="bootbox.html">Bootbox</a>
+</li>
+<li>
+<a href="sweetalert.html">Sweetalert</a>
+</li>
+<li>
+<a href="toastr.html">Toastr</a>
+</li>
+<li>
+<a href="tooltip_popover.html">Tooltip & Popover</a>
+</li>
+<li>
+<a href="masonry.html">Masonry</a>
+</li>
+<li>
+<a href="rating.html">Rating</a>
+</li>
+<li>
+<a href="sortable_nestable.html">Sortable & Nestable</a>
+</li>
+<li>
+<a href="lightbox.html">Lightbox</a>
+</li>
+<li>
+<a href="treeview.html">Treeview</a>
+</li>
+<li>
+<a href="context_menu.html">Context Menu</a>
+</li>
+<li>
+<a href="file_manager.html">File Manager</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Elements<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="alerts.html">Alerts</a>
+</li>
+<li>
+<a href="ribbon.html">Ribbon</a>
+</li>
+<li>
+<a href="pricing-table.html">Pricing Table</a>
+</li>
+<li>
+<a href="overlay.html">Overlay</a>
+</li>
+<li>
+<a href="step.html">Step</a>
+</li>
+<li>
+<a href="timeline.html">Timeline</a>
+</li>
+<li>
+<a href="testimonial.html">Testimonials</a>
+</li>
+<li>
+<a href="breadcrumbs.html">Breadcrumbs</a>
+</li>
+<li>
+<a href="blockquote.html">Blockquotes</a>
+</li>
+<li>
+<a href="nav.html">Nav</a>
+</li>
+<li>
+<a href="navbar.html">Navbars</a>
+</li>
+<li>
+<a href="pagination.html">Pagination</a>
+</li>
+<li>
+<a href="different_headers.html">Different Headers</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Forms<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="general_elements.html">General Elements</a>
+</li>
+<li>
+<a href="form_layout.html">Form Layouts</a>
+</li>
+<li>
+<a href="form_validation.html">Form Validation</a>
+</li>
+<li>
+<a href="form_mask.html">Form Masks</a>
+</li>
+<li>
+<a href="advanced_elements.html">Advanced Elements</a>
+</li>
+<li>
+<a href="form_wizard.html">Form Wizard</a>
+</li>
+<li>
+<a href="markdown_editor.html">Markdown Editor</a>
+</li>
+<li>
+<a href="image_cropping.html">Image Cropping</a>
+</li>
+<li>
+<a href="file_upload.html">File Upload</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Tables<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="basic_table.html">Basic Tables</a>
+</li>
+<li>
+<a href="bootstrap_tables.html">Bootstrap Tables</a>
+</li>
+<li>
+<a href="floatthead.html">floatThead</a>
+</li>
+<li>
+<a href="editable.html">Editable</a>
+</li>
+<li>
+<a href="datatable.html">Datatable</a>
+</li>
+<li>
+<a href="jsgrid.html">jsGrid</a>
+</li>
+<li>
+<a href="responsive_table.html">Responsive Tables</a>
+</li>
+<li>
+<a href="footable.html">Footable</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Chart<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="morris_chart.html">Morris Chart</a>
+</li>
+<li>
+<a href="sparkline_chart.html">Sparkline Chart </a>
+</li>
+<li>
+<a href="chartist.html">Chartist</a>
+</li>
+<li>
+<a href="gantt_chart.html">Gantt Chart</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Widgets<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="social_widget.html">Social Widgets</a>
+</li>
+<li>
+<a href="static_widget.html">Static Widgets</a>
+</li>
+<li>
+<a href="data_widgets.html">Data Widgets</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<nav id="nav-mega">
+<ul class="menu-list">
+<li class="dropdown dropdown-mega-item">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" aria-haspopup="true" aria-expanded="false">
+<span class="icon_ul header-icon" aria-hidden="true"></span><span class="mega-title">Mega</span>
+<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<div class="dropdown-menu dropdown-mega-menu">
+<div class="mega-menu-container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="mega-menu-title">
+<span>Layout</span>
+</div>
+<ul>
+<li>
+<a href="userlist.html">
+<span class="icon_documents_alt" aria-hidden="true"></span>Userlist
+</a>
+</li>
+<li>
+<a href="invoice.html">
+<span class="icon_document_alt" aria-hidden="true"></span>Invoice
+</a>
+</li>
+<li>
+<a href="blank.html">
+<span class="icon_menu-square_alt2" aria-hidden="true"></span>Blank
+</a>
+</li>
+<li>
+<a href="profile.html">
+<span class="icon_id-2" aria-hidden="true"></span>Profile
+</a>
+</li>
+<li>
+<a href="search.html">
+<span class="icon_search" aria-hidden="true"></span>Search
+</a>
+</li>
+<li>
+<a href="gallery.html">
+<span class="icon_images" aria-hidden="true"></span>Gallery
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="grid.html">
+<span class="icon_archive_alt" aria-hidden="true"></span>Grid
+</a>
+</li>
+<li>
+<a href="404.html">
+<span class="icon_error-triangle_alt" aria-hidden="true"></span>404 Error
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-xs-megamenu-spacing"></div>
+<div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="mega-menu-title">
+<span>Basic ui</span>
+</div>
+<ul>
+<li>
+<a href="cards.html">
+<span class="icon_creditcard" aria-hidden="true"></span>Cards
+</a>
+</li>
+<li>
+<a href="buttons.html">
+<span class="icon_tags_alt" aria-hidden="true"></span>Button
+</a>
+</li>
+<li>
+<a href="list.html">
+<span class="icon_document_alt" aria-hidden="true"></span>List
+</a>
+</li>
+<li>
+<a href="dropdown.html">
+<span class="icon_cloud_alt" aria-hidden="true"></span>Dropdown
+</a>
+</li>
+<li>
+<a href="images.html">
+<span class="icon_image" aria-hidden="true"></span>Image
+</a>
+</li>
+<li>
+<a href="themify_icons.html">
+<span class="icon_percent" aria-hidden="true"></span>Themify Icons
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="modals.html">
+<span class="icon_drawer_alt" aria-hidden="true"></span>Modals
+</a>
+</li>
+<li>
+<a href="scrollable.html">
+<span class="icon_pens" aria-hidden="true"></span>Scrollbar
+</a>
+</li>
+<li>
+<a href="typography.html">
+<span class="icon_pencil-edit_alt" aria-hidden="true"></span>Typography
+</a>
+</li>
+<li>
+<a href="utilities.html">
+<span class="icon_drive" aria-hidden="true"></span>Utilities
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-md-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="mega-menu-title">
+<span>Advance ui</span>
+</div>
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li>
+<a href="highlight.html">
+<span class="icon_pencil-edit" aria-hidden="true"></span>Highlight
+</a>
+</li>
+<li>
+<a href="bootbox.html">
+<span class="icon_drawer_alt" aria-hidden="true"></span>Bootbox
+</a>
+</li>
+<li>
+<a href="sweetalert.html">
+<span class="icon_info_alt" aria-hidden="true"></span>Sweetalert
+</a>
+</li>
+<li>
+<a href="toastr.html">
+<span class="icon_error-oct_alt" aria-hidden="true"></span>Toastr
+</a>
+</li>
+<li>
+<a href="tooltip_popover.html">
+<span class="icon_target" aria-hidden="true"></span>Tooltip & popover
+</a>
+</li>
+<li>
+<a href="masonry.html">
+<span class="icon_hourglass" aria-hidden="true"></span>Masonry
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="rating.html">
+<span class="icon_star_alt" aria-hidden="true"></span>Rating
+</a>
+</li>
+<li>
+<a href="sortable_nestable.html">
+<span class="arrow_move" aria-hidden="true"></span>Sortable &
+nestable
+</a>
+</li>
+<li>
+<a href="lightbox.html">
+<span class="icon_lightbulb_alt" aria-hidden="true"></span>Lightbox
+</a>
+</li>
+<li>
+<a href="treeview.html">
+<span class="icon_flowchart" aria-hidden="true"></span>Treeview
+</a>
+</li>
+<li>
+<a href="carousel.html">
+<span class="icon_puzzle" aria-hidden="true"></span>Carousel
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-xs-megamenu-spacing"></div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li>
+<a href="file_manager.html">
+<span class="icon_folder-open_alt" aria-hidden="true"></span>File Manager<span class="tag tag-pill tag-danger">New</span>
+</a>
+</li>
+<li>
+<a href="alerts.html">
+<span class="icon_puzzle" aria-hidden="true"></span>Alert
+</a>
+</li>
+<li>
+<a href="ribbon.html">
+<span class="icon_ribbon_alt" aria-hidden="true"></span>Ribbon
+</a>
+</li>
+<li>
+<a href="gantt_chart.html">
+<span class="icon_easel" aria-hidden="true"></span>Gantt Chart<span class="tag tag-pill tag-danger">New</span>
+</a>
+</li>
+<li>
+<a href="timeline.html">
+<span class="icon_clock_alt" aria-hidden="true"></span>Timeline
+</a>
+</li>
+<li>
+<a href="testimonial.html">
+<span class="icon_comment_alt" aria-hidden="true"></span>Testimonial
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="morris_chart.html">
+<span class="icon_piechart" aria-hidden="true"></span>Morris chart
+</a>
+</li>
+<li>
+<a href="chartist.html">
+<span class="icon_datareport" aria-hidden="true"></span>Chartist
+</a>
+</li>
+<li>
+<a href="social_widget.html">
+<span class="icon_globe-2" aria-hidden="true"></span>Social widget
+</a>
+</li>
+<li>
+<a href="static_widget.html">
+<span class="icon_id" aria-hidden="true"></span>Static widget
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<img src="../../../assets/global/image/tabimg.png" alt="" class="tabimage"/>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="col-sm-8 col-xl-10 header-right">
+<div class="header-inner-right">
+<div class="float-default searchbox">
+<div class="right-icon">
+<a href="javascript:void(0)">
+<i class="icon_search"></i>
+</a>
+</div>
+</div>
+<div class="float-default mail">
+<div class="right-icon">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" aria-expanded="true">
+<i class="icon_mail_alt"></i>
+<span class="mail-no">10</span>
+</a>
+<div class="dropdown-menu messagetoggle" role="menu">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#messages" role="tab">Message</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#resendmessage" role="tab">Resend</a>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="messages" role="tabpanel" data-plugin="custom-scroll" data-height="320">
+<ul class="userMessagedrop">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-primary"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>New tasks added</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-success"><i class="icon_lock"></i></span>
+</div>
+<div class="media-body">
+<h6>Successfully</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-danger"><i class="icon_info_alt"></i></span>
+</div>
+<div class="media-body">
+<h6>Warnind</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-info"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>Add new friend</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="tab-pane" id="resendmessage" role="tabpanel" data-plugin="custom-scroll" data-height="320">
+<ul class="userMessagedrop">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-primary"><i class="icon_profile"></i></span>
+</div>
+<div class="media-body">
+<h6>5 new members joi...</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">2 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-success"><i class="icon_key"></i></span>
+</div>
+<div class="media-body">
+<h6>You changed...</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-danger"><i class="icon_close"></i></span>
+</div>
+<div class="media-body">
+<h6>5 members removed</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">15 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-info"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>Update available</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="float-default chat">
+<div class="right-icon">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" data-animation="slideOutUp" aria-expanded="false">
+<i class="icon_chat_alt"></i>
+<span class="mail-no">8</span>
+</a>
+<ul class="dropdown-menu userChat" data-plugin="custom-scroll" data-height="310">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image1-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+<div class="status online"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image2-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">2 hours
+</time>
+</div>
+<div class="status offline"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image3-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">20 Oct
+</time>
+</div>
+<div class="status offline"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image4-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">20 Oct
+</time>
+</div>
+<div class="status online"></div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="float-default chat">
+<div class="right-icon">
+<a href="#" data-plugin="fullscreen">
+<i class="arrow_expand"></i>
+</a>
+</div>
+</div>
+<div class="user-dropdown">
+<div class="btn-group">
+<a href="#" class="user-header dropdown-toggle" data-toggle="dropdown" data-animation="slideOutUp" aria-haspopup="true" aria-expanded="false">
+<img src="../../../assets/global/image/user.jpg" alt="Profile image"/>
+</a>
+<div class="dropdown-menu drop-profile">
+<div class="userProfile">
+<img src="../../../assets/global/image/user.jpg" alt="Profile image"/>
+<h5>Miler Hussey</h5>
+<p>milerhussey@yahoo.com</p>
+</div>
+<div class="dropdown-divider"></div>
+<a class="btn left-spacing link-btn" href="#" role="button">Link</a>
+<a class="btn left-second-spacing link-btn" href="#" role="button">Link 2</a>
+<a class="btn btn-primary float-xs-right right-spacing" href="#" role="button">Logout</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="search-overlay">
+<div class="float-default search">
+<div class="search_bg"></div>
+<div class="right-icon search_box">
+<div class="search-div">
+<input type="text" class="search_input">
+<label class="search-input-label">
+<span class="input-label-title">Search</span>
+</label>
+</div>
+<div class="divider50"></div>
+<div class="search-result">
+<div class="search-item">
+<div class="search-image float-xs-left">
+<img src="../../../assets/global/image/guitar.jpg" alt="search-image">
+</div>
+<div class="search-info float-xs-right">
+<h3 class="title">Search here</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+<div class="divider15"></div>
+<div class="search-item">
+<div class="search-info search-full float-xs-right">
+<h3 class="title">Admin templates</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+<div class="divider15"></div>
+<div class="search-item">
+<div class="search-image float-xs-left">
+<img src="../../../assets/global/image/book-flower.jpg" alt="search-image">
+</div>
+<div class="search-info float-xs-right">
+<h3 class="title">Books</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="search_close icon_close"></div>
+</div>
+</div>
+ 
+ 
+<section id="main" class="container-fluid">
+<div class="row">
+ 
+<aside id="sidebar">
+<div class="sidebar-search">
+<input id="left-menu-search" type="search" class="form-control input-sm" placeholder="Search...">
+<a href="javascript:void(0)"><i class="search-close icon_search"></i></a>
+</div>
+<div class="sidebar-menu">
+<ul class="nav site-menu live-search-list" id="site-menu" data-plugin="custom-scroll" data-suppress-scroll-x="true" data-height="100%">
+<li class="menu-title"><i class="icon_compass_alt"></i><span>Main Menu</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)"><span>Dashboard</span>
+<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="index-2.html">Dashboard</a>
+</li>
+<li>
+<a href="dashboard_v1.html">Dashboard 1</a>
+</li>
+<li>
+<a href="dashboard_v2.html">Dashboard 2</a>
+</li>
+<li>
+<a href="dashboard_v3.html">Dashboard 3</a>
+</li>
+<li>
+<a href="crm_dashboard.html">CRM Dashboard</a>
+</li>
+<li>
+<a href="server_dashboard.html">Server Dashboard</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-title"><i class="icon_document_alt"></i><span>Layout Pages</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)"><span>General Pages</span>
+<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="userlist.html">Userlist</a>
+</li>
+<li>
+<a href="invoice.html">Invoice</a>
+</li>
+<li>
+<a href="blank.html">Blank</a>
+</li>
+<li>
+<a href="profile.html">Profile</a>
+</li>
+<li>
+<a href="search.html">Search</a>
+</li>
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+<li>
+<a href="grid.html">Grid</a>
+</li>
+<li>
+<a href="maintenance.html">Maintenance</a>
+</li>
+<li>
+<a href="404.html">404 Page</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Cookie consent<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="cookie_consent_v1.html">Cookie consent 1</a>
+</li>
+<li>
+<a href="cookie_consent_v2.html">Cookie consent 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+eCommerce<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="eCommerce_dashboard.html">Dashboard</a>
+</li>
+<li>
+<a href="order.html">Orders</a>
+</li>
+<li>
+<a href="order_view.html">Order view</a>
+</li>
+<li>
+<a href="product.html">Products</a>
+</li>
+<li>
+<a href="products_edit.html">Product edit</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Apps<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="contact.html">Contacts</a>
+</li>
+<li>
+<a href="calendar.html">Calender</a>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Message<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="message.html">Message</a>
+</li>
+<li>
+<a href="message_v2.html">Message V2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Mailbox<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="mail_box.html">Inbox</a>
+</li>
+<li>
+<a href="mail_draft.html">Draft</a>
+</li>
+<li>
+<a href="mail_send.html">Sent</a>
+</li>
+<li>
+<a href="mail_archive.html">Archive</a>
+</li>
+<li>
+<a href="mail_trash.html">Trash</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Maps<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="google_maps.html">Google map</a>
+</li>
+<li>
+<a href="vector_maps.html">Vector map</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Users<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li class="sub-item">
+<a href="javascript:void(0)">
+Login<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="login_v1.html">Login Page 1</a>
+</li>
+<li>
+<a href="login_v2.html">Login Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Register<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="register_v1.html">Register Page 1</a>
+</li>
+<li>
+<a href="register_v2.html">Register Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Lockscreen<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="lock_screen_v1.html">Lockscreen Page 1</a>
+</li>
+<li>
+<a href="lock_screen_v2.html">Lockscreen Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Forgot Password<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="forgot_password_v1.html">Forgot Password 1</a>
+</li>
+<li>
+<a href="forgot_password_v2.html">Forgot Password 2</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-title"><i class="icon_genius"></i><span>Components</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)">
+Basic UI<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="cards.html">Cards</a>
+</li>
+<li>
+<a href="buttons.html">Button</a>
+</li>
+<li>
+<a href="switches.html" class="flat-buttons">Switch</a>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Icons<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="font_awesome.html">Font-Awesome</a>
+</li>
+<li>
+<a href="themify_icons.html">Themify-Icons</a>
+</li>
+<li>
+<a href="7-Stroke_icons.html">7-stroke</a>
+</li>
+<li>
+<a href="weather_icons.html">Weather-Icons</a>
+</li>
+<li>
+<a href="material_icons.html">Material-Design</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Progress<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="youtube_progress.html">Youtube</a>
+</li>
+<li>
+<a href="3D_bar_progress.html">3D bar</a>
+</li>
+<li>
+<a href="flate_topbar_progress.html">Flate header</a>
+</li>
+<li>
+<a href="corner_indicator_progress.html">Corner indicator</a>
+</li>
+<li>
+<a href="big_counter.html">Counter</a>
+</li>
+<li>
+<a href="bounce.html">Bounce</a>
+</li>
+<li>
+<a href="loading_bar.html">Loading bar</a>
+</li>
+<li>
+<a href="center_circle.html">Center circle</a>
+</li>
+<li>
+<a href="center_simple.html">Center simple</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="list.html">List</a>
+</li>
+<li>
+<a href="dropdown.html">Dropdown</a>
+</li>
+<li>
+<a href="images.html">Image</a>
+</li>
+<li>
+<a href="modals.html">Modals</a>
+</li>
+<li>
+<a href="scrollable.html">Scrollbar</a>
+</li>
+<li>
+<a href="typography.html">Typography</a>
+</li>
+<li>
+<a href="utilities.html">Utilities</a>
+</li>
+<li>
+<a href="carousel.html">Carousel</a>
+</li>
+<li>
+<a href="color_generator.html">Color Generator</a>
+</li>
+<li>
+<a href="tabs_accordions.html">Tabs &amp; Accordions</a>
+</li>
+<li>
+<a href="badges_tags.html">Badges &amp; Tags</a>
+</li>
+<li>
+<a href="progress_bar.html">Progress Bars</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Advanced UI<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="highlight.html">Highlight</a>
+</li>
+<li>
+<a href="bootbox.html">Bootbox</a>
+</li>
+<li>
+<a href="sweetalert.html">Sweetalert</a>
+</li>
+<li>
+<a href="toastr.html">Toastr</a>
+</li>
+<li>
+<a href="tooltip_popover.html">Tooltip & Popover</a>
+</li>
+<li>
+<a href="masonry.html">Masonry</a>
+</li>
+<li>
+<a href="rating.html">Rating</a>
+</li>
+<li>
+<a href="sortable_nestable.html">Sortable & Nestable</a>
+</li>
+<li>
+<a href="lightbox.html">Lightbox</a>
+</li>
+<li>
+<a href="treeview.html">Treeview</a>
+</li>
+<li>
+<a href="context_menu.html">Context Menu</a>
+</li>
+<li>
+<a href="file_manager.html">File Manager</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Elements<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="alerts.html">Alerts</a>
+</li>
+<li>
+<a href="ribbon.html">Ribbon</a>
+</li>
+<li>
+<a href="pricing-table.html">Pricing Table</a>
+</li>
+<li>
+<a href="overlay.html">Overlay</a>
+</li>
+<li>
+<a href="step.html">Step</a>
+</li>
+<li>
+<a href="timeline.html">Timeline</a>
+</li>
+<li>
+<a href="testimonial.html">Testimonials</a>
+</li>
+<li>
+<a href="breadcrumbs.html">Breadcrumbs</a>
+</li>
+<li>
+<a href="blockquote.html">Blockquotes</a>
+</li>
+<li>
+<a href="nav.html">Nav</a>
+</li>
+<li>
+<a href="navbar.html">Navbars</a>
+</li>
+<li>
+<a href="pagination.html">Pagination</a>
+</li>
+<li>
+<a href="different_headers.html">Different Headers</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Forms<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="general_elements.html">General Elements</a>
+</li>
+<li>
+<a href="form_layout.html">Form Layouts</a>
+</li>
+<li>
+<a href="form_validation.html">Form Validation</a>
+</li>
+<li>
+<a href="form_mask.html">Form Masks</a>
+</li>
+<li>
+<a href="advanced_elements.html">Advanced Elements</a>
+</li>
+<li>
+<a href="form_wizard.html">Form Wizard</a>
+</li>
+<li>
+<a href="markdown_editor.html">Markdown Editor</a>
+</li>
+<li>
+<a href="image_cropping.html">Image Cropping</a>
+</li>
+<li>
+<a href="file_upload.html">File Upload</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Tables<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="basic_table.html">Basic Tables</a>
+</li>
+<li>
+<a href="bootstrap_tables.html">Bootstrap Tables</a>
+</li>
+<li>
+<a href="floatthead.html">floatThead</a>
+</li>
+<li>
+<a href="editable.html">Editable</a>
+</li>
+<li>
+<a href="datatable.html">Datatable</a>
+</li>
+<li>
+<a href="jsgrid.html">jsGrid</a>
+</li>
+<li>
+<a href="responsive_table.html">Responsive Tables</a>
+</li>
+<li>
+<a href="footable.html">Footable</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Chart<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="morris_chart.html">Morris Chart</a>
+</li>
+<li>
+<a href="sparkline_chart.html">Sparkline Chart </a>
+</li>
+<li>
+<a href="chartist.html">Chartist</a>
+</li>
+<li>
+<a href="gantt_chart.html">Gantt Chart</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Widgets<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="social_widget.html">Social Widgets</a>
+</li>
+<li>
+<a href="static_widget.html">Static Widgets</a>
+</li>
+<li>
+<a href="data_widgets.html">Data Widgets</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sidebar-extra">
+<a href="#"><i class="icon_lock-open_alt"></i></a>
+<a href="#"><i class="icon_key_alt"></i></a>
+<a href="#"><i class="icon_lock_alt"></i></a>
+</div>
+</aside>
+ 
+ 
+<section id="content-wrapper">
+ 
+<div class="site-content-title">
+<h2 class="float-xs-left content-title-main">List</h2>
+ 
+<ol class="breadcrumb float-xs-right">
+<li class="breadcrumb-item">
+<span class="fs1" aria-hidden="true" data-icon=""></span>
+<a href="#">Home</a>
+</li>
+<li class="breadcrumb-item"><a href="#">Components</a>
+</li>
+<li class="breadcrumb-item active">List</li>
+</ol>
+ 
+</div>
+ 
+<div class="content-list">
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-12 col-lg-12 col-xs-12 col-xl-4">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#list-order-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#list-order-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Unordered list</h4>
+<div class="tab-content">
+<div id="list-order-output" class="ordered-list tab-pane active">
+<p>The most basic list is an unordered list with list items and the proper classes. Use <code>ul</code> tag for unordered list and <code>li</code> for list-data.</p>
+<ul>
+<li>Returned peculiar pleasant</li>
+<li>
+Nulla volutpat aliquam velit
+<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+</div>
+<div id="list-order-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<div>
+<pre>
+<b>&lt;ul&gt;</b>
+    <b>&lt;li&gt;</b>Returned peculiar pleasant<b>&lt;/li&gt;</b>
+    <b>&lt;li&gt;</b>Nulla volutpat aliquam velit
+    <b>&lt;ul&gt;</b>
+    <b>&lt;li&gt;</b>Phasellus iaculis neque<b>&lt;/li&gt;</b>
+    <b>&lt;/ul&gt;</b>
+<b>&lt;/ul&gt;</b>
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-md-12 col-lg-12 col-xs-12 col-xl-4">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#list-unorder-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#list-unorder-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Ordered list</h4>
+<div class="tab-content">
+<div id="list-unorder-output" class="unordered-list tab-pane active">
+<p>The another basic list is an ordered list with list items and the proper classes. Use <code>ol</code> tag for ordered list and <code>li</code> for list-data.</p>
+<ol>
+<li>Returned peculiar pleasant</li>
+<li>
+Nulla volutpat aliquam velit
+<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+</div>
+<div id="list-unorder-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<div>
+<pre>
+<b>&lt;ol&gt;</b>
+    <b>&lt;li&gt;</b>Returned peculiar pleasant<b>&lt;/li&gt;</b>
+    <b>&lt;li&gt;</b>Nulla volutpat aliquam velit
+    <b>&lt;ul&gt;</b>
+    <b>&lt;li&gt;</b>Phasellus iaculis neque<b>&lt;/li&gt;</b>
+    <b>&lt;/ul&gt;</b>
+<b>&lt;/ol&gt;</b>
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-md-12 col-lg-12 col-xs-12 col-xl-4">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#list-style-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#list-style-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Styled list</h4>
+<div class="tab-content">
+<div id="list-style-output" class="tab-pane active">
+<p>We also create list with different style icon with list items. Use <code>.square-list-style</code> class with <code>ul</code> tag for square icon. </p>
+<ul class="roman-list-style">
+<li>Returned peculiar pleasant</li>
+<li>
+Nulla volutpat aliquam velit
+<ul class="square-list-style">
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+</div>
+<div id="list-style-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="270">
+<div>
+<pre>
+&lt;ul class=&quot;<b>roman-list-style</b>&quot;&gt;
+    &lt;li&gt;Returned peculiar pleasant&lt;/li&gt;
+    &lt;li&gt;Nulla volutpat aliquam velit
+        &lt;ul class=&quot;<b>square-list-style</b>&quot;&gt;
+            &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-6 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#basic-list-group-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#basic-list-group-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Basic list group</h4>
+<div class="tab-content">
+<div id="basic-list-group-output" class="tab-pane active">
+<p>List groups are a flexible and powerful component for displaying a series of content.Use <code>.list-group</code> class with <code>ul</code> tag and <code>.list-group-item</code> with <code>li</code> tag.</p>
+<ul class="list-group">
+<li class="list-group-item">
+<span class="tag tag-default tag-pill float-xs-right">3</span>
+Facilisi natoque curabitur
+</li>
+<li class="list-group-item">
+<span class="tag tag-success tag-pill float-xs-right">5</span>
+Morbi class posuere ut
+</li>
+<li class="list-group-item">
+<span class="tag tag-danger tag-pill float-xs-right">2</span>
+Integer laoreet odio
+</li>
+<li class="list-group-item">
+<span class="tag tag-warning tag-pill float-xs-right">7</span>
+Ante lobortis proin sem
+</li>
+</ul>
+</div>
+<div id="basic-list-group-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="250">
+<div>
+<pre>
+&lt;ul class=&quot;<b>list-group</b>&quot;&gt;
+    &lt;li class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;span class=&quot;tag tag-default tag-pill float-xs-right&quot;&gt;3&lt;/span&gt; Facilisi natoque curabitur
+    &lt;/li&gt;
+    &lt;li class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;span class=&quot;tag tag-success tag-pill float-xs-right&quot;&gt;5&lt;/span&gt; Morbi class posuere ut
+    &lt;/li&gt;
+    &lt;li class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;span class=&quot;tag tag-danger tag-pill float-xs-right&quot;&gt;2&lt;/span&gt; Integer laoreet odio
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-md-6">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#list-with-link-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#list-with-link-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">List with link</h4>
+<div class="tab-content">
+<div id="list-with-link-output" class="tab-pane active">
+<p>Use <code>a</code> tag to create actionable list group items with hover, disabled, and active states. Use <code>.active</code>, <code>.disabled</code> class with <code>.list-group-item</code> to make active or disabled link.</p>
+<div class="list-group">
+<a href="#" class="list-group-item">
+<span class="tag tag-warning float-xs-right">Pending</span>
+Consequat porttitor purus
+</a>
+<a href="#" class="list-group-item">
+<span class="tag tag-info float-xs-right">In Progress</span>
+Venenatis sagittis sociis</a>
+<a href="#" class="list-group-item disabled">
+<span class="tag tag-danger float-xs-right">Close</span>
+Auctor mollis egestas</a>
+<a href="#" class="list-group-item">
+<span class="tag tag-success float-xs-right">Complete</span>
+Senectus velit justo imperdiet</a>
+</div>
+</div>
+<div id="list-with-link-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="250">
+<div>
+<pre>
+&lt;div class=&quot;<b>list-group</b>&quot;&gt;
+    &lt;<b>a</b> href=&quot;#&quot; class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;span class=&quot;tag tag-warning float-xs-right&quot;&gt;Pending&lt;/span&gt;Content here...
+    <b>&lt;/a&gt;</b>
+    &lt;<b>a</b> href=&quot;#&quot; class=&quot;<b>list-group-item disabled</b>&quot;&gt;
+        &lt;span class=&quot;tag tag-danger float-xs-right&quot;&gt;Close&lt;/span&gt;Content here...
+    <b>&lt;/a&gt;</b>
+    &lt;<b>a</b> href=&quot;#&quot; class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;span class=&quot;tag tag-success float-xs-right&quot;&gt;Complete&lt;/span&gt;Content here...
+     <b>&lt;/a&gt;</b>
+&lt;/div&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-6 col-xs-12">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#list-with-bgcolor-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#list-with-bgcolor-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Colored list</h4>
+<div class="tab-content">
+<div id="list-with-bgcolor-output" class="tab-pane active">
+<p>Use contextual classes to style list items with a stateful background and color.</p>
+<ul class="list-group">
+<li class="list-group-item list-group-item-success">
+Facilisi natoque curabitur
+</li>
+<li class="list-group-item list-group-item-danger">
+Morbi class posuere ut
+</li>
+<li class="list-group-item list-group-item-action">
+Ridiculus Aliquet egestas
+</li>
+<li class="list-group-item list-group-item-warning">
+Integer laoreet odio
+</li>
+<li class="list-group-item list-group-item-info">
+Ante lobortis proin sem
+</li>
+</ul>
+</div>
+<div id="list-with-bgcolor-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="367">
+<div>
+<pre>
+&lt;ul class=&quot;<b>list-group</b>&quot;&gt;
+    &lt;li class=&quot;<b>list-group-item list-group-item-success</b>&quot;&gt;
+        Facilisi natoque curabitur
+    &lt;/li&gt;
+    &lt;li class=&quot;<b>list-group-item list-group-item-danger</b>&quot;&gt;
+        Morbi class posuere ut
+    &lt;/li&gt;
+    &lt;li class=&quot;<b>list-group-item list-group-item-info</b>&quot;&gt;
+        Ante lobortis proin sem
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-xs-spacing"></div>
+<div class="col-md-6">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#custom-content-list-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#custom-content-list-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Custom content list</h4>
+<div class="tab-content">
+<div id="custom-content-list-output" class="custom-content-list tab-pane active">
+<p>Add nearly any HTML within, even for linked list groups like the one below, with the help of some utilities class.</p>
+<div class="list-group">
+<div class="list-group-item list-group-item-action">
+<h6 class="list-group-item-heading">Metus Adipiscing</h6>
+<p class="list-group-item-text">Mattis Ut purus suspendisse
+placerat cubilia lacinia venenatis per cras.</p>
+</div>
+<div class="list-group-item list-group-item-action">
+<h6 class="list-group-item-heading">Pretium In
+Imperdiet</h6>
+<p class="list-group-item-text">Pretium In Dis Imperdiet
+Urna Interdum Eu pede praesent fusce vehicula.</p>
+</div>
+<div class="list-group-item list-group-item-action">
+<h6 class="list-group-item-heading">Suscipit Velit
+Pulvinar</h6>
+<p class="list-group-item-text">Nam sit, fermentum iaculis
+et. Luctus dapibus cubilia lacinia ligula.</p>
+</div>
+</div>
+</div>
+<div id="custom-content-list-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="340">
+<div>
+<pre>
+&lt;div class=&quot;<b>list-group</b>&quot;&gt;
+    &lt;div class=&quot;<b>list-group-item list-group-item-action</b>&quot;&gt;
+        &lt;h6 class=&quot;list-group-item-heading&quot;&gt;Heading&lt;/h6&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Content here...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;<b>list-group-item list-group-item-action</b>&quot;&gt;
+        &lt;h6 class=&quot;list-group-item-heading&quot;&gt;Heading&lt;/h6&gt;
+        &lt;p class=&quot;list-group-item-text&quot;&gt;Content here...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-xl-6 col-lg-12 col-md-12">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#user-list-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#user-list-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">User list</h4>
+<div class="tab-content">
+<div id="user-list-output" class="tab-pane active">
+<p>Create user list with use of basic list group concept. To make this type of user list, use <code>.user-list</code> class with <code>.list-group</code> class.</p>
+<div class="list-group user-list">
+<div class="list-group-item">
+<div class="user-list-image float-xs-left">
+<img src="../../../assets/global/image/image6-profile.jpg" alt="contact"/>
+</div>
+<div class="user-list-detail float-xs-left">
+<h6>Jakob</h6>
+<p>jakob@gmail.com</p>
+<small>Developer</small>
+</div>
+</div>
+<div class="list-group-item">
+<div class="user-list-image float-xs-left">
+<img src="../../../assets/global/image/image9-profile.jpg" alt="contact"/>
+</div>
+<div class="user-list-detail float-xs-left">
+<h6>Diana</h6>
+<p>diana@gmail.com</p>
+<small>Designer</small>
+</div>
+</div>
+<div class="list-group-item">
+<div class="user-list-image float-xs-left">
+<img src="../../../assets/global/image/image8-profile.jpg" alt="contact"/>
+</div>
+<div class="user-list-detail float-xs-left">
+<h6>Jessica</h6>
+<p>jessica@gmail.com</p>
+<small>Developer</small>
+</div>
+</div>
+</div>
+</div>
+<div id="user-list-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="500">
+<div>
+<pre>
+&lt;div class=&quot;<b>list-group user-list</b>&quot;&gt;
+    &lt;div class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;div class=&quot;<b>user-list-image</b> float-xs-left&quot;&gt;
+            &lt;img src=&quot;image pathe&quot; alt=&quot;...&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;<b>user-list-detail</b> float-xs-left&quot;&gt;
+            &lt;h6&gt;Name&lt;/h6&gt;
+            &lt;p&gt;Mail-id&lt;/p&gt;
+            &lt;small&gt;text&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="divider-lg-spacing divider-xs-spacing"></div>
+<div class="col-xl-6 col-lg-12 col-md-12">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#message-list-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#message-list-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<h4 class="page-content-title">Message list</h4>
+<div class="tab-content">
+<div id="message-list-output" class="tab-pane active">
+<p>Make this custom messgae list with use of <code>.message-list-group</code> class with <code>.list-group</code> class.</p>
+<div class="list-group message-list-group">
+<a href="#" class="list-group-item">
+<div class="list-image float-xs-left">
+<img src="../../../assets/global/image/image-profile.jpg" alt="contact"/>
+</div>
+<div class="list-message float-xs-left">
+<span class="float-xs-right">Just now</span>
+<h6>Jenny</h6>
+<p>Convallis risus. Praesent nec nascetur varius
+senectus aptent elit elementum auctor quis suscipit,
+curae; tempor varius maecenas viverra tempus
+cum.</p>
+</div>
+</a>
+<a href="#" class="list-group-item">
+<div class="list-image float-xs-left">
+<img src="../../../assets/global/image/image2-profile.jpg" alt="contact"/>
+</div>
+<div class="list-message float-xs-left">
+<span class="float-xs-right">5 hour ago</span>
+<h6>Suzi</h6>
+<p>Rhoncus neque per porta. Suspendisse ultricies risus,
+iaculis egestas eget tristique elementum mattis sem
+venenatis nascetur orci natoque aptent cursus.</p>
+</div>
+</a>
+<a href="#" class="list-group-item">
+<div class="list-image float-xs-left">
+<img src="../../../assets/global/image/image5-profile.jpg" alt="contact"/>
+</div>
+<div class="list-message float-xs-left">
+<span class="float-xs-right">yesterday</span>
+<h6>Henry</h6>
+<p>Elementum eu lorem senectus volutpat facilisi quam
+dignissim potenti enim posuere conubia eu aenean
+Sapien ultricies mattis tellus semper blandit.</p>
+</div>
+</a>
+</div>
+</div>
+<div id="message-list-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="405">
+<div>
+<pre>
+&lt;div class=&quot;<b>list-group message-list-group</b>&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;div class=&quot;<b>list-image</b> float-xs-left&quot;&gt;
+            &lt;img src=&quot;&quot; alt=&quot;contact&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;<b>list-message</b> float-xs-left&quot;&gt;
+            &lt;span class=&quot;float-xs-right&quot;&gt;Just now&lt;/span&gt;
+            &lt;h6&gt;Name&lt;/h6&gt;
+            &lt;p&gt;Content here...&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<div class="nav-tab-horizontal">
+<ul role="tablist" class="nav nav-tabs">
+<li class="nav-item">
+<a role="tab" href="#comment-list-output" data-toggle="tab" class="nav-link active">Output</a>
+</li>
+<li class="nav-item">
+<a role="tab" href="#comment-list-code" data-toggle="tab" class="nav-link">Code</a>
+</li>
+</ul>
+<div class="divider15"></div>
+<div class="tab-content">
+<h4 class="page-content-title">Comment list</h4>
+<div id="comment-list-output" class="tab-pane active">
+<p>Comment list is created with use of <code>.list-group-item</code> class within <code>.list-group-item</code> class.</p>
+<div class="list-group comment-list">
+<div class="list-group-item">
+<div class="comment-image float-xs-left">
+<img src="../../../assets/global/image/image-profile.jpg" alt="contact">
+</div>
+<div class="comment-detail float-xs-left">
+<span class="float-xs-right">2 hour ago</span>
+<h6>Lisa</h6>
+<p>
+Netus fermentum a montes. Morbi nulla luctus dolor sagittis
+rhoncus fames. Ridiculus volutpat. Enim parturient. Commodo
+tempus ultricies mus etiam.
+</p>
+<div class="comment-icon">
+<a href="#"> <i class="icon_like"></i>
+</a>
+<a href="#"><i class="icon_comment_alt"></i></a>
+</div>
+<div class="list-group-item">
+<div class="comment-image float-xs-left">
+<img src="../../../assets/global/image/image5-profile.jpg" alt="contact">
+</div>
+<div class="comment-detail float-xs-left">
+<span class="float-xs-right">2 hour ago</span>
+<h6>Paul</h6>
+<p>
+Aliquet class sapien conubia libero malesuada amet
+mattis
+placerat quisque pellentesque ullamcorper ad lacinia
+ultricies quis. Senectus turpis. Odio dictumst
+tristique
+nisl faucibus fermentum consequat luctus senectus,
+malesuada
+ultricies Inceptos.
+</p>
+<div class="comment-icon">
+<a href="#"> <i class="icon_like"></i>
+</a>
+<a href="#"><i class="icon_comment_alt"></i></a>
+</div>
+<div class="list-group-item">
+<div class="comment-image float-xs-left">
+<img src="../../../assets/global/image/image2-profile.jpg" alt="contact">
+</div>
+<div class="comment-detail float-xs-left">
+<textarea class="form-control" placeholder="Enter comment..." rows="3"></textarea>
+<div class="comment-btn">
+<button class="btn btn-primary">Comment
+</button>
+<button class="btn btn-default">Cancel
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="comment-image float-xs-left">
+<img src="../../../assets/global/image/image-profile.jpg" alt="contact">
+</div>
+<div class="comment-detail float-xs-left">
+<span class="float-xs-right">5 hour ago</span>
+<h6>Lisa</h6>
+<p>
+Tristique. Magnis potenti laoreet risus montes dolor
+facilisi dignissim non tellus. Eu, mattis id maecenas
+gravida aliquam feugiat placerat risus.
+</p>
+<div class="comment-icon">
+<a href="#"> <i class="icon_like"></i>
+</a>
+<a href="#"><i class="icon_comment_alt"></i></a>
+</div>
+<div class="list-group-item">
+<div class="comment-image float-xs-left">
+<img src="../../../assets/global/image/image11-profile.jpg" alt="contact">
+</div>
+<div class="comment-detail float-xs-left">
+<span class="float-xs-right">4 hour ago</span>
+<h6>Max</h6>
+<p>Convallis risus. Praesent nec nascetur varius
+senectus aptent
+elit elementum auctor quis suscipit, curae; tempor
+varius
+maecenas viverra tempus cum.</p>
+<div class="comment-icon">
+<a href="#"> <i class="icon_like"></i>
+</a>
+<a href="#"><i class="icon_comment_alt"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="comment-list-code" class="tab-pane pre-code">
+<div data-plugin="custom-scroll" data-min="300" data-height="500">
+<div>
+<pre>
+&lt;div class=&quot;<b>list-group comment-list</b>&quot;&gt;
+    &lt;div class=&quot;<b>list-group-item</b>&quot;&gt;
+        &lt;div class=&quot;<b>comment-image</b> float-xs-left&quot;&gt;
+            &lt;img src=&quot;image path&quot; alt=&quot;contact&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;<b>comment-detail</b> float-xs-left&quot;&gt;
+            &lt;span class=&quot;float-xs-right&quot;&gt;Time&lt;/span&gt;
+            &lt;h6&gt;Name&lt;/h6&gt;
+            &lt;p&gt;Comment..&lt;/p&gt;
+            &lt;div class=&quot;<b>comment-icon</b>&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;icon_like&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon_comment_alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;<b>list-group-item</b>&quot;&gt;
+                &lt;div class=&quot;<b>comment-image</b> float-xs-left&quot;&gt;
+                    &lt;img src=&quot;image path&quot; alt=&quot;contact&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;<b>comment-detail</b> float-xs-left&quot;&gt;
+                    &lt;span class=&quot;float-xs-right&quot;&gt;Time&lt;/span&gt;
+                    &lt;h6&gt;Name&lt;/h6&gt;
+                    &lt;p&gt;Comment...&lt;/p&gt;
+                    &lt;div class=&quot;<b>comment-icon</b>&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;icon_like&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon_comment_alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                                    </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+ 
+</div>
+</section>
+ 
+ 
+<footer id="footer">
+Copyright&copy; 2017, All Rights Reserved.
+</footer>
+ 
+ 
+<div class="right-side-bar">
+<div class="float-xs-left icon-right site-setting-animation how-it-works">
+<div id="site_setting_icon" class="animation">
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon1"/>
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon2">
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon3">
+</div>
+</div>
+<div class="right-side-box float-xs-right" data-plugin="custom-scroll" data-height="100%">
+<div class="right-side-inner-box">
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> Colors</h5>
+<div class="settings-sidebox site-color">
+<div class="color-inner-box default-color color-active" data-color="default" data-color-code="#087380"></div>
+<div class="color-inner-box golden-color" data-color="golden" data-color-code="#F3C200"></div>
+<div class="color-inner-box soft-orange-color" data-color="soft-orange" data-color-code="#F2784B"></div>
+<div class="color-inner-box dodger-blue-color" data-color="dodger-blue" data-color-code="#039be5"></div>
+<div class="color-inner-box bright-pink-color" data-color="bright-pink" data-color-code="#ec407a"></div>
+<div class="color-inner-box light-red-color" data-color="light-red" data-color-code="#eb6d6d"></div>
+<div class="color-inner-box purple-color" data-color="purple" data-color-code="#6d5cae"></div>
+<div class="color-inner-box spice-color" data-color="spice" data-color-code="#6d4c41"></div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Template</h5>
+<div class="settings-sidebox">
+<span class="dark-color">Light</span>
+<div class="texture-switch dark-color-switch">
+<input type="checkbox" class="js-switch site-dark-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Navigation</h5>
+<div class="settings-sidebox">
+<span class="nav-dark-color">Vertical Dark</span>
+<div class="texture-switch nav-color-switch">
+<input type="checkbox" class="js-switch nav-dark-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+<div class="settings-sidebox">
+<span class="top-nav-color-text">Horizontal Light</span>
+<div class="texture-switch top-nav-color-switch">
+<input type="checkbox" class="js-switch top-nav-color-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+<div class="settings-sidebox">
+<span class="nav-fixed-text">Vertical Fixed</span>
+<div class="texture-switch nav-fixed-switch">
+<input type="checkbox" class="js-switch nav-fixed-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Footer</h5>
+<div class="settings-sidebox">
+<span class="footer-check-text">Default</span>
+<div class="texture-switch footer-fixed-switch">
+<input type="checkbox" class="js-switch footer-fixed-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> Fonts</h5>
+<div class="settings-sidebox site-fonts">
+<div class="font-box">
+<label for="font-radio-button1">Default</label>
+<div class="radio-button float-xs-right">
+<input value="default" id="font-radio-button1" name="font" type="radio" checked>
+<label class="radio-check" for="font-radio-button1"></label>
+</div>
+</div>
+<div class="font-box">
+<label for="font-radio-button2">PT Sans</label>
+<div class="radio-button float-xs-right">
+<input value="font2" id="font-radio-button2" name="font" type="radio">
+<label class="radio-check" for="font-radio-button2"></label>
+</div></div>
+<div class="font-box">
+<label for="font-radio-button3">Open Sans</label>
+<div class="radio-button float-xs-right">
+<input value="font3" id="font-radio-button3" name="font" type="radio">
+<label class="radio-check" for="font-radio-button3"></label>
+</div></div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> System</h5>
+<div class="settings-sidebox">
+<ul class="list-unstyled">
+<li>
+<span class="system-option"><i class="icon_lock"></i> Last Login</span>
+<span class="time float-xs-right">2h ago</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_calendar"></i> Our Task</span>
+<span class="time float-xs-right">06</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_cloud_alt"></i> Weather Today</span>
+<span class="time float-xs-right">32c</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_comment_alt"></i> Notifications</span>
+<span class="time float-xs-right">10</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+ 
+<script type="text/javascript" src="../../../assets/global/plugins/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/tether/dist/js/tether.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/switchery/dist/switchery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/screenfull.js/dist/screenfull.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/classie/classie.js"></script>
+ 
+ 
+ 
+ 
+<script type="text/javascript" src="../../../assets/global/js/site.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/js/site-settings.min.js"></script>
+ 
+ 
+ 
+ 
+<script type="text/javascript" src="../../../assets/layouts/layout-left-top-menu/js/layout.js"></script>
+ 
+</body>
+
+<!-- Mirrored from backend.themesadmin.com/backend/admin_left_top_menu/default/admin_default/list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 08:25:41 GMT -->
+</html>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container custom-bg">
         <h2>Revenue Report</h2>
         <p>Total Revenue: {{ number_format($totalRevenue, 2) }}</p>
         <p>Cost of Goods Sold (COGS): {{ number_format($cogs, 2) }}</p>

@@ -1,0 +1,60 @@
+@media print {
+    /* All your print styles go here */
+    #header, #footer, #nav { display: none !important; }
+}
+@media all {
+    @page {
+        /*size: A4 portrait !important; !* 210 × 297 millimeters *!*/
+        size: A4 portrait !important;
+    }
+    /*.footer {
+        position: fixed; bottom: 0; left: 0; right: 0; font-family: Arial, sans-serif; width: 100%; !*background-color: lightblue; height: 50px; *!
+    }*/
+    .div_break {
+        page-break-inside: avoid !important;
+    }
+    body {
+        padding: 0 11.25pt 0 11.25pt; /*15px*/
+        /*padding-left: 15px;*/
+        line-height: 1.4;
+        text-align: center;
+        /*margin-left: 3cm;
+        margin-right: 1.3cm;*/
+        /*position: relative;*/
+    }
+    /*body::after {
+        content: '';
+        display: block;
+        height: 1cm;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1cm;
+    }*/
+    * {
+        font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+        font-size: 12pt;
+
+    }
+    td {
+        padding: 0px;
+    }
+    html {
+        width: 210mm;
+        height: 297mm;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 0px #ffffff;
+    }
+    sup {
+        font-size: 11px;
+    }
+    li {
+        text-align: justify;
+    }
+
+}

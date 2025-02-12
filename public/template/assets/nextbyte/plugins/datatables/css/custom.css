@@ -1,0 +1,25 @@
+div.dataTables_filter input { width: 380px !important }
+tr.odd:hover {
+    background-color: #edefff;
+}
+tr.even:hover {
+    background-color: #d5dcd1;
+}
+.dataTables_wrapper tfoot input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+td.details-control {
+    background: url("images/details_open.png") no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url("images/details_close.png") no-repeat center center;
+    cursor: pointer;
+}
+td.details-control:before{
+    /*content:"\4f";*/
+    content:"" !important;
+}

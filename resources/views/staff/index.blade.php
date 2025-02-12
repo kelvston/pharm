@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container custom-bg">
         <h2>Staff Members</h2>
         <a href="{{ route('staff.create') }}" class="btn btn-success mb-3">Add New Staff</a>
 

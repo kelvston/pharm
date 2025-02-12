@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Storage;
 use Milon\Barcode\DNS1D;
 use Milon\Barcode\DNS2D;
 use Psy\Util\Str;
+use App\Imports\MedicinesImport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class MedicineController extends Controller
 {
@@ -43,7 +45,14 @@ class MedicineController extends Controller
         return view('inventory.barcode', compact('barcodeImage', 'medicine'));
     }
 
-
+public function show(Request $request){
+        $search = $request->input('search');
+    $medicines = MedicineList::where('product_name', 'ilike', "%{$search}%")
+            ->orWhere('generic_name', 'ilike', "%{$search}%")
+            ->orWhere('category', 'ilike', "%{$search}%")
+            ->paginate(10);
+        return view('inventory.show', compact('medicines'));
+}
 
 
 
@@ -175,7 +184,6 @@ class MedicineController extends Controller
 
         $query = $request->get('query');
         $medicine_list = Medicine::pluck('medicine_id'); // Assuming you need only the IDs.
-
         $medicines = DB::table('medicine_list')
             ->select('id', 'product_name', 'generic_name', 'category')
             ->whereIn('id', $medicine_list)
@@ -197,6 +205,63 @@ class MedicineController extends Controller
         // Process the barcode, e.g., look up the product and update inventory
         return response()->json(['success' => true, 'barcode' => $barcode]);
     }
+    public static function generateBarcodesForMedicineList()
+    {
+        $medicineLists = Medicinelist::all();
+        foreach ($medicineLists as $listItem) {
+            if ($listItem->barcode_image) {
+                continue;
+            }
+            $barcodeData = $listItem->id;
+            $barcode = new DNS1D();
+            $barcodeImage = $barcode->getBarcodePNG($barcodeData, 'C39');
 
+            $filename = \Illuminate\Support\Str::slug($listItem->product_name) . '_' . time() . '.png';
+            Storage::disk('public')->put('barcodes/' . $filename, base64_decode($barcodeImage));
+            $listItem->barcode_image = 'barcodes/' . $filename;
+            $listItem->save();
+        }
+    }
+
+    public function searchList(Request $request)
+    {
+        $search = $request->input('query');
+        $medicines = MedicineList::where('product_name', 'like', "%{$search}%")
+            ->orWhere('generic_name', 'like', "%{$search}%")
+            ->orWhere('category', 'like', "%{$search}%")
+            ->paginate(10);
+
+        // Return a JSON response
+        return response()->json(view('inventory.partials.medicine_table', compact('medicines'))->render());
+    }
+
+    public function searchStock(Request $request)
+    {
+        $search = $request->input('q');
+
+                $medicines = MedicineList::where('product_name', 'like', "%{$search}%")
+            ->orWhere('generic_name', 'like', "%{$search}%")
+            ->orWhere('category', 'like', "%{$search}%")
+            ->take(10)->get();
+
+        // Return a JSON response
+        return response()->json($medicines);
+    }
+
+
+
+    public function upload(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|mimes:xlsx,xls'
+        ]);
+        try {
+            Excel::import(new MedicinesImport, $request->file('file'));
+
+            return redirect()->back()->with('success', 'Medicines uploaded successfully!');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'An error occurred: ' . $e->getMessage());
+        }
+    }
 
 }

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container custom-bg">
         <h1>Pharmacy Dashboard</h1>
         <div class="row">
             <!-- Total Medications -->

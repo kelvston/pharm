@@ -1,0 +1,269 @@
+
+table, figure {
+    page-break-inside: avoid;
+}
+
+/*
+Page section in terms of mm, 100mm, 98mm, 99mm.
+From top put a break after 100mm.
+From bottom put a break after 99mm.
+ */
+@media print {
+    /* All your print styles go here */
+    #header, #footer, #nav { display: none !important; }
+}
+
+
+@media all {
+
+/*
+    @page :right {
+        margin: 5mm !important;
+    }
+
+    @page :left {
+        margin: 5mm !important;
+    }
+*/
+    /*
+All dimensions are in mm.
+
+heading 21 + 2 + 2
+received_from 6 + 2
+payer 10 + 2
+amount_words 11 + 2
+in_respect 10 + 2
+bank 8 + 2
+content 10 + 2
+
+total : 92, including padding 2mm top and bottom
+92 * 3 = 276, Maximum required 287.
+
+Remained : 11
+
+bottom_separator 2.8mm 0.2mm
+
+top_space 3mm
+
+
+Receipts Alignment:
+top_space 3mm
+top_receipt 92mm
+bottom_separator 0.2mm + 2.8mm = 3mm
+middle_receipt 92mm
+bottom_separator 0.2mm + 2.8mm = 3mm
+bottom_receipt 92mm
+
+total = 285mm
+
+Separator Positions (According to the calculated lengths from the fixed measurements)
+
+1st separator : 100mm from top.
+2nd separator : 195mm from top
+
+No more bottom separator ...
+
+Separator Positions (According to the real measurement from the printout receipts)
+
+1st separator :
+2nd separator :
+
+*/
+
+    @page {
+        /*size: A4 portrait !important; !* 210 × 297 millimeters *!*/
+        size: A4 portrait !important;
+    }
+
+    html {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    body {
+        background-color: #f8feea;
+        font-size: 12pt !important;
+        font-family: Monospaced sans-serif !important;
+        -webkit-print-color-adjust: exact !important;
+        width: 200mm;
+        height: 287mm;
+        margin: 5mm !important;
+    }
+
+    .page {
+        width: 198mm;
+        max-width: 200mm;
+        height: 92mm;
+        max-height: 92mm;
+        z-index:1;
+        display: block;
+        margin-right: 2mm;
+        /* padding-left: 1mm; */
+    }
+
+    .bottom_separator {
+        width: 196mm !important;
+        border-bottom: solid 0.2mm grey !important;
+        border-bottom-style: dotted !important;
+        margin-bottom: 2.8mm !important;
+    }
+
+    .top_space {
+        width: 198mm;
+        margin-top: 3mm !important;
+    }
+
+    .heading {
+        height: 21mm;
+        max-height: 21mm;
+        width: 198mm;
+        padding-bottom: 2mm;
+        padding-top: 2mm;
+    }
+
+    .amount_words {
+        height: 11mm;
+        max-height: 11mm;
+        margin-bottom: 2mm;
+    }
+
+    .amount_words_v2 {
+        height: 11mm;
+        max-height: 11mm;
+        margin-bottom: 2mm;
+        display: inline-block;
+    }
+
+    .underline_v2 {
+        border-bottom: 0.2mm grey !important;
+        border-bottom-style: dotted !important;
+        display: inline;
+        overflow: auto;
+        position: relative;
+        /*background-image: url("../../../img/stripe_underline.png");
+        background-repeat: repeat-x;*/
+    }
+
+    .underline {
+        border-bottom: 0.2mm grey !important;
+        border-bottom-style: dotted !important;
+        /*background-image: url("../../../img/stripe_underline.png");
+        background-repeat: repeat-x;*/
+    }
+
+    .in_respect {
+        height: 10mm;
+        max-height: 10mm;
+        padding-bottom: 2mm;
+    }
+
+    .received_from {
+        height: 6mm;
+        max-height: 6mm;
+        margin-bottom: 2mm;
+        z-index: 9999;
+    }
+
+    .bank {
+        height: 8mm;
+        max-height: 8mm;
+        padding-bottom: 2mm;
+        z-index: 9999;
+    }
+
+    .content {
+        height: 10mm;
+        max-height: 10mm;
+        padding-bottom: 2mm;
+        z-index: 9999;
+    }
+
+    .payer {
+        height: 10mm;
+        max-height: 10mm;
+        padding-bottom: 2mm;
+        z-index: 9999;
+    }
+    
+    .logo {
+        padding-top: 1mm;
+        margin-left: 82mm;
+        float: left;
+    }
+
+    .logo_img {
+        height: 20mm;
+        width: 26mm;
+    }
+
+    .amount {
+        padding: 2mm 2mm 2mm 4mm;
+        border: 1px lightgreen;
+        border-style: solid;
+    }
+
+    .rctno {
+        vertical-align: top;
+        float: right;
+    }
+
+    table {
+        width: 198mm;
+        height: auto;
+        border-collapse: collapse;
+        text-align: center;
+        position: relative;
+    }
+
+    table, th, td {
+        border: 1px lightgrey;
+        border-style: solid;
+    }
+
+    td {
+        padding: 2mm 0mm 2mm 0mm;
+        margin : 3mm 0mm 3mm 0mm;
+        height: 5mm;
+    }
+
+    /* start: Controlling the background watermark */
+    .background {
+        position:absolute;
+        z-index:-1;
+        display:block;
+        max-height: 1mm;
+        width:initial;
+        padding-left: 65mm;
+        background-color: initial;
+    }
+
+    .bg-text {
+        color: #efefef;
+        font-size: 32mm;
+        z-index:-1;
+        letter-spacing: 3mm;
+        transform:rotate(330deg) !important;
+        -webkit-transform:rotate(330deg) !important;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* start : Changes can be removed later ... */
+    .jamana_adjust_second_receipt {
+        height: 8mm !important;
+    }
+    .jamana_adjust_third_receipt {
+        height: 18mm !important;
+    }
+    .jamana_bottom_separator {
+        width: 196mm !important;
+        /* border-bottom: solid 0.2mm grey !important; */
+        /*border-bottom-style: dotted !important;*/
+        /* margin-bottom: 2.8mm !important; */
+        margin-bottom: 3mm !important;
+    }
+    /* end : Changes can be removed later ... */
+
+    /* end: Controlling the background watermark */
+
+}

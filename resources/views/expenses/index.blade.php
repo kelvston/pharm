@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container custom-bg">
         <h1>Expenses</h1>
         <a href="{{ route('expenses.create') }}" class="btn btn-primary mb-3">Add Expense</a>
         @if ($expenses->count())

@@ -1,0 +1,66 @@
+/*Financial Statement Css - Print out*/
+.tr_head{
+    background-color: #eb4c58;
+    border-bottom: blue;
+}
+
+
+.number_input{
+    text-align: right;
+
+}
+
+
+table{
+    width: 100%;
+    page-break-after:auto;
+    page-break-before:auto;
+    page-break-inside:auto;
+}
+
+/*table, th, td {*/
+    /*border-collapse: collapse;*/
+    /*border: 1px solid #dddddd;*/
+/*}*/
+.trow_border{
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+
+}
+
+tr {
+    page-break-inside:avoid; page-break-after:auto;
+}
+
+
+.title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.column_header_sm{
+    font-size: 12px;
+}
+
+
+.row_input{
+    font-size: 11px;
+}
+
+.center {
+    text-align: center;
+}

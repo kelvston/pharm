@@ -9,9 +9,9 @@ class Sale extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'staff_id', 'quantity', 'total_amount', 'medicine_id',
-    ];
+    protected $fillable = ['staff_id', 'medicine_id', 'quantity', 'total_amount','batch_number'];
+
+
     public function staff(){
         return $this->belongsTo(User::class, 'staff_id', 'id');
     }

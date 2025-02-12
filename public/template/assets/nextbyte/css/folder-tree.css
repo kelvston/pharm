@@ -1,0 +1,26 @@
+/* start: File Icons CSS */
+#folder-tree .folder { background:url('../img/file_sprite.png') right bottom no-repeat; }
+#folder-tree .file { background:url('../img/file_sprite.png') 0 0 no-repeat; }
+#folder-tree .file-pdf { background-position: -32px 0 }
+#folder-tree .file-as { background-position: -36px 0 }
+#folder-tree .file-c { background-position: -72px -0px }
+#folder-tree .file-iso { background-position: -108px -0px }
+#folder-tree .file-htm, #folder-tree .file-html, #folder-tree .file-xml, #folder-tree .file-xsl { background-position: -126px -0px }
+#folder-tree .file-cf { background-position: -162px -0px }
+#folder-tree .file-cpp { background-position: -216px -0px }
+#folder-tree .file-cs { background-position: -236px -0px }
+#folder-tree .file-sql { background-position: -272px -0px }
+#folder-tree .file-xls, #folder-tree .file-xlsx { background-position: -362px -0px }
+#folder-tree .file-h { background-position: -488px -0px }
+#folder-tree .file-crt, #folder-tree .file-pem, #folder-tree .file-cer { background-position: -452px -18px }
+#folder-tree .file-php { background-position: -108px -18px }
+#folder-tree .file-jpg, #folder-tree .file-jpeg, #folder-tree .file-png, #folder-tree .file-gif, #folder-tree .file-bmp { background-position: -126px -18px }
+#folder-tree .file-ppt, #folder-tree .file-pptx { background-position: -144px -18px }
+#folder-tree .file-rb { background-position: -180px -18px }
+#folder-tree .file-text, #folder-tree .file-txt, #folder-tree .file-md, #folder-tree .file-log, #folder-tree .file-htaccess { background-position: -254px -18px }
+#folder-tree .file-doc, #folder-tree .file-docx { background-position: -362px -18px }
+#folder-tree .file-zip, #folder-tree .file-gz, #folder-tree .file-tar, #folder-tree .file-rar { background-position: -416px -18px }
+#folder-tree .file-js { background-position: -434px -18px }
+#folder-tree .file-css { background-position: -144px -0px }
+#folder-tree .file-fla { background-position: -398px -0px }
+/* end: File Icon CSS */

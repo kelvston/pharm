@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container mt-4">
+    <div class="container mt-4 custom-bg">
         <h2 class="mb-4 text-primary">Inventory Report</h2>
 
         <!-- Current Stock Levels Section -->

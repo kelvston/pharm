@@ -19,4 +19,10 @@ class Medicine extends Model
     public function medicinelist(){
         return $this->hasMany('App\Models\MedicineList','id','medicine_id');
     }
+
+    public function stockTakes()
+    {
+        return $this->hasMany(StockTake::class);
+    }
+
 }

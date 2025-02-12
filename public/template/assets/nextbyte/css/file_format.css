@@ -1,0 +1,175 @@
+/*
+FILE FORMAT ICONS
+by Greg Schoppe (http://gschoppe.com)
+USAGE: include FontAwesome on page, as shown on http://fontawesome.io
+then include this css file, and target links by adding the link-icon
+class.  Note: try to avoid or manually label links to websites, as that
+detection code is necessarily janky. when in doubt, just end all external
+links with a trailing slash (/), a query string (?), or a link target (#)
+*/
+a.link-icon:before,
+a.link-icon.link-file[data-ext]:before {
+    content: "\f016"; /* generic file icon */
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    width: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+a[data-ext$=".txt"].link-icon:before,
+a.link-icon.link-text[data-ext]:before {
+    content: "\f0f6"; /*Text*/
+}
+a[data-ext$=".pdf"].link-icon:before,
+a.link-icon.link-pdf[data-ext]:before {
+    content: "\f1c1"; /*PDF*/
+}
+a[data-ext$=".doc"].link-icon:before,
+a[data-ext$=".docx"].link-icon:before,
+a.link-icon.link-word[data-ext]:before {
+    content: "\f1c2"; /*Word*/
+}
+a[data-ext$=".xls"].link-icon:before,
+a[data-ext$=".xlsx"].link-icon:before,
+a.link-icon.link-excel[data-ext]:before {
+    content: "\f1c3"; /*Excel*/
+}
+a[data-ext$=".ppt"].link-icon:before,
+a[data-ext$=".pptx"].link-icon:before,
+a.link-icon.link-powerpoint[data-ext]:before {
+    content: "\f1c4"; /*Powerpoint*/
+}
+a[data-ext$=".gif"].link-icon:before,
+a[data-ext$=".jpg"].link-icon:before,
+a[data-ext$=".jpeg"].link-icon:before,
+a[data-ext$=".png"].link-icon:before,
+a[data-ext$=".bmp"].link-icon:before,
+a[data-ext$=".tif"].link-icon:before,
+a.link-icon.link-image[data-ext]:before {
+    content: "\f1c5"; /*Image*/
+}
+a[data-ext$=".zip"].link-icon:before,
+a[data-ext$=".zipx"].link-icon:before,
+a[data-ext$=".rar"].link-icon:before,
+a[data-ext$=".tar"].link-icon:before,
+a[data-ext$=".gz"].link-icon:before,
+a[data-ext$=".dmg"].link-icon:before,
+a[data-ext$=".iso"].link-icon:before,
+a.link-icon.link-archive[data-ext]:before {
+    content: "\f1c6"; /*Archive*/
+}
+a[data-ext$=".wav"].link-icon:before,
+a[data-ext$=".mp3"].link-icon:before,
+a[data-ext$=".fla"].link-icon:before,
+a[data-ext$=".flac"].link-icon:before,
+a[data-ext$=".ra"].link-icon:before,
+a[data-ext$=".rma"].link-icon:before,
+a[data-ext$=".aif"].link-icon:before,
+a[data-ext$=".aiff"].link-icon:before,
+a[data-ext$=".aa"].link-icon:before,
+a[data-ext$=".aac"].link-icon:before,
+a[data-ext$=".aax"].link-icon:before,
+a[data-ext$=".ac3"].link-icon:before,
+a[data-ext$=".au"].link-icon:before,
+a[data-ext$=".ogg"].link-icon:before,
+a[data-ext$=".avr"].link-icon:before,
+a[data-ext$=".3ga"].link-icon:before,
+a[data-ext$=".flac"].link-icon:before,
+a[data-ext$=".mid"].link-icon:before,
+a[data-ext$=".midi"].link-icon:before,
+a[data-ext$=".m4a"].link-icon:before,
+a[data-ext$=".mp4a"].link-icon:before,
+a[data-ext$=".amz"].link-icon:before,
+a[data-ext$=".mka"].link-icon:before,
+a[data-ext$=".asx"].link-icon:before,
+a[data-ext$=".pcm"].link-icon:before,
+a[data-ext$=".m3u"].link-icon:before,
+a[data-ext$=".wma"].link-icon:before,
+a[data-ext$=".xwma"].link-icon:before,
+a.link-icon.link-audio[data-ext]:before {
+    content: "\f1c7"; /*Audio*/
+}
+a[data-ext$=".avi"].link-icon:before,
+a[data-ext$=".mpg"].link-icon:before,
+a[data-ext$=".mp4"].link-icon:before,
+a[data-ext$=".mkv"].link-icon:before,
+a[data-ext$=".mov"].link-icon:before,
+a[data-ext$=".wmv"].link-icon:before,
+a[data-ext$=".vp6"].link-icon:before,
+a[data-ext$=".264"].link-icon:before,
+a[data-ext$=".vid"].link-icon:before,
+a[data-ext$=".rv"].link-icon:before,
+a[data-ext$=".webm"].link-icon:before,
+a[data-ext$=".swf"].link-icon:before,
+a[data-ext$=".h264"].link-icon:before,
+a[data-ext$=".flv"].link-icon:before,
+a[data-ext$=".mk3d"].link-icon:before,
+a[data-ext$=".gifv"].link-icon:before,
+a[data-ext$=".oggv"].link-icon:before,
+a[data-ext$=".3gp"].link-icon:before,
+a[data-ext$=".m4v"].link-icon:before,
+a[data-ext$=".movie"].link-icon:before,
+a[data-ext$=".divx"].link-icon:before,
+a.link-icon.link-video[data-ext]:before {
+    content: "\f1c8"; /*Video*/
+}
+a[data-ext$=".css"].link-icon:before,
+a[data-ext$=".js"].link-icon:before,
+a[data-ext$=".py"].link-icon:before,
+a[data-ext$=".git"].link-icon:before,
+a[data-ext$=".py"].link-icon:before,
+a[data-ext$=".cpp"].link-icon:before,
+a[data-ext$=".h"].link-icon:before,
+a[data-ext$=".ini"].link-icon:before,
+a[data-ext$=".config"].link-icon:before,
+a.link-icon.link-code[data-ext]:before {
+    content: "\f1c9"; /*code*/
+}
+a[data-ext$=".exe"].link-icon:before,
+a[data-ext$=".jar"].link-icon:before,
+a[data-ext$=".dll"].link-icon:before,
+a[data-ext$=".bat"].link-icon:before,
+a[data-ext$=".pl"].link-icon:before,
+a[data-ext$=".scr"].link-icon:before,
+a[data-ext$=".msi"].link-icon:before,
+a[data-ext$=".app"].link-icon:before,
+a[data-ext$=".deb"].link-icon:before,
+a[data-ext$=".apk"].link-icon:before,
+a[data-ext$=".jar"].link-icon:before,
+a[data-ext$=".vb"].link-icon:before,
+a[data-ext$=".prg"].link-icon:before,
+a[data-ext$=".sh"].link-icon:before,
+a.link-icon.link-exe[data-ext]:before {
+    content: "\f085"; /*Executable*/
+}
+
+a[data-ext$=".com"].link-icon:before,
+a[data-ext$=".net"].link-icon:before,
+a[data-ext$=".org"].link-icon:before,
+a[data-ext$=".edu"].link-icon:before,
+a[data-ext$=".gov"].link-icon:before,
+a[data-ext$=".mil"].link-icon:before,
+a[data-ext$="/"].link-icon:before,
+a[data-ext$=".html"].link-icon:before,
+a[data-ext$=".htm"].link-icon:before,
+a[data-ext$=".xhtml"].link-icon:before,
+a[data-ext$=".jhtml"].link-icon:before,
+a[data-ext$=".php"].link-icon:before,
+a[data-ext$=".php3"].link-icon:before,
+a[data-ext$=".php4"].link-icon:before,
+a[data-ext$=".php5"].link-icon:before,
+a[data-ext$=".phtml"].link-icon:before,
+a[data-ext$=".asp"].link-icon:before,
+a[data-ext$=".aspx"].link-icon:before,
+a[data-ext$=".cfm"].link-icon:before,
+a[data-ext*="?"].link-icon:before,
+a[data-ext*="#"].link-icon:before,
+a.link-icon:not([data-ext*='.']):before,
+a.link-icon.link[data-ext]:before {
+    content: "\f0c1"; /*link*/
+}

@@ -31,14 +31,26 @@ class SettingController extends Controller
 
         // Find the first setting record and update it
         $settings = SystemSetting::first();
-        $settings->update([
-            'pharmacy_name' => $request->pharmacy_name,
-            'address' => $request->address,
-            'contact_email' => $request->contact_email,
-            'contact_phone' => $request->contact_phone,
-            'tax_rate' => $request->tax_rate,
-            'currency' => $request->currency,
-        ]);
+        if($settings){
+            $settings->update([
+                'pharmacy_name' => $request->pharmacy_name,
+                'address' => $request->address,
+                'contact_email' => $request->contact_email,
+                'contact_phone' => $request->contact_phone,
+                'tax_rate' => $request->tax_rate,
+                'currency' => $request->currency,
+            ]);
+        }else{
+            SystemSetting::create([
+                'pharmacy_name' => $request->pharmacy_name,
+                'address' => $request->address,
+                'contact_email' => $request->contact_email,
+                'contact_phone' => $request->contact_phone,
+                'tax_rate' => $request->tax_rate,
+                'currency' => $request->currency,
+            ]);
+        }
+
 
         // Redirect back with success message
         return redirect()->back()->with('success', 'System settings updated successfully.');

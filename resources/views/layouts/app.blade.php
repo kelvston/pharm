@@ -13,42 +13,73 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
 
     <!-- Add this to the end of your body section for JavaScript -->
+
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <style>
-        .suggestion-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .custom-bg {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            /*background: rgba(147, 172, 197, 0.66);*/
         }
 
-        .suggestion-item strong {
-            flex: 1;
+        .faded-text {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Offset the element by half of its width and height */
+            color: rgba(255, 255, 255, 0.8); /* Adjust opacity for fading */
+            font-size: 5rem; /* Adjust font size */
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better visibility */
         }
+
+        body {
+            background-image:url('{{ asset('images/background1.png') }}');
+        ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+        }
+
+
+                                                       /*.suggestion-item {*/
+        /*    display: flex;*/
+        /*    justify-content: space-between;*/
+        /*    align-items: center;*/
+        /*}*/
+
+        /*.suggestion-item strong {*/
+        /*    flex: 1;*/
+        /*}*/
 
         .suggestion-item .text-muted {
             font-style: italic;
         }
 
         .suggestion-item .text-info {
-            color: #17a2b8;
+            color: #b88a17;
         }
 
         #medicine-search {
             width: 100%;
         }
 
-        #medicine-suggestions {
-            width: 100%; /* Ensure the list takes the same width as the input */
-            position: absolute; /* Position suggestions below the input */
-            z-index: 1000; /* Make sure the suggestions appear on top of other elements */
-            max-height: 200px; /* Optional: Limit the height if too many suggestions appear */
-            overflow-y: auto; /* Enable scrolling if the list exceeds max-height */
-        }
+        /*#medicine-suggestions {*/
+        /*    width: 100%; !* Ensure the list takes the same width as the input *!*/
+        /*    position: absolute; !* Position suggestions below the input *!*/
+        /*    z-index: 1000; !* Make sure the suggestions appear on top of other elements *!*/
+        /*    max-height: 200px; !* Optional: Limit the height if too many suggestions appear *!*/
+        /*    overflow-y: auto; !* Enable scrolling if the list exceeds max-height *!*/
+        /*}*/
 
         body {
             font-family: 'Nunito', sans-serif;
-            background-color: #f8f9fa;
+            /*background-color: #f8f9fa;*/
         }
 
         .sidebar {
@@ -57,7 +88,7 @@
             left: 0;
             height: 100%;
             width: 240px;
-            background-color: #343a40;
+            background-color: rgba(147, 172, 197, 0.66);
             color: #fff;
             padding-top: 60px; /* Navbar height */
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -71,10 +102,10 @@
             transition: background-color 0.3s, color 0.3s;
         }
 
-        .sidebar .list-group-item:hover {
-            background-color: #495057;
-            color: #fff;
-        }
+        /*.sidebar .list-group-item:hover {*/
+        /*    background-color: #495057;*/
+        /*    color: #fff;*/
+        /*}*/
 
         .sidebar .list-group-item.active {
             background-color: #007bff;
@@ -111,25 +142,31 @@
                 height: auto;
             }
         }
-        #medicine-suggestions {
-            position: absolute;
-            z-index: 1000;
-            width: 100%;
-            max-height: 200px;
-            overflow-y: auto;
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-top: 5px;
-        }
+        /*#medicine-suggestions {*/
+        /*    position: absolute;*/
+        /*    z-index: 1000;*/
+        /*    width: 100%;*/
+        /*    max-height: 200px;*/
+        /*    overflow-y: auto;*/
+        /*    background: white;*/
+        /*    border: 1px solid #ccc;*/
+        /*    border-radius: 4px;*/
+        /*    margin-top: 5px;*/
+        /*}*/
 
         .suggestion-item {
-            padding: 8px;
+    padding: 8px;
             cursor: pointer;
         }
 
-        .suggestion-item:hover {
-            background-color: #f1f1f1;
+
+        .sidebar .list-group-item:hover {
+            background-color: #70F4F8 !important; /* Ensure it overrides any other rules */
+        }
+
+        .list-group-item {
+            background-color:  rgba(147, 172, 197, 0.66) !important;
+            color: #101115  !important;
         }
 
     </style>
@@ -137,9 +174,9 @@
 </head>
 <header>
     <!-- Sidebar -->
-    <nav id="sidebarMenu" class="sidebar">
-        <div class="list-group list-group-flush">
-            <a href="/dashboard" class="list-group-item list-group-item-action active">
+    <nav id="sidebarMenu" class="sidebar" >
+        <div class="list-group list-group-flush" >
+            <a href="/dashboard" class="list-group-item list-group-item-action active" >
                 <i class="fas fa-tachometer-alt"></i>Main Dashboard
             </a>
             <!-- Medications -->
@@ -186,8 +223,8 @@
     <!-- Navbar -->
     <nav
         id="main-navbar"
-        class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
-    >
+        class="navbar navbar-expand-lg navbar-light  fixed-top"
+    style=" background-color: rgba(147, 172, 197, 0.66);">
         <!-- Container wrapper -->
         <div class="container-fluid">
             <!-- Toggle button -->
@@ -250,6 +287,13 @@
                 @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+{{--                            <img src="{{ asset('storage/' . $user->profile_picture) }}" alt="Profile Picture" class="img-thumbnail mb-3" style="width: 150px; height: 150px;">--}}
+{{--                            <img--}}
+{{--                                src="{{ Auth::user()->profile_image ? asset('storage/' . $user->profile_picture) : asset('images/default-profile.png') }}"--}}
+{{--                                alt="Profile Image"--}}
+{{--                                class="rounded-circle"--}}
+{{--                                style="width: 35px; height: 35px; object-fit: cover; margin-right: 10px;"--}}
+{{--                            />--}}
                             {{ Auth::user()->name }}
                         </a>
 
@@ -275,8 +319,13 @@
 <!--Main Navigation-->
 
 <!--Main layout-->
-<main style="margin-top: 58px">
-    <div class="container mt-4">
+@php
+    $data = \App\Models\SystemSetting::first();
+@endphp
+<div class="faded-text">{{$data->pharmacy_name}}</div>
+
+<main style="margin-top: 58px;" >
+   <div class="container mt-4">
         @yield('content')
     </div>
 </main>

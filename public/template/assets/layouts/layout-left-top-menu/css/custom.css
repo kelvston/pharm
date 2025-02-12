@@ -1,0 +1,175 @@
+/*Nav-mega - Navigation menu ->top_bar.blade*/
+#nav li ul li a:hover, #nav-mega li ul li a:hover {
+                                  color: #FFFFFF;
+                                  background-color: #32CD32;}
+/*MIS Dropdown hover bg*/
+#nav-mega ul li.dropdown-mega-item .dropdown-mega-menu ul li a:hover {
+    background: #32CD32 !important; }
+
+/*Header*/
+.wrapper #header {
+    background: #4c66a4;}
+
+
+/*Body content - Background color*/
+body {
+        background: #ffffff  !important;}
+
+
+/*Bottom_border_custom - grey faint*/
+
+#bottom_border_custom {
+    border-bottom: solid 1px rgba(215, 211, 226, 0.78);
+}
+
+/*Hover id for grey faint background*/
+ul a li:hover {
+    background: rgba(243, 242, 245, 0.91);
+}
+
+#hover_grey_faint_bg:hover {
+    background: rgba(243, 242, 245, 0.91);
+}
+
+/*Button Background Color*/
+.save_button {
+    background: #0f82f5 !important;
+    border: solid 1px #0f82f5 !important;
+
+}
+
+.save_button:hover {
+    background: #2b8ef5 !important;
+}
+
+.dishonour_button {
+    background: green !important;
+    border: solid 1px green !important;
+}
+
+.dishonour_button:hover {
+    background: limegreen !important;
+    border: solid 1px limegreen !important;
+}
+
+.cancel_button {
+    color: rgba(0, 0, 0, 0.8) !important;
+      background: #ddd !important;
+    border : solid 1px rgba(184, 179, 195, 0.78) !important;
+}
+.cancel_button:hover {
+    background: #e9ecef !important;
+}
+
+.delete_button {
+    color: #fff !important;
+    background: #e20925 !important;
+    border : solid 1px #e20925 !important;
+}
+
+.delete_button:hover {
+    background: red !important;
+}
+
+.required_asterik{
+    color: red !important;
+}
+
+/*Table header color*/
+.wrapper table thead tr th {
+    color: rgba(3, 3, 6, 0.81);
+    background: rgba(243, 242, 245, 0.91); }
+
+.wrapper table thead tr th td {
+    color: rgba(3, 3, 6, 0.81);
+    background: rgba(243, 242, 245, 0.91);
+}
+
+/*Form Legends*/
+legend {
+    padding: 0.2em 0.5em;
+    border-bottom:1px solid #ddd;
+    color: rgba(92, 97, 105, 0.81);
+    font-size:120%;
+    font-weight: bold;
+    text-align:left;
+}
+
+/*Labels */
+.label.label-danger{
+    color: white;
+}
+
+/*Colors*/
+.black_color{
+    color: #111;
+}
+.red_color{
+    color: red;
+}
+.white_color{
+    color: #ffffff;
+}
+
+/*Modals*/
+.grey_modal{
+    background: #cdcdcd !important;;
+}
+
+
+
+/*Dropdown-item */
+.mydropdown-item:hover{
+    background: #f1f3f9 !important;
+}
+.mydropdown-item{
+    color: #000000 !important;
+}
+
+/*NAV-Tabs*/
+.nav-tabs {
+    background: #ddd !important;
+}
+
+.nav-item {
+    margin-left: .0rem !important;
+}
+
+.nav-item:hover {
+    background: #fefefe !important;
+}
+
+.nav-link:hover {
+    background: #f0f0f0 !important;
+}
+
+.nav-link{
+    color: #111 !important;
+    border: 0px solid #d6d6d6 !important;
+    margin-left: .1rem !important;
+    background: #ddd !important;
+}
+
+.nav-link.active {
+    color: #ffffff !important;
+    background: #4c66a4 !important;
+}
+
+.nav-link.active:hover {
+    background: #4c66a4 !important;
+}
+
+.nav_tab_pane{
+    padding: 0px !important;
+    background: #0f82f5 !important;
+}
+
+.nav_button{
+     background: #0f82f5 !important;
+     border: solid 0px #0f82f5 !important;
+ }
+
+.nav_button:hover{
+    background: rgba(57, 130, 255, 0.84) !important;
+    border: solid 0px #0f82f5 !important;
+}

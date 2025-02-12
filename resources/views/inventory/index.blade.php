@@ -3,8 +3,11 @@
 @section('title', 'Inventory')
 
 @section('content')
+    <div class="custom-bg">
     <h1>Add Medication</h1>
     <a href="/inventory/create" class="btn btn-primary">Add Medicine</a>
+    <a href="/inventory/show" class="btn btn-primary">Medicines List</a>
+    <a href="/stock-takes" class="btn btn-primary">stock Management</a>
     <table class="table table-bordered mt-3">
         <thead>
         <tr>
@@ -39,5 +42,5 @@
         @endforeach
         </tbody>
     </table>
-
+    </div>
 @endsection

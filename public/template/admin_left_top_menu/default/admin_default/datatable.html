@@ -1,0 +1,3851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from backend.themesadmin.com/backend/admin_left_top_menu/default/admin_default/datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 08:27:41 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="bootstrap default admin template">
+<meta name="viewport" content="width=device-width">
+<title>Datatable | Admin Template</title>
+ 
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1491196372,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"faccdb26552b26ba47282e3ab09989aa",petok:"d49c5bdb88c9acd3f7fa5edf360e17d5f0f5a01e-1491207790-1800",zone:"themesadmin.com",rocket:"0",apps:{"ga_key":{"ua":"UA-92643213-2","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="../../../../../ajax.cloudflare.com/cdn-cgi/nexp/dok3v%3df2befc48d1/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link rel="shortcut icon" href="http://backend.themesadmin.com/backend/assets/favicon/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="../../../assets/favicon/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../../../assets/favicon/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="../../../assets/favicon/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../../../assets/favicon/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="../../../assets/favicon/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="../../../assets/favicon/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="../../../assets/favicon/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="../../../assets/favicon/apple-touch-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicon/apple-touch-icon-180x180.png"/>
+ 
+<link rel="stylesheet" href="../../../assets/global/plugins/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../../../assets/icons_fonts/elegant_font/elegant.min.css"/>
+<link id="site-color" rel="stylesheet" href="../../../assets/layouts/layout-left-top-menu/css/color/light/color-default.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/switchery/dist/switchery.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+ 
+ 
+<link rel="stylesheet" href="../../../assets/global/plugins/datatables/media/css/dataTables.bootstrap4.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/datatables-responsive/css/responsive.bootstrap4.min.css"/>
+<link rel="stylesheet" href="../../../assets/global/plugins/datatables-scroller/css/scroller.bootstrap4.min.css"/>
+ 
+ 
+<link rel="stylesheet" href="../../../assets/global/css/components.min.css"/>
+ 
+ 
+<link rel="stylesheet" href="../../../assets/layouts/layout-left-top-menu/css/layout.css"/>
+ 
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-92643213-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body>
+<div class="loader-overlay">
+<div class="loader-preview-area">
+<div class="spinners">
+<div class="loader">
+<div class="rotating-plane"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+ 
+<header id="header">
+<div class="row">
+<div class="col-sm-4 col-xl-2 header-left">
+<div class="logo float-xs-left">
+<a href="#"><img src="../../../assets/global/image/web-logo.png" alt="logo"></a>
+</div>
+<button class="left-menu-toggle float-xs-right">
+<i class="icon_menu toggle-icon"></i>
+</button>
+<button class="right-menu-toggle float-xs-right">
+<i class="arrow_carrot-left toggle-icon"></i>
+</button>
+</div>
+<div class="col-xl-6 header-center">
+<div class="menucontainer">
+<div class="overlapblackbg"></div>
+<a id="navtoggle" class="animated-arrow"><span></span></a>
+<nav id="nav" class="topmenu" role="navigation">
+<div class="sidebar-search">
+<input id="live-search-box" type="search" class="form-control input-sm" placeholder="Search...">
+<a href="javascript:void(0)"><i class="search-close icon_search"></i></a>
+</div>
+<ul class="menu-list live-search-list">
+<li>
+<a href="javascript:void(0)">
+<span class="icon_desktop header-icon" aria-hidden="true"></span>Dashboard<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li>
+<a href="index-2.html">Dashboard</a>
+</li>
+<li>
+<a href="dashboard_v1.html">Dashboard 1</a>
+</li>
+<li>
+<a href="dashboard_v2.html">Dashboard 2</a>
+</li>
+<li>
+<a href="dashboard_v3.html">Dashboard 3</a>
+</li>
+<li>
+<a href="crm_dashboard.html">CRM Dashboard</a>
+</li>
+<li>
+<a href="server_dashboard.html">Server Dashboard</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">
+<span class="icon_tags_alt header-icon" aria-hidden="true"></span>Layout<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li><a href="javascript:void(0)">General Pages<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub dropNav">
+<li>
+<a href="userlist.html">Userlist</a>
+</li>
+<li>
+<a href="invoice.html">Invoice</a>
+</li>
+<li>
+<a href="blank.html">Blank</a>
+</li>
+<li>
+<a href="profile.html">Profile</a>
+</li>
+<li>
+<a href="search.html">Search</a>
+</li>
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+<li>
+<a href="grid.html">Grid</a>
+</li>
+<li>
+<a href="maintenance.html">Maintenance</a>
+</li>
+<li>
+<a href="404.html">404 Page</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Cookie consent<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="cookie_consent_v1.html">Cookie consent 1</a>
+</li>
+<li>
+<a href="cookie_consent_v2.html">Cookie consent 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">eCommerce<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="eCommerce_dashboard.html">Dashboard</a>
+</li>
+<li>
+<a href="order.html">Orders</a>
+</li>
+<li>
+<a href="order_view.html">Order view</a>
+</li>
+<li>
+<a href="product.html">Products</a>
+</li>
+<li>
+<a href="products_edit.html">Product edit</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Apps<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="contact.html">Contacts</a>
+</li>
+<li>
+<a href="calendar.html">Calender</a>
+</li>
+<li><a href="javascript:void(0)">Message<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="message.html">Message</a>
+</li>
+<li>
+<a href="message_v2.html">Message V2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Mailbox<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="mail_box.html">Inbox</a>
+</li>
+<li>
+<a href="mail_draft.html">Draft</a>
+</li>
+<li>
+<a href="mail_send.html">Sent</a>
+</li>
+<li>
+<a href="mail_archive.html">Archive</a>
+</li>
+<li>
+<a href="mail_trash.html">Trash</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Maps<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="google_maps.html">Google map</a>
+</li>
+<li>
+<a href="vector_maps.html">Vector map</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Users<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li><a href="javascript:void(0)">Login<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="login_v1.html">Login Page 1</a>
+</li>
+<li>
+<a href="login_v2.html">Login Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Register<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="register_v1.html">Register Page 1</a>
+</li>
+<li>
+<a href="register_v2.html">Register Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Lockscreen<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="lock_screen_v1.html">Lockscreen Page 1</a>
+</li>
+<li>
+<a href="lock_screen_v2.html">Lockscreen Page 2</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Forgot Password<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="forgot_password_v1.html">Forgot Password 1</a>
+</li>
+<li>
+<a href="forgot_password_v2.html">Forgot Password 2</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">
+<span class="icon_ribbon_alt header-icon" aria-hidden="true"></span>Components<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<ul class="dropNav">
+<li><a href="javascript:void(0)">Basic UI<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="cards.html">Cards</a>
+</li>
+<li>
+<a href="buttons.html">Button</a>
+</li>
+<li>
+<a class="flat-buttons" href="switches.html">Switch</a>
+</li>
+<li><a href="javascript:void(0)">Icons<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="font_awesome.html">Font-Awesome</a>
+</li>
+<li>
+<a href="themify_icons.html">Themify-Icons</a>
+</li>
+<li>
+<a href="7-Stroke_icons.html">7-stroke</a>
+</li>
+<li>
+<a href="weather_icons.html">Weather-Icons</a>
+</li>
+<li>
+<a href="material_icons.html">Material-Design</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)">Progress<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub-sub">
+<li>
+<a href="youtube_progress.html">Youtube</a>
+</li>
+<li>
+<a href="3D_bar_progress.html">3D bar</a>
+</li>
+<li>
+<a href="flate_topbar_progress.html">Flate header</a>
+</li>
+<li>
+<a href="corner_indicator_progress.html">Corner indicator</a>
+</li>
+<li>
+<a href="big_counter.html">Counter</a>
+</li>
+<li>
+<a href="bounce.html">Bounce</a>
+</li>
+<li>
+<a href="loading_bar.html">Loading bar</a>
+</li>
+<li>
+<a href="center_circle.html">Center circle</a>
+</li>
+<li>
+<a href="center_simple.html">Center simple</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="list.html">List</a>
+</li>
+<li>
+<a href="dropdown.html">Dropdown</a>
+</li>
+<li>
+<a href="images.html">Image</a>
+</li>
+<li>
+<a href="modals.html">Modals</a>
+</li>
+<li>
+<a href="scrollable.html">Scrollbar</a>
+</li>
+<li>
+<a href="typography.html">Typography</a>
+</li>
+<li>
+<a href="utilities.html">Utilities</a>
+</li>
+<li>
+<a href="carousel.html">Carousel</a>
+</li>
+<li>
+<a href="color_generator.html">Color Generator</a>
+</li>
+<li>
+<a href="tabs_accordions.html">Tabs &amp; Accordions</a>
+</li>
+<li>
+<a href="badges_tags.html">Badges &amp; Tags</a>
+</li>
+<li>
+<a href="progress_bar.html">Progress Bars</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Advanced UI<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="highlight.html">Highlight</a>
+</li>
+<li>
+<a href="bootbox.html">Bootbox</a>
+</li>
+<li>
+<a href="sweetalert.html">Sweetalert</a>
+</li>
+<li>
+<a href="toastr.html">Toastr</a>
+</li>
+<li>
+<a href="tooltip_popover.html">Tooltip & Popover</a>
+</li>
+<li>
+<a href="masonry.html">Masonry</a>
+</li>
+<li>
+<a href="rating.html">Rating</a>
+</li>
+<li>
+<a href="sortable_nestable.html">Sortable & Nestable</a>
+</li>
+<li>
+<a href="lightbox.html">Lightbox</a>
+</li>
+<li>
+<a href="treeview.html">Treeview</a>
+</li>
+<li>
+<a href="context_menu.html">Context Menu</a>
+</li>
+<li>
+<a href="file_manager.html">File Manager</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Elements<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="alerts.html">Alerts</a>
+</li>
+<li>
+<a href="ribbon.html">Ribbon</a>
+</li>
+<li>
+<a href="pricing-table.html">Pricing Table</a>
+</li>
+<li>
+<a href="overlay.html">Overlay</a>
+</li>
+<li>
+<a href="step.html">Step</a>
+</li>
+<li>
+<a href="timeline.html">Timeline</a>
+</li>
+<li>
+<a href="testimonial.html">Testimonials</a>
+</li>
+<li>
+<a href="breadcrumbs.html">Breadcrumbs</a>
+</li>
+<li>
+<a href="blockquote.html">Blockquotes</a>
+</li>
+<li>
+<a href="nav.html">Nav</a>
+</li>
+<li>
+<a href="navbar.html">Navbars</a>
+</li>
+<li>
+<a href="pagination.html">Pagination</a>
+</li>
+<li>
+<a href="different_headers.html">Different Headers</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Forms<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="general_elements.html">General Elements</a>
+</li>
+<li>
+<a href="form_layout.html">Form Layouts</a>
+</li>
+<li>
+<a href="form_validation.html">Form Validation</a>
+</li>
+<li>
+<a href="form_mask.html">Form Masks</a>
+</li>
+<li>
+<a href="advanced_elements.html">Advanced Elements</a>
+</li>
+<li>
+<a href="form_wizard.html">Form Wizard</a>
+</li>
+<li>
+<a href="markdown_editor.html">Markdown Editor</a>
+</li>
+<li>
+<a href="image_cropping.html">Image Cropping</a>
+</li>
+<li>
+<a href="file_upload.html">File Upload</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Tables<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="basic_table.html">Basic Tables</a>
+</li>
+<li>
+<a href="bootstrap_tables.html">Bootstrap Tables</a>
+</li>
+<li>
+<a href="floatthead.html">floatThead</a>
+</li>
+<li>
+<a href="editable.html">Editable</a>
+</li>
+<li>
+<a href="datatable.html">Datatable</a>
+</li>
+<li>
+<a href="jsgrid.html">jsGrid</a>
+</li>
+<li>
+<a href="responsive_table.html">Responsive Tables</a>
+</li>
+<li>
+<a href="footable.html">Footable</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Chart<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="morris_chart.html">Morris Chart</a>
+</li>
+<li>
+<a href="sparkline_chart.html">Sparkline Chart </a>
+</li>
+<li>
+<a href="chartist.html">Chartist</a>
+</li>
+<li>
+<a href="gantt_chart.html">Gantt Chart</a>
+</li>
+</ul>
+</li>
+<li><a href="javascript:void(0)">Widgets<span class="arrow_carrot-right submenu-arrow-right" aria-hidden="true"></span></a>
+<ul class="submenu-sub">
+<li>
+<a href="social_widget.html">Social Widgets</a>
+</li>
+<li>
+<a href="static_widget.html">Static Widgets</a>
+</li>
+<li>
+<a href="data_widgets.html">Data Widgets</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<nav id="nav-mega">
+<ul class="menu-list">
+<li class="dropdown dropdown-mega-item">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" aria-haspopup="true" aria-expanded="false">
+<span class="icon_ul header-icon" aria-hidden="true"></span><span class="mega-title">Mega</span>
+<span class="arrow_carrot-down header-arrow-down" aria-hidden="true"></span>
+</a>
+<div class="dropdown-menu dropdown-mega-menu">
+<div class="mega-menu-container">
+<div class="row">
+<div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="mega-menu-title">
+<span>Layout</span>
+</div>
+<ul>
+<li>
+<a href="userlist.html">
+<span class="icon_documents_alt" aria-hidden="true"></span>Userlist
+</a>
+</li>
+<li>
+<a href="invoice.html">
+<span class="icon_document_alt" aria-hidden="true"></span>Invoice
+</a>
+</li>
+<li>
+<a href="blank.html">
+<span class="icon_menu-square_alt2" aria-hidden="true"></span>Blank
+</a>
+</li>
+<li>
+<a href="profile.html">
+<span class="icon_id-2" aria-hidden="true"></span>Profile
+</a>
+</li>
+<li>
+<a href="search.html">
+<span class="icon_search" aria-hidden="true"></span>Search
+</a>
+</li>
+<li>
+<a href="gallery.html">
+<span class="icon_images" aria-hidden="true"></span>Gallery
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="grid.html">
+<span class="icon_archive_alt" aria-hidden="true"></span>Grid
+</a>
+</li>
+<li>
+<a href="404.html">
+<span class="icon_error-triangle_alt" aria-hidden="true"></span>404 Error
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-xs-megamenu-spacing"></div>
+<div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-xs-12">
+<div class="mega-menu-title">
+<span>Basic ui</span>
+</div>
+<ul>
+<li>
+<a href="cards.html">
+<span class="icon_creditcard" aria-hidden="true"></span>Cards
+</a>
+</li>
+<li>
+<a href="buttons.html">
+<span class="icon_tags_alt" aria-hidden="true"></span>Button
+</a>
+</li>
+<li>
+<a href="list.html">
+<span class="icon_document_alt" aria-hidden="true"></span>List
+</a>
+</li>
+<li>
+<a href="dropdown.html">
+<span class="icon_cloud_alt" aria-hidden="true"></span>Dropdown
+</a>
+</li>
+<li>
+<a href="images.html">
+<span class="icon_image" aria-hidden="true"></span>Image
+</a>
+</li>
+<li>
+<a href="themify_icons.html">
+<span class="icon_percent" aria-hidden="true"></span>Themify Icons
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="modals.html">
+<span class="icon_drawer_alt" aria-hidden="true"></span>Modals
+</a>
+</li>
+<li>
+<a href="scrollable.html">
+<span class="icon_pens" aria-hidden="true"></span>Scrollbar
+</a>
+</li>
+<li>
+<a href="typography.html">
+<span class="icon_pencil-edit_alt" aria-hidden="true"></span>Typography
+</a>
+</li>
+<li>
+<a href="utilities.html">
+<span class="icon_drive" aria-hidden="true"></span>Utilities
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-md-spacing"></div>
+<div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="mega-menu-title">
+<span>Advance ui</span>
+</div>
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li>
+<a href="highlight.html">
+<span class="icon_pencil-edit" aria-hidden="true"></span>Highlight
+</a>
+</li>
+<li>
+<a href="bootbox.html">
+<span class="icon_drawer_alt" aria-hidden="true"></span>Bootbox
+</a>
+</li>
+<li>
+<a href="sweetalert.html">
+<span class="icon_info_alt" aria-hidden="true"></span>Sweetalert
+</a>
+</li>
+<li>
+<a href="toastr.html">
+<span class="icon_error-oct_alt" aria-hidden="true"></span>Toastr
+</a>
+</li>
+<li>
+<a href="tooltip_popover.html">
+<span class="icon_target" aria-hidden="true"></span>Tooltip & popover
+</a>
+</li>
+<li>
+<a href="masonry.html">
+<span class="icon_hourglass" aria-hidden="true"></span>Masonry
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="rating.html">
+<span class="icon_star_alt" aria-hidden="true"></span>Rating
+</a>
+</li>
+<li>
+<a href="sortable_nestable.html">
+<span class="arrow_move" aria-hidden="true"></span>Sortable &
+nestable
+</a>
+</li>
+<li>
+<a href="lightbox.html">
+<span class="icon_lightbulb_alt" aria-hidden="true"></span>Lightbox
+</a>
+</li>
+<li>
+<a href="treeview.html">
+<span class="icon_flowchart" aria-hidden="true"></span>Treeview
+</a>
+</li>
+<li>
+<a href="carousel.html">
+<span class="icon_puzzle" aria-hidden="true"></span>Carousel
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="divider-xs-megamenu-spacing"></div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li>
+<a href="file_manager.html">
+<span class="icon_folder-open_alt" aria-hidden="true"></span>File Manager<span class="tag tag-pill tag-danger">New</span>
+</a>
+</li>
+<li>
+<a href="alerts.html">
+<span class="icon_puzzle" aria-hidden="true"></span>Alert
+</a>
+</li>
+<li>
+<a href="ribbon.html">
+<span class="icon_ribbon_alt" aria-hidden="true"></span>Ribbon
+</a>
+</li>
+<li>
+<a href="gantt_chart.html">
+<span class="icon_easel" aria-hidden="true"></span>Gantt Chart<span class="tag tag-pill tag-danger">New</span>
+</a>
+</li>
+<li>
+<a href="timeline.html">
+<span class="icon_clock_alt" aria-hidden="true"></span>Timeline
+</a>
+</li>
+<li>
+<a href="testimonial.html">
+<span class="icon_comment_alt" aria-hidden="true"></span>Testimonial
+</a>
+</li>
+<li>
+<ul>
+<li>
+<a href="morris_chart.html">
+<span class="icon_piechart" aria-hidden="true"></span>Morris chart
+</a>
+</li>
+<li>
+<a href="chartist.html">
+<span class="icon_datareport" aria-hidden="true"></span>Chartist
+</a>
+</li>
+<li>
+<a href="social_widget.html">
+<span class="icon_globe-2" aria-hidden="true"></span>Social widget
+</a>
+</li>
+<li>
+<a href="static_widget.html">
+<span class="icon_id" aria-hidden="true"></span>Static widget
+</a>
+</li>
+</ul>
+<a class="show_all_menu" href="javascript:void(0);">
+<span class="icon_plus" aria-hidden="true"></span><span>All</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<img src="../../../assets/global/image/tabimg.png" alt="" class="tabimage"/>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="col-sm-8 col-xl-10 header-right">
+<div class="header-inner-right">
+<div class="float-default searchbox">
+<div class="right-icon">
+<a href="javascript:void(0)">
+<i class="icon_search"></i>
+</a>
+</div>
+</div>
+<div class="float-default mail">
+<div class="right-icon">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" aria-expanded="true">
+<i class="icon_mail_alt"></i>
+<span class="mail-no">10</span>
+</a>
+<div class="dropdown-menu messagetoggle" role="menu">
+<div class="nav-tab-horizontal">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#messages" role="tab">Message</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#resendmessage" role="tab">Resend</a>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="messages" role="tabpanel" data-plugin="custom-scroll" data-height="320">
+<ul class="userMessagedrop">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-primary"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>New tasks added</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-success"><i class="icon_lock"></i></span>
+</div>
+<div class="media-body">
+<h6>Successfully</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-danger"><i class="icon_info_alt"></i></span>
+</div>
+<div class="media-body">
+<h6>Warnind</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-info"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>Add new friend</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="tab-pane" id="resendmessage" role="tabpanel" data-plugin="custom-scroll" data-height="320">
+<ul class="userMessagedrop">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-primary"><i class="icon_profile"></i></span>
+</div>
+<div class="media-body">
+<h6>5 new members joi...</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">2 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-success"><i class="icon_key"></i></span>
+</div>
+<div class="media-body">
+<h6>You changed...</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-danger"><i class="icon_close"></i></span>
+</div>
+<div class="media-body">
+<h6>5 members removed</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">15 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<span class="label label-info"><i class="icon_plus"></i></span>
+</div>
+<div class="media-body">
+<h6>Update available</h6>
+<p>Dummy text of the printing and typesetting industry.</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="float-default chat">
+<div class="right-icon">
+<a href="javascript:void(0)" data-toggle="dropdown" data-open="true" data-animation="slideOutUp" aria-expanded="false">
+<i class="icon_chat_alt"></i>
+<span class="mail-no">8</span>
+</a>
+<ul class="dropdown-menu userChat" data-plugin="custom-scroll" data-height="310">
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image1-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">5 mins
+</time>
+</div>
+<div class="status online"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image2-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">2 hours
+</time>
+</div>
+<div class="status offline"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image3-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">20 Oct
+</time>
+</div>
+<div class="status offline"></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media">
+<div class="media-left float-xs-left">
+<img src="../../../assets/global/image/image4-profile.jpg" alt="message"/>
+</div>
+<div class="media-body">
+<h5>Judy Fowler</h5>
+<p>Dummy text of the printing...</p>
+<div class="meta-tag text-nowrap">
+<time datetime="2016-12-10T20:27:48+07:00" class="text-muted">20 Oct
+</time>
+</div>
+<div class="status online"></div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="float-default chat">
+<div class="right-icon">
+<a href="#" data-plugin="fullscreen">
+<i class="arrow_expand"></i>
+</a>
+</div>
+</div>
+<div class="user-dropdown">
+<div class="btn-group">
+<a href="#" class="user-header dropdown-toggle" data-toggle="dropdown" data-animation="slideOutUp" aria-haspopup="true" aria-expanded="false">
+<img src="../../../assets/global/image/user.jpg" alt="Profile image"/>
+</a>
+<div class="dropdown-menu drop-profile">
+<div class="userProfile">
+<img src="../../../assets/global/image/user.jpg" alt="Profile image"/>
+<h5>Miler Hussey</h5>
+<p>milerhussey@yahoo.com</p>
+</div>
+<div class="dropdown-divider"></div>
+<a class="btn left-spacing link-btn" href="#" role="button">Link</a>
+<a class="btn left-second-spacing link-btn" href="#" role="button">Link 2</a>
+<a class="btn btn-primary float-xs-right right-spacing" href="#" role="button">Logout</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="search-overlay">
+<div class="float-default search">
+<div class="search_bg"></div>
+<div class="right-icon search_box">
+<div class="search-div">
+<input type="text" class="search_input">
+<label class="search-input-label">
+<span class="input-label-title">Search</span>
+</label>
+</div>
+<div class="divider50"></div>
+<div class="search-result">
+<div class="search-item">
+<div class="search-image float-xs-left">
+<img src="../../../assets/global/image/guitar.jpg" alt="search-image">
+</div>
+<div class="search-info float-xs-right">
+<h3 class="title">Search here</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+<div class="divider15"></div>
+<div class="search-item">
+<div class="search-info search-full float-xs-right">
+<h3 class="title">Admin templates</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+<div class="divider15"></div>
+<div class="search-item">
+<div class="search-image float-xs-left">
+<img src="../../../assets/global/image/book-flower.jpg" alt="search-image">
+</div>
+<div class="search-info float-xs-right">
+<h3 class="title">Books</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus diam quis arcu
+lobortis sagittis. Etiam eu ornare mi. Interdum et malesuada fames ac ante ipsum primis in
+faucibus.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="search_close icon_close"></div>
+</div>
+</div>
+ 
+ 
+<section id="main" class="container-fluid">
+<div class="row">
+ 
+<aside id="sidebar">
+<div class="sidebar-search">
+<input id="left-menu-search" type="search" class="form-control input-sm" placeholder="Search...">
+<a href="javascript:void(0)"><i class="search-close icon_search"></i></a>
+</div>
+<div class="sidebar-menu">
+<ul class="nav site-menu live-search-list" id="site-menu" data-plugin="custom-scroll" data-suppress-scroll-x="true" data-height="100%">
+<li class="menu-title"><i class="icon_compass_alt"></i><span>Main Menu</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)"><span>Dashboard</span>
+<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="index-2.html">Dashboard</a>
+</li>
+<li>
+<a href="dashboard_v1.html">Dashboard 1</a>
+</li>
+<li>
+<a href="dashboard_v2.html">Dashboard 2</a>
+</li>
+<li>
+<a href="dashboard_v3.html">Dashboard 3</a>
+</li>
+<li>
+<a href="crm_dashboard.html">CRM Dashboard</a>
+</li>
+<li>
+<a href="server_dashboard.html">Server Dashboard</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-title"><i class="icon_document_alt"></i><span>Layout Pages</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)"><span>General Pages</span>
+<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="userlist.html">Userlist</a>
+</li>
+<li>
+<a href="invoice.html">Invoice</a>
+</li>
+<li>
+<a href="blank.html">Blank</a>
+</li>
+<li>
+<a href="profile.html">Profile</a>
+</li>
+<li>
+<a href="search.html">Search</a>
+</li>
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+<li>
+<a href="grid.html">Grid</a>
+</li>
+<li>
+<a href="maintenance.html">Maintenance</a>
+</li>
+<li>
+<a href="404.html">404 Page</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Cookie consent<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="cookie_consent_v1.html">Cookie consent 1</a>
+</li>
+<li>
+<a href="cookie_consent_v2.html">Cookie consent 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+eCommerce<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="eCommerce_dashboard.html">Dashboard</a>
+</li>
+<li>
+<a href="order.html">Orders</a>
+</li>
+<li>
+<a href="order_view.html">Order view</a>
+</li>
+<li>
+<a href="product.html">Products</a>
+</li>
+<li>
+<a href="products_edit.html">Product edit</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Apps<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="contact.html">Contacts</a>
+</li>
+<li>
+<a href="calendar.html">Calender</a>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Message<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="message.html">Message</a>
+</li>
+<li>
+<a href="message_v2.html">Message V2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Mailbox<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="mail_box.html">Inbox</a>
+</li>
+<li>
+<a href="mail_draft.html">Draft</a>
+</li>
+<li>
+<a href="mail_send.html">Sent</a>
+</li>
+<li>
+<a href="mail_archive.html">Archive</a>
+</li>
+<li>
+<a href="mail_trash.html">Trash</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Maps<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="google_maps.html">Google map</a>
+</li>
+<li>
+<a href="vector_maps.html">Vector map</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Users<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li class="sub-item">
+<a href="javascript:void(0)">
+Login<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="login_v1.html">Login Page 1</a>
+</li>
+<li>
+<a href="login_v2.html">Login Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Register<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="register_v1.html">Register Page 1</a>
+</li>
+<li>
+<a href="register_v2.html">Register Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Lockscreen<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="lock_screen_v1.html">Lockscreen Page 1</a>
+</li>
+<li>
+<a href="lock_screen_v2.html">Lockscreen Page 2</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Forgot Password<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="forgot_password_v1.html">Forgot Password 1</a>
+</li>
+<li>
+<a href="forgot_password_v2.html">Forgot Password 2</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-title"><i class="icon_genius"></i><span>Components</span>
+<ul class="main-menu">
+<li class="sub-item">
+<a href="javascript:void(0)">
+Basic UI<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="cards.html">Cards</a>
+</li>
+<li>
+<a href="buttons.html">Button</a>
+</li>
+<li>
+<a href="switches.html" class="flat-buttons">Switch</a>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Icons<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="font_awesome.html">Font-Awesome</a>
+</li>
+<li>
+<a href="themify_icons.html">Themify-Icons</a>
+</li>
+<li>
+<a href="7-Stroke_icons.html">7-stroke</a>
+</li>
+<li>
+<a href="weather_icons.html">Weather-Icons</a>
+</li>
+<li>
+<a href="material_icons.html">Material-Design</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Progress<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="youtube_progress.html">Youtube</a>
+</li>
+<li>
+<a href="3D_bar_progress.html">3D bar</a>
+</li>
+<li>
+<a href="flate_topbar_progress.html">Flate header</a>
+</li>
+<li>
+<a href="corner_indicator_progress.html">Corner indicator</a>
+</li>
+<li>
+<a href="big_counter.html">Counter</a>
+</li>
+<li>
+<a href="bounce.html">Bounce</a>
+</li>
+<li>
+<a href="loading_bar.html">Loading bar</a>
+</li>
+<li>
+<a href="center_circle.html">Center circle</a>
+</li>
+<li>
+<a href="center_simple.html">Center simple</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="list.html">List</a>
+</li>
+<li>
+<a href="dropdown.html">Dropdown</a>
+</li>
+<li>
+<a href="images.html">Image</a>
+</li>
+<li>
+<a href="modals.html">Modals</a>
+</li>
+<li>
+<a href="scrollable.html">Scrollbar</a>
+</li>
+<li>
+<a href="typography.html">Typography</a>
+</li>
+<li>
+<a href="utilities.html">Utilities</a>
+</li>
+<li>
+<a href="carousel.html">Carousel</a>
+</li>
+<li>
+<a href="color_generator.html">Color Generator</a>
+</li>
+<li>
+<a href="tabs_accordions.html">Tabs &amp; Accordions</a>
+</li>
+<li>
+<a href="badges_tags.html">Badges &amp; Tags</a>
+</li>
+<li>
+<a href="progress_bar.html">Progress Bars</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Advanced UI<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="highlight.html">Highlight</a>
+</li>
+<li>
+<a href="bootbox.html">Bootbox</a>
+</li>
+<li>
+<a href="sweetalert.html">Sweetalert</a>
+</li>
+<li>
+<a href="toastr.html">Toastr</a>
+</li>
+<li>
+<a href="tooltip_popover.html">Tooltip & Popover</a>
+</li>
+<li>
+<a href="masonry.html">Masonry</a>
+</li>
+<li>
+<a href="rating.html">Rating</a>
+</li>
+<li>
+<a href="sortable_nestable.html">Sortable & Nestable</a>
+</li>
+<li>
+<a href="lightbox.html">Lightbox</a>
+</li>
+<li>
+<a href="treeview.html">Treeview</a>
+</li>
+<li>
+<a href="context_menu.html">Context Menu</a>
+</li>
+<li>
+<a href="file_manager.html">File Manager</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Elements<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="alerts.html">Alerts</a>
+</li>
+<li>
+<a href="ribbon.html">Ribbon</a>
+</li>
+<li>
+<a href="pricing-table.html">Pricing Table</a>
+</li>
+<li>
+<a href="overlay.html">Overlay</a>
+</li>
+<li>
+<a href="step.html">Step</a>
+</li>
+<li>
+<a href="timeline.html">Timeline</a>
+</li>
+<li>
+<a href="testimonial.html">Testimonials</a>
+</li>
+<li>
+<a href="breadcrumbs.html">Breadcrumbs</a>
+</li>
+<li>
+<a href="blockquote.html">Blockquotes</a>
+</li>
+<li>
+<a href="nav.html">Nav</a>
+</li>
+<li>
+<a href="navbar.html">Navbars</a>
+</li>
+<li>
+<a href="pagination.html">Pagination</a>
+</li>
+<li>
+<a href="different_headers.html">Different Headers</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Forms<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="general_elements.html">General Elements</a>
+</li>
+<li>
+<a href="form_layout.html">Form Layouts</a>
+</li>
+<li>
+<a href="form_validation.html">Form Validation</a>
+</li>
+<li>
+<a href="form_mask.html">Form Masks</a>
+</li>
+<li>
+<a href="advanced_elements.html">Advanced Elements</a>
+</li>
+<li>
+<a href="form_wizard.html">Form Wizard</a>
+</li>
+<li>
+<a href="markdown_editor.html">Markdown Editor</a>
+</li>
+<li>
+<a href="image_cropping.html">Image Cropping</a>
+</li>
+<li>
+<a href="file_upload.html">File Upload</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Tables<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="basic_table.html">Basic Tables</a>
+</li>
+<li>
+<a href="bootstrap_tables.html">Bootstrap Tables</a>
+</li>
+<li>
+<a href="floatthead.html">floatThead</a>
+</li>
+<li>
+<a href="editable.html">Editable</a>
+</li>
+<li>
+<a href="datatable.html">Datatable</a>
+</li>
+<li>
+<a href="jsgrid.html">jsGrid</a>
+</li>
+<li>
+<a href="responsive_table.html">Responsive Tables</a>
+</li>
+<li>
+<a href="footable.html">Footable</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Chart<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="morris_chart.html">Morris Chart</a>
+</li>
+<li>
+<a href="sparkline_chart.html">Sparkline Chart </a>
+</li>
+<li>
+<a href="chartist.html">Chartist</a>
+</li>
+<li>
+<a href="gantt_chart.html">Gantt Chart</a>
+</li>
+</ul>
+</li>
+<li class="sub-item">
+<a href="javascript:void(0)">
+Widgets<span class="float-xs-right"><i class="icon_plus"></i></span>
+</a>
+<ul class="sub-menu">
+<li>
+<a href="social_widget.html">Social Widgets</a>
+</li>
+<li>
+<a href="static_widget.html">Static Widgets</a>
+</li>
+<li>
+<a href="data_widgets.html">Data Widgets</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sidebar-extra">
+<a href="#"><i class="icon_lock-open_alt"></i></a>
+<a href="#"><i class="icon_key_alt"></i></a>
+<a href="#"><i class="icon_lock_alt"></i></a>
+</div>
+</aside>
+ 
+ 
+<section id="content-wrapper">
+ 
+<div class="site-content-title">
+<h2 class="float-xs-left content-title-main">Datatable</h2>
+ 
+<ol class="breadcrumb float-xs-right">
+<li class="breadcrumb-item">
+<span class="fs1" aria-hidden="true" data-icon=""></span>
+<a href="#">Home</a>
+</li>
+<li class="breadcrumb-item"><a href="#">Components</a></li>
+<li class="breadcrumb-item active">Datatable</li>
+</ol>
+ 
+</div>
+ 
+<div class="content content-datatable datatable-width">
+<h4 class="page-content-title">Basic</h4>
+<p>To display <strong>basic datatable</strong>, use <code>data-plugin="datatable"</code> in html tag.</p>
+<div class="row">
+<div class="col-md-12">
+<table data-plugin="datatable" data-responsive="true" class="table table-striped table-hover dt-responsive">
+<thead>
+<tr>
+<th>Id</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Faye</td>
+<td>Mayer</td>
+<td>Faye34@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Kianna</td>
+<td>Lockman</td>
+<td>Kianna.Lockman@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Timmothy</td>
+<td>Mertz</td>
+<td>Timmothy72@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alfred</td>
+<td>Watsica</td>
+<td>Alfred34@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Aleen</td>
+<td>Aaland</td>
+<td>AleenAaland@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Afton</td>
+<td>Abeln</td>
+<td>Afton@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Aiko</td>
+<td>Ablin</td>
+<td>Ablin1989@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Abram</td>
+<td>Ali</td>
+<td>Abram@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Bokal</td>
+<td>Berna</td>
+<td>Bokal@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Bomba</td>
+<td>Bondy</td>
+<td>Bombabondy@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Braly</td>
+<td>Brook</td>
+<td>Bralybrook2017@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Carby</td>
+<td>Carlena</td>
+<td>Carlena@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Braly</td>
+<td>Brook</td>
+<td>Bralybrook2017@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Carel</td>
+<td>Carola</td>
+<td>Carel20@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Delson</td>
+<td>Dung</td>
+<td>DSdung@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Engel</td>
+<td>Edison</td>
+<td>Engel@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Ethen</td>
+<td>Elena</td>
+<td>EElena@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Grice</td>
+<td>Tashia</td>
+<td>TashiaG@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Jaquet</td>
+<td>Joey</td>
+<td>Joey@gmail.com</td>
+<td><span class="text-danger">Offline</span></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Johnson</td>
+<td>John</td>
+<td>Johnson@gmail.com</td>
+<td><span class="text-success">Online</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<h4 class="page-content-title">Scroller datatable</h4>
+<p>Use <code>data-scroll-y="380px", data-scroll-collapse="true"</code> in html tag to display <strong>Scroller
+datatable.</strong></p>
+<table id="initscroll" data-plugin="datatable" data-scroll-x="true" data-b-auto-width="false" data-scroll-y="380" data-scroll-collapse="true" data-defer-render="false" data-paging="false" class="table table-striped table-hover display nowrap">
+<thead>
+<tr>
+<th>Name</th>
+<th>Position</th>
+<th>Office</th>
+<th>Age</th>
+<th style="width: 80px;">Start date</th>
+<th>Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiger Nixon</td>
+<td>System Architect</td>
+<td>Edinburgh</td>
+<td>61</td>
+<td>2011/04/25</td>
+<td>$320,800</td>
+</tr>
+<tr>
+<td>Garrett Winters</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>63</td>
+<td>2011/07/25</td>
+<td>$170,750</td>
+</tr>
+<tr>
+<td>Ashton Cox</td>
+<td>Junior Technical Author</td>
+<td>San Francisco</td>
+<td>66</td>
+<td>2009/01/12</td>
+<td>$86,000</td>
+</tr>
+<tr>
+<td>Cedric Kelly</td>
+<td>Senior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>22</td>
+<td>2012/03/29</td>
+<td>$433,060</td>
+</tr>
+<tr>
+<td>Airi Satou</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>33</td>
+<td>2008/11/28</td>
+<td>$162,700</td>
+</tr>
+<tr>
+<td>Brielle Williamson</td>
+<td>Integration Specialist</td>
+<td>New York</td>
+<td>61</td>
+<td>2012/12/02</td>
+<td>$372,000</td>
+</tr>
+<tr>
+<td>Herrod Chandler</td>
+<td>Sales Assistant</td>
+<td>San Francisco</td>
+<td>59</td>
+<td>2012/08/06</td>
+<td>$137,500</td>
+</tr>
+<tr>
+<td>Rhona Davidson</td>
+<td>Integration Specialist</td>
+<td>Tokyo</td>
+<td>55</td>
+<td>2010/10/14</td>
+<td>$327,900</td>
+</tr>
+<tr>
+<td>Colleen Hurst</td>
+<td>Javascript Developer</td>
+<td>San Francisco</td>
+<td>39</td>
+<td>2009/09/15</td>
+<td>$205,500</td>
+</tr>
+<tr>
+<td>Sonya Frost</td>
+<td>Software Engineer</td>
+<td>Edinburgh</td>
+<td>23</td>
+<td>2008/12/13</td>
+<td>$103,600</td>
+</tr>
+<tr>
+<td>Jena Gaines</td>
+<td>Office Manager</td>
+<td>London</td>
+<td>30</td>
+<td>2008/12/19</td>
+<td>$90,560</td>
+</tr>
+<tr>
+<td>Quinn Flynn</td>
+<td>Support Lead</td>
+<td>Edinburgh</td>
+<td>22</td>
+<td>2013/03/03</td>
+<td>$342,000</td>
+</tr>
+<tr>
+<td>Charde Marshall</td>
+<td>Regional Director</td>
+<td>San Francisco</td>
+<td>36</td>
+<td>2008/10/16</td>
+<td>$470,600</td>
+</tr>
+<tr>
+<td>Haley Kennedy</td>
+<td>Senior Marketing Designer</td>
+<td>London</td>
+<td>43</td>
+<td>2012/12/18</td>
+<td>$313,500</td>
+</tr>
+<tr>
+<td>Tatyana Fitzpatrick</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>19</td>
+<td>2010/03/17</td>
+<td>$385,750</td>
+</tr>
+<tr>
+<td>Michael Silva</td>
+<td>Marketing Designer</td>
+<td>London</td>
+<td>66</td>
+<td>2012/11/27</td>
+<td>$198,500</td>
+</tr>
+<tr>
+<td>Paul Byrd</td>
+<td>Chief Financial Officer (CFO)</td>
+<td>New York</td>
+<td>64</td>
+<td>2010/06/09</td>
+<td>$725,000</td>
+</tr>
+<tr>
+<td>Gloria Little</td>
+<td>Systems Administrator</td>
+<td>New York</td>
+<td>59</td>
+<td>2009/04/10</td>
+<td>$237,500</td>
+</tr>
+<tr>
+<td>Bradley Greer</td>
+<td>Software Engineer</td>
+<td>London</td>
+<td>41</td>
+<td>2012/10/13</td>
+<td>$132,000</td>
+</tr>
+<tr>
+<td>Dai Rios</td>
+<td>Personnel Lead</td>
+<td>Edinburgh</td>
+<td>35</td>
+<td>2012/09/26</td>
+<td>$217,500</td>
+</tr>
+<tr>
+<td>Jenette Caldwell</td>
+<td>Development Lead</td>
+<td>New York</td>
+<td>30</td>
+<td>2011/09/03</td>
+<td>$345,000</td>
+</tr>
+<tr>
+<td>Yuri Berry</td>
+<td>Chief Marketing Officer (CMO)</td>
+<td>New York</td>
+<td>40</td>
+<td>2009/06/25</td>
+<td>$675,000</td>
+</tr>
+<tr>
+<td>Caesar Vance</td>
+<td>Pre-Sales Support</td>
+<td>New York</td>
+<td>21</td>
+<td>2011/12/12</td>
+<td>$106,450</td>
+</tr>
+<tr>
+<td>Doris Wilder</td>
+<td>Sales Assistant</td>
+<td>Sidney</td>
+<td>23</td>
+<td>2010/09/20</td>
+<td>$85,600</td>
+</tr>
+<tr>
+<td>Angelica Ramos</td>
+<td>Chief Executive Officer (CEO)</td>
+<td>London</td>
+<td>47</td>
+<td>2009/10/09</td>
+<td>$1,200,000</td>
+</tr>
+<tr>
+<td>Gavin Joyce</td>
+<td>Developer</td>
+<td>Edinburgh</td>
+<td>42</td>
+<td>2010/12/22</td>
+<td>$92,575</td>
+</tr>
+<tr>
+<td>Jennifer Chang</td>
+<td>Regional Director</td>
+<td>Singapore</td>
+<td>28</td>
+<td>2010/11/14</td>
+<td>$357,650</td>
+</tr>
+<tr>
+<td>Brenden Wagner</td>
+<td>Software Engineer</td>
+<td>San Francisco</td>
+<td>28</td>
+<td>2011/06/07</td>
+<td>$206,850</td>
+</tr>
+<tr>
+<td>Fiona Green</td>
+<td>Chief Operating Officer (COO)</td>
+<td>San Francisco</td>
+<td>48</td>
+<td>2010/03/11</td>
+<td>$850,000</td>
+</tr>
+<tr>
+<td>Shou Itou</td>
+<td>Regional Marketing</td>
+<td>Tokyo</td>
+<td>20</td>
+<td>2011/08/14</td>
+<td>$163,000</td>
+</tr>
+<tr>
+<td>Michelle House</td>
+<td>Integration Specialist</td>
+<td>Sidney</td>
+<td>37</td>
+<td>2011/06/02</td>
+<td>$95,400</td>
+</tr>
+<tr>
+<td>Suki Burks</td>
+<td>Developer</td>
+<td>London</td>
+<td>53</td>
+<td>2009/10/22</td>
+<td>$114,500</td>
+</tr>
+<tr>
+<td>Prescott Bartlett</td>
+<td>Technical Author</td>
+<td>London</td>
+<td>27</td>
+<td>2011/05/07</td>
+<td>$145,000</td>
+</tr>
+<tr>
+<td>Gavin Cortez</td>
+<td>Team Leader</td>
+<td>San Francisco</td>
+<td>22</td>
+<td>2008/10/26</td>
+<td>$235,500</td>
+</tr>
+<tr>
+<td>Martena Mccray</td>
+<td>Post-Sales support</td>
+<td>Edinburgh</td>
+<td>46</td>
+<td>2011/03/09</td>
+<td>$324,050</td>
+</tr>
+<tr>
+<td>Unity Butler</td>
+<td>Marketing Designer</td>
+<td>San Francisco</td>
+<td>47</td>
+<td>2009/12/09</td>
+<td>$85,675</td>
+</tr>
+<tr>
+<td>Howard Hatfield</td>
+<td>Office Manager</td>
+<td>San Francisco</td>
+<td>51</td>
+<td>2008/12/16</td>
+<td>$164,500</td>
+</tr>
+<tr>
+<td>Hope Fuentes</td>
+<td>Secretary</td>
+<td>San Francisco</td>
+<td>41</td>
+<td>2010/02/12</td>
+<td>$109,850</td>
+</tr>
+<tr>
+<td>Vivian Harrell</td>
+<td>Financial Controller</td>
+<td>San Francisco</td>
+<td>62</td>
+<td>2009/02/14</td>
+<td>$452,500</td>
+</tr>
+<tr>
+<td>Timothy Mooney</td>
+<td>Office Manager</td>
+<td>London</td>
+<td>37</td>
+<td>2008/12/11</td>
+<td>$136,200</td>
+</tr>
+<tr>
+<td>Jackson Bradshaw</td>
+<td>Director</td>
+<td>New York</td>
+<td>65</td>
+<td>2008/09/26</td>
+<td>$645,750</td>
+</tr>
+<tr>
+<td>Olivia Liang</td>
+<td>Support Engineer</td>
+<td>Singapore</td>
+<td>64</td>
+<td>2011/02/03</td>
+<td>$234,500</td>
+</tr>
+<tr>
+<td>Bruno Nash</td>
+<td>Software Engineer</td>
+<td>London</td>
+<td>38</td>
+<td>2011/05/03</td>
+<td>$163,500</td>
+</tr>
+<tr>
+<td>Sakura Yamamoto</td>
+<td>Support Engineer</td>
+<td>Tokyo</td>
+<td>37</td>
+<td>2009/08/19</td>
+<td>$139,575</td>
+</tr>
+<tr>
+<td>Thor Walton</td>
+<td>Developer</td>
+<td>New York</td>
+<td>61</td>
+<td>2013/08/11</td>
+<td>$98,540</td>
+</tr>
+<tr>
+<td>Finn Camacho</td>
+<td>Support Engineer</td>
+<td>San Francisco</td>
+<td>47</td>
+<td>2009/07/07</td>
+<td>$87,500</td>
+</tr>
+<tr>
+<td>Serge Baldwin</td>
+<td>Data Coordinator</td>
+<td>Singapore</td>
+<td>64</td>
+<td>2012/04/09</td>
+<td>$138,575</td>
+</tr>
+<tr>
+<td>Zenaida Frank</td>
+<td>Software Engineer</td>
+<td>New York</td>
+<td>63</td>
+<td>2010/01/04</td>
+<td>$125,250</td>
+</tr>
+<tr>
+<td>Zorita Serrano</td>
+<td>Software Engineer</td>
+<td>San Francisco</td>
+<td>56</td>
+<td>2012/06/01</td>
+<td>$115,000</td>
+</tr>
+<tr>
+<td>Jennifer Acosta</td>
+<td>Junior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>43</td>
+<td>2013/02/01</td>
+<td>$75,650</td>
+</tr>
+<tr>
+<td>Cara Stevens</td>
+<td>Sales Assistant</td>
+<td>New York</td>
+<td>46</td>
+<td>2011/12/06</td>
+<td>$145,600</td>
+</tr>
+<tr>
+<td>Hermione Butler</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>47</td>
+<td>2011/03/21</td>
+<td>$356,250</td>
+</tr>
+<tr>
+<td>Lael Greer</td>
+<td>Systems Administrator</td>
+<td>London</td>
+<td>21</td>
+<td>2009/02/27</td>
+<td>$103,500</td>
+</tr>
+<tr>
+<td>Jonas Alexander</td>
+<td>Developer</td>
+<td>San Francisco</td>
+<td>30</td>
+<td>2010/07/14</td>
+<td>$86,500</td>
+</tr>
+<tr>
+<td>Shad Decker</td>
+<td>Regional Director</td>
+<td>Edinburgh</td>
+<td>51</td>
+<td>2008/11/13</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Michael Bruce</td>
+<td>Javascript Developer</td>
+<td>Singapore</td>
+<td>29</td>
+<td>2011/06/27</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Donna Snider</td>
+<td>Customer Support</td>
+<td>New York</td>
+<td>27</td>
+<td>2011/01/25</td>
+<td>$112,000</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th>Name</th>
+<th>Position</th>
+<th>Office</th>
+<th>Age</th>
+<th>Start date</th>
+<th>Salary</th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<h4 class="page-content-title">Event datatable</h4>
+<p>To display <strong>event datatable</strong> use <code>#eventdatatable</code> in html tag.</p>
+<table id="eventdatatable" class="table table-striped table-hover display nowrap">
+<thead>
+<tr>
+<th>Name</th>
+<th>Position</th>
+<th>Office</th>
+<th>Age</th>
+<th style="width: 80px;">Start date</th>
+<th>Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiger Nixon</td>
+<td>System Architect</td>
+<td>Edinburgh</td>
+<td>61</td>
+<td>2011/04/25</td>
+<td>$320,800</td>
+</tr>
+<tr>
+<td>Garrett Winters</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>63</td>
+<td>2011/07/25</td>
+<td>$170,750</td>
+</tr>
+<tr>
+<td>Ashton Cox</td>
+<td>Junior Technical Author</td>
+<td>San Francisco</td>
+<td>66</td>
+<td>2009/01/12</td>
+<td>$86,000</td>
+</tr>
+<tr>
+<td>Cedric Kelly</td>
+<td>Senior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>22</td>
+<td>2012/03/29</td>
+<td>$433,060</td>
+</tr>
+<tr>
+<td>Airi Satou</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>33</td>
+<td>2008/11/28</td>
+<td>$162,700</td>
+</tr>
+<tr>
+<td>Brielle Williamson</td>
+<td>Integration Specialist</td>
+<td>New York</td>
+<td>61</td>
+<td>2012/12/02</td>
+<td>$372,000</td>
+</tr>
+<tr>
+<td>Herrod Chandler</td>
+<td>Sales Assistant</td>
+<td>San Francisco</td>
+<td>59</td>
+<td>2012/08/06</td>
+<td>$137,500</td>
+</tr>
+<tr>
+<td>Rhona Davidson</td>
+<td>Integration Specialist</td>
+<td>Tokyo</td>
+<td>55</td>
+<td>2010/10/14</td>
+<td>$327,900</td>
+</tr>
+<tr>
+<td>Colleen Hurst</td>
+<td>Javascript Developer</td>
+<td>San Francisco</td>
+<td>39</td>
+<td>2009/09/15</td>
+<td>$205,500</td>
+</tr>
+<tr>
+<td>Sonya Frost</td>
+<td>Software Engineer</td>
+<td>Edinburgh</td>
+<td>23</td>
+<td>2008/12/13</td>
+<td>$103,600</td>
+</tr>
+<tr>
+<td>Jena Gaines</td>
+<td>Office Manager</td>
+<td>London</td>
+<td>30</td>
+<td>2008/12/19</td>
+<td>$90,560</td>
+</tr>
+<tr>
+<td>Quinn Flynn</td>
+<td>Support Lead</td>
+<td>Edinburgh</td>
+<td>22</td>
+<td>2013/03/03</td>
+<td>$342,000</td>
+</tr>
+<tr>
+<td>Charde Marshall</td>
+<td>Regional Director</td>
+<td>San Francisco</td>
+<td>36</td>
+<td>2008/10/16</td>
+<td>$470,600</td>
+</tr>
+<tr>
+<td>Haley Kennedy</td>
+<td>Senior Marketing Designer</td>
+<td>London</td>
+<td>43</td>
+<td>2012/12/18</td>
+<td>$313,500</td>
+</tr>
+<tr>
+<td>Tatyana Fitzpatrick</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>19</td>
+<td>2010/03/17</td>
+<td>$385,750</td>
+</tr>
+<tr>
+<td>Michael Silva</td>
+<td>Marketing Designer</td>
+<td>London</td>
+<td>66</td>
+<td>2012/11/27</td>
+<td>$198,500</td>
+</tr>
+<tr>
+<td>Paul Byrd</td>
+<td>Chief Financial Officer (CFO)</td>
+<td>New York</td>
+<td>64</td>
+<td>2010/06/09</td>
+<td>$725,000</td>
+</tr>
+<tr>
+<td>Gloria Little</td>
+<td>Systems Administrator</td>
+<td>New York</td>
+<td>59</td>
+<td>2009/04/10</td>
+<td>$237,500</td>
+</tr>
+<tr>
+<td>Bradley Greer</td>
+<td>Software Engineer</td>
+<td>London</td>
+<td>41</td>
+<td>2012/10/13</td>
+<td>$132,000</td>
+</tr>
+<tr>
+<td>Dai Rios</td>
+<td>Personnel Lead</td>
+<td>Edinburgh</td>
+<td>35</td>
+<td>2012/09/26</td>
+<td>$217,500</td>
+</tr>
+<tr>
+<td>Jenette Caldwell</td>
+<td>Development Lead</td>
+<td>New York</td>
+<td>30</td>
+<td>2011/09/03</td>
+<td>$345,000</td>
+</tr>
+<tr>
+<td>Yuri Berry</td>
+<td>Chief Marketing Officer (CMO)</td>
+<td>New York</td>
+<td>40</td>
+<td>2009/06/25</td>
+<td>$675,000</td>
+</tr>
+<tr>
+<td>Caesar Vance</td>
+<td>Pre-Sales Support</td>
+<td>New York</td>
+<td>21</td>
+<td>2011/12/12</td>
+<td>$106,450</td>
+</tr>
+<tr>
+<td>Doris Wilder</td>
+<td>Sales Assistant</td>
+<td>Sidney</td>
+<td>23</td>
+<td>2010/09/20</td>
+<td>$85,600</td>
+</tr>
+<tr>
+<td>Angelica Ramos</td>
+<td>Chief Executive Officer (CEO)</td>
+<td>London</td>
+<td>47</td>
+<td>2009/10/09</td>
+<td>$1,200,000</td>
+</tr>
+<tr>
+<td>Gavin Joyce</td>
+<td>Developer</td>
+<td>Edinburgh</td>
+<td>42</td>
+<td>2010/12/22</td>
+<td>$92,575</td>
+</tr>
+<tr>
+<td>Jennifer Chang</td>
+<td>Regional Director</td>
+<td>Singapore</td>
+<td>28</td>
+<td>2010/11/14</td>
+<td>$357,650</td>
+</tr>
+<tr>
+<td>Brenden Wagner</td>
+<td>Software Engineer</td>
+<td>San Francisco</td>
+<td>28</td>
+<td>2011/06/07</td>
+<td>$206,850</td>
+</tr>
+<tr>
+<td>Fiona Green</td>
+<td>Chief Operating Officer (COO)</td>
+<td>San Francisco</td>
+<td>48</td>
+<td>2010/03/11</td>
+<td>$850,000</td>
+</tr>
+<tr>
+<td>Shou Itou</td>
+<td>Regional Marketing</td>
+<td>Tokyo</td>
+<td>20</td>
+<td>2011/08/14</td>
+<td>$163,000</td>
+</tr>
+<tr>
+<td>Michelle House</td>
+<td>Integration Specialist</td>
+<td>Sidney</td>
+<td>37</td>
+<td>2011/06/02</td>
+<td>$95,400</td>
+</tr>
+<tr>
+<td>Suki Burks</td>
+<td>Developer</td>
+<td>London</td>
+<td>53</td>
+<td>2009/10/22</td>
+<td>$114,500</td>
+</tr>
+<tr>
+<td>Prescott Bartlett</td>
+<td>Technical Author</td>
+<td>London</td>
+<td>27</td>
+<td>2011/05/07</td>
+<td>$145,000</td>
+</tr>
+<tr>
+<td>Gavin Cortez</td>
+<td>Team Leader</td>
+<td>San Francisco</td>
+<td>22</td>
+<td>2008/10/26</td>
+<td>$235,500</td>
+</tr>
+<tr>
+<td>Martena Mccray</td>
+<td>Post-Sales support</td>
+<td>Edinburgh</td>
+<td>46</td>
+<td>2011/03/09</td>
+<td>$324,050</td>
+</tr>
+<tr>
+<td>Unity Butler</td>
+<td>Marketing Designer</td>
+<td>San Francisco</td>
+<td>47</td>
+<td>2009/12/09</td>
+<td>$85,675</td>
+</tr>
+<tr>
+<td>Howard Hatfield</td>
+<td>Office Manager</td>
+<td>San Francisco</td>
+<td>51</td>
+<td>2008/12/16</td>
+<td>$164,500</td>
+</tr>
+<tr>
+<td>Hope Fuentes</td>
+<td>Secretary</td>
+<td>San Francisco</td>
+<td>41</td>
+<td>2010/02/12</td>
+<td>$109,850</td>
+</tr>
+<tr>
+<td>Vivian Harrell</td>
+<td>Financial Controller</td>
+<td>San Francisco</td>
+<td>62</td>
+<td>2009/02/14</td>
+<td>$452,500</td>
+</tr>
+<tr>
+<td>Timothy Mooney</td>
+<td>Office Manager</td>
+<td>London</td>
+<td>37</td>
+<td>2008/12/11</td>
+<td>$136,200</td>
+</tr>
+<tr>
+<td>Jackson Bradshaw</td>
+<td>Director</td>
+<td>New York</td>
+<td>65</td>
+<td>2008/09/26</td>
+<td>$645,750</td>
+</tr>
+<tr>
+<td>Olivia Liang</td>
+<td>Support Engineer</td>
+<td>Singapore</td>
+<td>64</td>
+<td>2011/02/03</td>
+<td>$234,500</td>
+</tr>
+<tr>
+<td>Bruno Nash</td>
+<td>Software Engineer</td>
+<td>London</td>
+<td>38</td>
+<td>2011/05/03</td>
+<td>$163,500</td>
+</tr>
+<tr>
+<td>Sakura Yamamoto</td>
+<td>Support Engineer</td>
+<td>Tokyo</td>
+<td>37</td>
+<td>2009/08/19</td>
+<td>$139,575</td>
+</tr>
+<tr>
+<td>Thor Walton</td>
+<td>Developer</td>
+<td>New York</td>
+<td>61</td>
+<td>2013/08/11</td>
+<td>$98,540</td>
+</tr>
+<tr>
+<td>Finn Camacho</td>
+<td>Support Engineer</td>
+<td>San Francisco</td>
+<td>47</td>
+<td>2009/07/07</td>
+<td>$87,500</td>
+</tr>
+<tr>
+<td>Serge Baldwin</td>
+<td>Data Coordinator</td>
+<td>Singapore</td>
+<td>64</td>
+<td>2012/04/09</td>
+<td>$138,575</td>
+</tr>
+<tr>
+<td>Zenaida Frank</td>
+<td>Software Engineer</td>
+<td>New York</td>
+<td>63</td>
+<td>2010/01/04</td>
+<td>$125,250</td>
+</tr>
+<tr>
+<td>Zorita Serrano</td>
+<td>Software Engineer</td>
+<td>San Francisco</td>
+<td>56</td>
+<td>2012/06/01</td>
+<td>$115,000</td>
+</tr>
+<tr>
+<td>Jennifer Acosta</td>
+<td>Junior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>43</td>
+<td>2013/02/01</td>
+<td>$75,650</td>
+</tr>
+<tr>
+<td>Cara Stevens</td>
+<td>Sales Assistant</td>
+<td>New York</td>
+<td>46</td>
+<td>2011/12/06</td>
+<td>$145,600</td>
+</tr>
+<tr>
+<td>Hermione Butler</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>47</td>
+<td>2011/03/21</td>
+<td>$356,250</td>
+</tr>
+<tr>
+<td>Lael Greer</td>
+<td>Systems Administrator</td>
+<td>London</td>
+<td>21</td>
+<td>2009/02/27</td>
+<td>$103,500</td>
+</tr>
+<tr>
+<td>Jonas Alexander</td>
+<td>Developer</td>
+<td>San Francisco</td>
+<td>30</td>
+<td>2010/07/14</td>
+<td>$86,500</td>
+</tr>
+<tr>
+<td>Shad Decker</td>
+<td>Regional Director</td>
+<td>Edinburgh</td>
+<td>51</td>
+<td>2008/11/13</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Michael Bruce</td>
+<td>Javascript Developer</td>
+<td>Singapore</td>
+<td>29</td>
+<td>2011/06/27</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Donna Snider</td>
+<td>Customer Support</td>
+<td>New York</td>
+<td>27</td>
+<td>2011/01/25</td>
+<td>$112,000</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th>Name</th>
+<th>Position</th>
+<th>Office</th>
+<th>Age</th>
+<th>Start date</th>
+<th>Salary</th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<h4 class="page-content-title">Add row datatable</h4>
+<p><strong>Create datatable that adds row in runtime</strong>. To display it, use <code>#addrowdatatable</code> in html tag.</p>
+<table id="addrowdatatable" class="table table-striped table-hover display nowrap">
+<thead>
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+<th>Column 4</th>
+<th>Column 5</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+<th>Column 4</th>
+<th>Column 5</th>
+</tr>
+</tfoot>
+</table>
+<div class="divider10"></div>
+<div class="text-xs-center text-md-left">
+<button class="btn btn-primary" id="addRow"><i class="icon_plus"></i>ADD NEW ROW
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<h4 class="page-content-title">Individual column searching</h4>
+<p>Use attribute <code>#individualcolumn</code> in html tag to display <strong>individual column
+datatable.</strong></p>
+<table id="individualcolumn" class="table table-striped table-hover display nowrap">
+<thead>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Position</th>
+<th>Office</th>
+<th>Start date</th>
+<th>Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiger</td>
+<td>Nixon</td>
+<td>System Architect</td>
+<td>Edinburgh</td>
+<td>2011/04/25</td>
+<td>$320,800</td>
+</tr>
+<tr>
+<td>Garrett</td>
+<td>Winters</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>2011/07/25</td>
+<td>$170,750</td>
+</tr>
+<tr>
+<td>Ashton</td>
+<td>Cox</td>
+<td>Junior Technical Author</td>
+<td>San Francisco</td>
+<td>2009/01/12</td>
+<td>$86,000</td>
+</tr>
+<tr>
+<td>Cedric</td>
+<td>Kelly</td>
+<td>Senior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>2012/03/29</td>
+<td>$433,060</td>
+</tr>
+<tr>
+<td>Airi</td>
+<td>Satou</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>2008/11/28</td>
+<td>$162,700</td>
+</tr>
+<tr>
+<td>Brielle</td>
+<td>Williamson</td>
+<td>Integration Specialist</td>
+<td>New York</td>
+<td>2012/12/02</td>
+<td>$372,000</td>
+</tr>
+<tr>
+<td>Herrod</td>
+<td>Chandler</td>
+<td>Sales Assistant</td>
+<td>San Francisco</td>
+<td>2012/08/06</td>
+<td>$137,500</td>
+</tr>
+<tr>
+<td>Rhona</td>
+<td>Davidson</td>
+<td>Integration Specialist</td>
+<td>Tokyo</td>
+<td>2010/10/14</td>
+<td>$327,900</td>
+</tr>
+<tr>
+<td>Colleen</td>
+<td>Hurst</td>
+<td>Javascript Developer</td>
+<td>San Francisco</td>
+<td>2009/09/15</td>
+<td>$205,500</td>
+</tr>
+<tr>
+<td>Sonya</td>
+<td>Frost</td>
+<td>Software Engineer</td>
+<td>Edinburgh</td>
+<td>2008/12/13</td>
+<td>$103,600</td>
+</tr>
+<tr>
+<td>Jena</td>
+<td>Gaines</td>
+<td>Office Manager</td>
+<td>London</td>
+<td>2008/12/19</td>
+<td>$90,560</td>
+</tr>
+<tr>
+<td>Quinn</td>
+<td>Flynn</td>
+<td>Support Lead</td>
+<td>Edinburgh</td>
+<td>2013/03/03</td>
+<td>$342,000</td>
+</tr>
+<tr>
+<td>Charde</td>
+<td>Marshall</td>
+<td>Regional Director</td>
+<td>San Francisco</td>
+<td>2008/10/16</td>
+<td>$470,600</td>
+</tr>
+<tr>
+<td>Haley</td>
+<td>Kennedy</td>
+<td>Senior Marketing Designer</td>
+<td>London</td>
+<td>2012/12/18</td>
+<td>$313,500</td>
+</tr>
+<tr>
+<td>Tatyana</td>
+<td>Fitzpatrick</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>2010/03/17</td>
+<td>$385,750</td>
+</tr>
+<tr>
+<td>Michael</td>
+<td>Silva</td>
+<td>Marketing Designer</td>
+<td>London</td>
+<td>2012/11/27</td>
+<td>$198,500</td>
+</tr>
+<tr>
+<td>Serge</td>
+<td>Baldwin</td>
+<td>Data Coordinator</td>
+<td>Singapore</td>
+<td>2012/04/09</td>
+<td>$138,575</td>
+</tr>
+<tr>
+<td>Zenaida</td>
+<td>Frank</td>
+<td>Software Engineer</td>
+<td>New York</td>
+<td>2010/01/04</td>
+<td>$125,250</td>
+</tr>
+<tr>
+<td>Zorita</td>
+<td>Serrano</td>
+<td>Software Engineer</td>
+<td>San Francisco</td>
+<td>2012/06/01</td>
+<td>$115,000</td>
+</tr>
+<tr>
+<td>Jennifer</td>
+<td>Acosta</td>
+<td>Junior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>2013/02/01</td>
+<td>$75,650</td>
+</tr>
+<tr>
+<td>Cara</td>
+<td>Stevens</td>
+<td>Sales Assistant</td>
+<td>New York</td>
+<td>2011/12/06</td>
+<td>$145,600</td>
+</tr>
+<tr>
+<td>Hermione</td>
+<td>Butler</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>2011/03/21</td>
+<td>$356,250</td>
+</tr>
+<tr>
+<td>Lael</td>
+<td>Greer</td>
+<td>Systems Administrator</td>
+<td>London</td>
+<td>2009/02/27</td>
+<td>$103,500</td>
+</tr>
+<tr>
+<td>Jonas</td>
+<td>Alexander</td>
+<td>Developer</td>
+<td>San Francisco</td>
+<td>2010/07/14</td>
+<td>$86,500</td>
+</tr>
+<tr>
+<td>Shad</td>
+<td>Decker</td>
+<td>Regional Director</td>
+<td>Edinburgh</td>
+<td>2008/11/13</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Michael</td>
+<td>Bruce</td>
+<td>Javascript Developer</td>
+<td>Singapore</td>
+<td>2011/06/27</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Donna</td>
+<td>Snider</td>
+<td>Customer Support</td>
+<td>New York</td>
+<td>2011/01/25</td>
+<td>$112,000</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Position</th>
+<th>Office</th>
+<th>Start date</th>
+<th>Salary</th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<h4 class="page-content-title">AJAX data</h4>
+<p>To create <strong>AJAX datatable</strong>, use <code>data-ajax="../../../assets/data/data.txt"</code> in html tag to call ajax data
+datatable.</p>
+<table data-plugin="datatable" data-scroll-x="true" data-b-auto-width="false" data-s-pagination-type="simple" data-ajax="../../../assets/data/ajax_demo.txt" class="table table-striped table-hover display nowrap">
+<thead>
+<tr>
+<th>ID</th>
+<th style="width: 250px;">First name</th>
+<th style="width: 250px;">Last name</th>
+<th style="width: 250px;">Post code</th>
+<th>Country</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th>ID</th>
+<th>First name</th>
+<th>Last name</th>
+<th>ZIP / Post code</th>
+<th>Country</th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<h4 class="page-content-title">Multi column table</h4>
+<p>To call <strong>multi column datatable</strong>, use <code>#multi-table</code> in html tag.</p>
+<table id="multi-table" class="table table-striped table-hover display nowrap">
+<thead>
+<tr>
+<th>First name</th>
+<th>Last name</th>
+<th>Position</th>
+<th>Office</th>
+<th>Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiger</td>
+<td>Nixon</td>
+<td>System Architect</td>
+<td>Edinburgh</td>
+<td>$320,800</td>
+</tr>
+<tr>
+<td>Garrett</td>
+<td>Winters</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>$170,750</td>
+</tr>
+<tr>
+<td>Ashton</td>
+<td>Cox</td>
+<td>Junior Technical Author</td>
+<td>San Francisco</td>
+<td>$86,000</td>
+</tr>
+<tr>
+<td>Cedric</td>
+<td>Kelly</td>
+<td>Senior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>$433,060</td>
+</tr>
+<tr>
+<td>Airi</td>
+<td>Satou</td>
+<td>Accountant</td>
+<td>Tokyo</td>
+<td>$162,700</td>
+</tr>
+<tr>
+<td>Brielle</td>
+<td>Williamson</td>
+<td>Integration Specialist</td>
+<td>New York</td>
+<td>$372,000</td>
+</tr>
+<tr>
+<td>Herrod</td>
+<td>Chandler</td>
+<td>Sales Assistant</td>
+<td>San Francisco</td>
+<td>$137,500</td>
+</tr>
+<tr>
+<td>Rhona</td>
+<td>Davidson</td>
+<td>Integration Specialist</td>
+<td>Tokyo</td>
+<td>$327,900</td>
+</tr>
+<tr>
+<td>Colleen</td>
+<td>Hurst</td>
+<td>Javascript Developer</td>
+<td>San Francisco</td>
+<td>$205,500</td>
+</tr>
+<tr>
+<td>Sonya</td>
+<td>Frost</td>
+<td>Software Engineer</td>
+<td>Edinburgh</td>
+<td>$103,600</td>
+</tr>
+<tr>
+<td>Jena</td>
+<td>Gaines</td>
+<td>Office Manager</td>
+<td>London</td>
+<td>$90,560</td>
+</tr>
+<tr>
+<td>Quinn</td>
+<td>Flynn</td>
+<td>Support Lead</td>
+<td>Edinburgh</td>
+<td>$342,000</td>
+</tr>
+<tr>
+<td>Charde</td>
+<td>Marshall</td>
+<td>Regional Director</td>
+<td>San Francisco</td>
+<td>$470,600</td>
+</tr>
+<tr>
+<td>Haley</td>
+<td>Kennedy</td>
+<td>Senior Marketing Designer</td>
+<td>London</td>
+<td>$313,500</td>
+</tr>
+<tr>
+<td>Tatyana</td>
+<td>Fitzpatrick</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>$385,750</td>
+</tr>
+<tr>
+<td>Michael</td>
+<td>Silva</td>
+<td>Marketing Designer</td>
+<td>London</td>
+<td>$198,500</td>
+</tr>
+<tr>
+<td>Paul</td>
+<td>Byrd</td>
+<td>Chief Financial Officer (CFO)</td>
+<td>New York</td>
+<td>$725,000</td>
+</tr>
+<tr>
+<td>Gloria</td>
+<td>Little</td>
+<td>Systems Administrator</td>
+<td>New York</td>
+<td>$237,500</td>
+</tr>
+<tr>
+<td>Bradley</td>
+<td>Greer</td>
+<td>Software Engineer</td>
+<td>London</td>
+<td>$132,000</td>
+</tr>
+<tr>
+<td>Dai</td>
+<td>Rios</td>
+<td>Personnel Lead</td>
+<td>Edinburgh</td>
+<td>$217,500</td>
+</tr>
+<tr>
+<td>Jenette</td>
+<td>Caldwell</td>
+<td>Development Lead</td>
+<td>New York</td>
+<td>$345,000</td>
+</tr>
+<tr>
+<td>Yuri</td>
+<td>Berry</td>
+<td>Chief Marketing Officer (CMO)</td>
+<td>New York</td>
+<td>$675,000</td>
+</tr>
+<tr>
+<td>Caesar</td>
+<td>Vance</td>
+<td>Pre-Sales Support</td>
+<td>New York</td>
+<td>$106,450</td>
+</tr>
+<tr>
+<td>Doris</td>
+<td>Wilder</td>
+<td>Sales Assistant</td>
+<td>Sidney</td>
+<td>$85,600</td>
+</tr>
+<tr>
+<td>Angelica</td>
+<td>Ramos</td>
+<td>Chief Executive Officer (CEO)</td>
+<td>London</td>
+<td>$1,200,000</td>
+</tr>
+<tr>
+<td>Gavin</td>
+<td>Joyce</td>
+<td>Developer</td>
+<td>Edinburgh</td>
+<td>$92,575</td>
+</tr>
+<tr>
+<td>Jennifer</td>
+<td>Chang</td>
+<td>Regional Director</td>
+<td>Singapore</td>
+<td>$357,650</td>
+</tr>
+<tr>
+<td>Brenden</td>
+<td>Wagner</td>
+<td>Software Engineer</td>
+<td>San Francisco</td>
+<td>$206,850</td>
+</tr>
+<tr>
+<td>Fiona</td>
+<td>Green</td>
+<td>Chief Operating Officer (COO)</td>
+<td>San Francisco</td>
+<td>$850,000</td>
+</tr>
+<tr>
+<td>Shou</td>
+<td>Itou</td>
+<td>Regional Marketing</td>
+<td>Tokyo</td>
+<td>$163,000</td>
+</tr>
+<tr>
+<td>Michelle</td>
+<td>House</td>
+<td>Integration Specialist</td>
+<td>Sidney</td>
+<td>$95,400</td>
+</tr>
+<tr>
+<td>Suki</td>
+<td>Burks</td>
+<td>Developer</td>
+<td>London</td>
+<td>$114,500</td>
+</tr>
+<tr>
+<td>Prescott</td>
+<td>Bartlett</td>
+<td>Technical Author</td>
+<td>London</td>
+<td>$145,000</td>
+</tr>
+<tr>
+<td>Gavin</td>
+<td>Cortez</td>
+<td>Team Leader</td>
+<td>San Francisco</td>
+<td>$235,500</td>
+</tr>
+<tr>
+<td>Martena</td>
+<td>Mccray</td>
+<td>Post-Sales support</td>
+<td>Edinburgh</td>
+<td>$324,050</td>
+</tr>
+<tr>
+<td>Unity</td>
+<td>Butler</td>
+<td>Marketing Designer</td>
+<td>San Francisco</td>
+<td>$85,675</td>
+</tr>
+<tr>
+<td>Howard</td>
+<td>Hatfield</td>
+<td>Office Manager</td>
+<td>San Francisco</td>
+<td>$164,500</td>
+</tr>
+<tr>
+<td>Hope</td>
+<td>Fuentes</td>
+<td>Secretary</td>
+<td>San Francisco</td>
+<td>$109,850</td>
+</tr>
+<tr>
+<td>Vivian</td>
+<td>Harrell</td>
+<td>Financial Controller</td>
+<td>San Francisco</td>
+<td>$452,500</td>
+</tr>
+<tr>
+<td>Timothy</td>
+<td>Mooney</td>
+<td>Office Manager</td>
+<td>London</td>
+<td>$136,200</td>
+</tr>
+<tr>
+<td>Jackson</td>
+<td>Bradshaw</td>
+<td>Director</td>
+<td>New York</td>
+<td>$645,750</td>
+</tr>
+<tr>
+<td>Olivia</td>
+<td>Liang</td>
+<td>Support Engineer</td>
+<td>Singapore</td>
+<td>$234,500</td>
+</tr>
+<tr>
+<td>Bruno</td>
+<td>Nash</td>
+<td>Software Engineer</td>
+<td>London</td>
+<td>$163,500</td>
+</tr>
+<tr>
+<td>Sakura</td>
+<td>Yamamoto</td>
+<td>Support Engineer</td>
+<td>Tokyo</td>
+<td>$139,575</td>
+</tr>
+<tr>
+<td>Thor</td>
+<td>Walton</td>
+<td>Developer</td>
+<td>New York</td>
+<td>$98,540</td>
+</tr>
+<tr>
+<td>Finn</td>
+<td>Camacho</td>
+<td>Support Engineer</td>
+<td>San Francisco</td>
+<td>$87,500</td>
+</tr>
+<tr>
+<td>Serge</td>
+<td>Baldwin</td>
+<td>Data Coordinator</td>
+<td>Singapore</td>
+<td>$138,575</td>
+</tr>
+<tr>
+<td>Zenaida</td>
+<td>Frank</td>
+<td>Software Engineer</td>
+<td>New York</td>
+<td>$125,250</td>
+</tr>
+<tr>
+<td>Zorita</td>
+<td>Serrano</td>
+<td>Software Engineer</td>
+<td>San Francisco</td>
+<td>$115,000</td>
+</tr>
+<tr>
+<td>Jennifer</td>
+<td>Acosta</td>
+<td>Junior Javascript Developer</td>
+<td>Edinburgh</td>
+<td>$75,650</td>
+</tr>
+<tr>
+<td>Cara</td>
+<td>Stevens</td>
+<td>Sales Assistant</td>
+<td>New York</td>
+<td>$145,600</td>
+</tr>
+<tr>
+<td>Hermione</td>
+<td>Butler</td>
+<td>Regional Director</td>
+<td>London</td>
+<td>$356,250</td>
+</tr>
+<tr>
+<td>Lael</td>
+<td>Greer</td>
+<td>Systems Administrator</td>
+<td>London</td>
+<td>$103,500</td>
+</tr>
+<tr>
+<td>Jonas</td>
+<td>Alexander</td>
+<td>Developer</td>
+<td>San Francisco</td>
+<td>$86,500</td>
+</tr>
+<tr>
+<td>Shad</td>
+<td>Decker</td>
+<td>Regional Director</td>
+<td>Edinburgh</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Michael</td>
+<td>Bruce</td>
+<td>Javascript Developer</td>
+<td>Singapore</td>
+<td>$183,000</td>
+</tr>
+<tr>
+<td>Donna</td>
+<td>Snider</td>
+<td>Customer Support</td>
+<td>New York</td>
+<td>$112,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="row">
+<div class="col-md-12">
+<h4 class="page-content-title">Editable datatable</h4>
+<p>Create <strong>editable datatable</strong>, by using <code>#editable-table</code> in html tag.</p>
+<table id="editable-table" data-plugin="datatable" data-scroll-x="true" data-b-auto-width="false" data-count="numeric" class="table-editing table table-striped table-hover display nowrap">
+<thead>
+<tr>
+<th>Name</th>
+<th>Cost</th>
+<th>Progress</th>
+<th>Vat</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product 1</td>
+<td>800</td>
+<td>500</td>
+<td>50</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Product 2</td>
+<td>600</td>
+<td>300</td>
+<td>25</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Product 3</td>
+<td>890</td>
+<td>650</td>
+<td>60</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Product 4</td>
+<td>850</td>
+<td>450</td>
+<td>100</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Product 5</td>
+<td>1500</td>
+<td>1000</td>
+<td>250</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Product 6</td>
+<td>350</td>
+<td>50</td>
+<td>20</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Product 7</td>
+<td>780</td>
+<td>600</td>
+<td>25</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Product 8</td>
+<td>150</td>
+<td>120</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Product 9</td>
+<td>1000</td>
+<td>780</td>
+<td>120</td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th><strong>TOTAL</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+</section>
+ 
+</div>
+</section>
+ 
+ 
+<footer id="footer">
+Copyright&copy; 2017, All Rights Reserved.
+</footer>
+ 
+ 
+<div class="right-side-bar">
+<div class="float-xs-left icon-right site-setting-animation how-it-works">
+<div id="site_setting_icon" class="animation">
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon1"/>
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon2">
+<img src="../../../assets/global/image/site-setting-icon.png" alt="" class="icon3">
+</div>
+</div>
+<div class="right-side-box float-xs-right" data-plugin="custom-scroll" data-height="100%">
+<div class="right-side-inner-box">
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> Colors</h5>
+<div class="settings-sidebox site-color">
+<div class="color-inner-box default-color color-active" data-color="default" data-color-code="#087380"></div>
+<div class="color-inner-box golden-color" data-color="golden" data-color-code="#F3C200"></div>
+<div class="color-inner-box soft-orange-color" data-color="soft-orange" data-color-code="#F2784B"></div>
+<div class="color-inner-box dodger-blue-color" data-color="dodger-blue" data-color-code="#039be5"></div>
+<div class="color-inner-box bright-pink-color" data-color="bright-pink" data-color-code="#ec407a"></div>
+<div class="color-inner-box light-red-color" data-color="light-red" data-color-code="#eb6d6d"></div>
+<div class="color-inner-box purple-color" data-color="purple" data-color-code="#6d5cae"></div>
+<div class="color-inner-box spice-color" data-color="spice" data-color-code="#6d4c41"></div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Template</h5>
+<div class="settings-sidebox">
+<span class="dark-color">Light</span>
+<div class="texture-switch dark-color-switch">
+<input type="checkbox" class="js-switch site-dark-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Navigation</h5>
+<div class="settings-sidebox">
+<span class="nav-dark-color">Vertical Dark</span>
+<div class="texture-switch nav-color-switch">
+<input type="checkbox" class="js-switch nav-dark-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+<div class="settings-sidebox">
+<span class="top-nav-color-text">Horizontal Light</span>
+<div class="texture-switch top-nav-color-switch">
+<input type="checkbox" class="js-switch top-nav-color-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+<div class="settings-sidebox">
+<span class="nav-fixed-text">Vertical Fixed</span>
+<div class="texture-switch nav-fixed-switch">
+<input type="checkbox" class="js-switch nav-fixed-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5 class="default"><span class="icon_box-selected" aria-hidden="true"></span> Footer</h5>
+<div class="settings-sidebox">
+<span class="footer-check-text">Default</span>
+<div class="texture-switch footer-fixed-switch">
+<input type="checkbox" class="js-switch footer-fixed-check" data-plugin="switchery" data-switchery="true" data-size="small"/>
+</div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> Fonts</h5>
+<div class="settings-sidebox site-fonts">
+<div class="font-box">
+<label for="font-radio-button1">Default</label>
+<div class="radio-button float-xs-right">
+<input value="default" id="font-radio-button1" name="font" type="radio" checked>
+<label class="radio-check" for="font-radio-button1"></label>
+</div>
+</div>
+<div class="font-box">
+<label for="font-radio-button2">PT Sans</label>
+<div class="radio-button float-xs-right">
+<input value="font2" id="font-radio-button2" name="font" type="radio">
+<label class="radio-check" for="font-radio-button2"></label>
+</div></div>
+<div class="font-box">
+<label for="font-radio-button3">Open Sans</label>
+<div class="radio-button float-xs-right">
+<input value="font3" id="font-radio-button3" name="font" type="radio">
+<label class="radio-check" for="font-radio-button3"></label>
+</div></div>
+</div>
+</div>
+<div class="globle-right-content">
+<h5><span class="icon_box-selected" aria-hidden="true"></span> System</h5>
+<div class="settings-sidebox">
+<ul class="list-unstyled">
+<li>
+<span class="system-option"><i class="icon_lock"></i> Last Login</span>
+<span class="time float-xs-right">2h ago</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_calendar"></i> Our Task</span>
+<span class="time float-xs-right">06</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_cloud_alt"></i> Weather Today</span>
+<span class="time float-xs-right">32c</span>
+</li>
+<li>
+<span class="system-option"><i class="icon_comment_alt"></i> Notifications</span>
+<span class="time float-xs-right">10</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+ 
+<script type="text/javascript" src="../../../assets/global/plugins/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/tether/dist/js/tether.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/switchery/dist/switchery.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/screenfull.js/dist/screenfull.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/classie/classie.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/datatables-responsive/js/dataTables.responsive.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/datatables-responsive/js/responsive.bootstrap4.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/datatables-scroller/js/dataTables.scroller.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/editable-table/mindmup-editabletable.js"></script>
+<script type="text/javascript" src="../../../assets/global/plugins/editable-table/numeric-input-example.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/global/js/site.min.js"></script>
+<script type="text/javascript" src="../../../assets/global/js/site-settings.min.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/global/js/global/datatable.js"></script>
+ 
+ 
+<script type="text/javascript" src="../../../assets/layouts/layout-left-top-menu/js/layout.js"></script>
+ 
+</body>
+
+<!-- Mirrored from backend.themesadmin.com/backend/admin_left_top_menu/default/admin_default/datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 08:27:41 GMT -->
+</html>

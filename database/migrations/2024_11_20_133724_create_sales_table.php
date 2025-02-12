@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('staff_id')->constrained()->onDelete('cascade'); // Staff handling the sale
-            $table->integer('medicine_id')->nullable(); // Customer's name
-            $table->string('quantity')->nullable(); // Customer's name
+            $table->integer('staff_id');// Staff handling the sale
+            $table->integer('medicine_id'); // Sold medicine
+            $table->integer('batch_number')->nullable(); // Unique batch number for this sale
+            $table->unsignedInteger('quantity'); // Quantity sold
             $table->decimal('total_amount', 10, 2); // Total sale amount
             $table->timestamps();
         });

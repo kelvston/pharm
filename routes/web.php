@@ -12,6 +12,7 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\StockTakeController;
 
 // Public Routes
 Route::get('/', function () {
@@ -38,6 +39,9 @@ Route::post('staff/register', [StaffRegisterController::class, 'register']);
     // Inventory Management
     Route::get('/inventory', [MedicineController::class, 'index'])->name('inventory.index');
     Route::get('/inventory/create', [MedicineController::class, 'create'])->name('inventory.create');
+    Route::get('/inventory/show', [MedicineController::class, 'show'])->name('inventory.show');
+    Route::get('/inventory/search', [MedicineController::class, 'searchList'])->name('inventory.search');
+    Route::get('/stock/search', [MedicineController::class, 'searchStock'])->name('stock.search');
     Route::post('/inventory', [MedicineController::class, 'store'])->name('inventory.store');
     Route::get('/inventory/{id}/edit', [MedicineController::class, 'edit'])->name('inventory.edit');
     Route::put('/inventory/{id}', [MedicineController::class, 'update'])->name('inventory.update');
@@ -63,6 +67,13 @@ Route::get('/revenue-report', [ReportController::class, 'revenueReport'])->name(
 Route::get('/medicines/{medicine}/barcode', [MedicineController::class, 'showBarcode'])->name('medicines.barcode');
 Route::post('/api/scan', [MedicineController::class, 'processScan']);
 Route::resource('expenses', ExpenseController::class);
+Route::post('medicines/upload', [MedicineController::class, 'upload'])->name('medicines.upload');
+
+
+Route::get('/stock-takes', [StockTakeController::class, 'index'])->name('stock.take.index');
+Route::post('/stock-takes', [StockTakeController::class, 'store'])->name('stock.take.store');
+Route::get('/stock-takes/report', [StockTakeController::class, 'report'])->name('stock.take.report');
+
 
 Route::middleware('auth')->group(function () {
     // Profile route
@@ -72,7 +83,16 @@ Route::get('/settings', [SettingController::class, 'index'])->name('settings.ind
 
 // Update settings
 Route::post('/settings/update', [SettingController::class, 'update'])->name('settings.update');
+Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 
+Route::get('/data', function () {
+    return response()->json([
+        'system' => 'Phams System',
+        'data' => ['keyA' => 'valueA', 'keyB' => 'valueB']
+    ]);
+});
+Route::get('/view-visitors-data', [ProfileController::class, 'showVisitorsData']);
 
 
 Auth::routes();
